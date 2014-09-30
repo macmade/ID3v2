@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "056C885E18C8C76B006260B3"
-               BuildableName = "CF++.framework"
+               BuildableName = "ID3v2.framework"
                BlueprintName = "ID3v2 Mac Framework"
                ReferencedContainer = "container:ID3v2.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "056C885E18C8C76B006260B3"
-            BuildableName = "CF++.framework"
+            BuildableName = "ID3v2.framework"
             BlueprintName = "ID3v2 Mac Framework"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "056C885E18C8C76B006260B3"
-            BuildableName = "CF++.framework"
+            BuildableName = "ID3v2.framework"
             BlueprintName = "ID3v2 Mac Framework"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "056C885E18C8C76B006260B3"
-            BuildableName = "CF++.framework"
+            BuildableName = "ID3v2.framework"
             BlueprintName = "ID3v2 Mac Framework"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>

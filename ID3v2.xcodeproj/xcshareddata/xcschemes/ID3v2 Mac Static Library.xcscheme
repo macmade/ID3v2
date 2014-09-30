@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "056C881118C8B85F006260B3"
-               BuildableName = "libCF++.a"
+               BuildableName = "libID3v2.a"
                BlueprintName = "ID3v2 Mac Static Library"
                ReferencedContainer = "container:ID3v2.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "056C881118C8B85F006260B3"
-            BuildableName = "libCF++.a"
+            BuildableName = "libID3v2.a"
             BlueprintName = "ID3v2 Mac Static Library"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "056C881118C8B85F006260B3"
-            BuildableName = "libCF++.a"
+            BuildableName = "libID3v2.a"
             BlueprintName = "ID3v2 Mac Static Library"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>
@@ -71,7 +71,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "056C881118C8B85F006260B3"
-            BuildableName = "libCF++.a"
+            BuildableName = "libID3v2.a"
             BlueprintName = "ID3v2 Mac Static Library"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>

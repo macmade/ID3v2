@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "056C884918C8C547006260B3"
-               BuildableName = "libCF++.dylib"
+               BuildableName = "libID3v2.dylib"
                BlueprintName = "ID3v2 Mac Dynamic Library"
                ReferencedContainer = "container:ID3v2.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "056C884918C8C547006260B3"
-            BuildableName = "libCF++.dylib"
+            BuildableName = "libID3v2.dylib"
             BlueprintName = "ID3v2 Mac Dynamic Library"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "056C884918C8C547006260B3"
-            BuildableName = "libCF++.dylib"
+            BuildableName = "libID3v2.dylib"
             BlueprintName = "ID3v2 Mac Dynamic Library"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "056C884918C8C547006260B3"
-            BuildableName = "libCF++.dylib"
+            BuildableName = "libID3v2.dylib"
             BlueprintName = "ID3v2 Mac Dynamic Library"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>

@@ -39,7 +39,7 @@
 
 int main( void )
 {
-    ID3v2::Tag                              tag( "/Users/macmade/Desktop/Cendrillon - 30.09.2014.mp3" );
+    ID3v2::Tag                              tag( "/Users/macmade/Desktop/song.mp3" );
     ID3v2::Frame                          * frame;     
     std::vector< ID3v2::Frame * >           frames;
     std::vector< ID3v2::Frame * >::iterator it;
@@ -48,7 +48,7 @@ int main( void )
     {
         std::cout << "Invalid ID3v2 file" << std::endl;
         
-        return EXIT_FAILURE;
+        return EXIT_SUCCESS;
     }
     else
     {

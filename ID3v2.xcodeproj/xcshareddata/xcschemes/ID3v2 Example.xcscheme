@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "056C87CD18C8B0F8006260B3"
-               BuildableName = "CFPPExample"
+               BuildableName = "ID3v2Example"
                BlueprintName = "ID3v2 Example"
                ReferencedContainer = "container:ID3v2.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "056C87CD18C8B0F8006260B3"
-            BuildableName = "CFPPExample"
+            BuildableName = "ID3v2Example"
             BlueprintName = "ID3v2 Example"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "056C87CD18C8B0F8006260B3"
-            BuildableName = "CFPPExample"
+            BuildableName = "ID3v2Example"
             BlueprintName = "ID3v2 Example"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>
@@ -84,7 +84,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "056C87CD18C8B0F8006260B3"
-            BuildableName = "CFPPExample"
+            BuildableName = "ID3v2Example"
             BlueprintName = "ID3v2 Example"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>
