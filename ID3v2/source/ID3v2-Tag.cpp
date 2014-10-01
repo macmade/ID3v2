@@ -205,7 +205,7 @@ namespace ID3v2
         this->valid = false;
         
         #ifdef _WIN32
-        fopen( &fh, path.c_str(), "rb" );
+        fopen_s( &fh, path.c_str(), "rb" );
         #else
         fh = fopen( path.c_str(), "rb" );
         #endif
