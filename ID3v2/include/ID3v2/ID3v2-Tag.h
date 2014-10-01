@@ -64,6 +64,7 @@ namespace ID3v2
             unsigned char           GetFlags( void ) const;
             bool                    HasFlag( Flag flag ) const;
             std::size_t             GetSize( void );
+            ExtendedHeader        * GetExtendedHeader( void );
             std::vector< Frame * >  GetFrames( void ) const;
             Frame                 * GetFrameWithName( std::string name ) const;
             

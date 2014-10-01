@@ -77,8 +77,6 @@ namespace ID3v2
             
             static Frame * NewFrameFromFileHandle( FILE * fh );
             
-            
-            
             class  IMPL;
             IMPL * impl;
     };
