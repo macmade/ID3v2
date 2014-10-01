@@ -53,10 +53,7 @@ namespace ID3v2
         
         WCOP::~WCOP( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void WCOP::ProcessData( void )

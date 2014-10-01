@@ -53,10 +53,7 @@ namespace ID3v2
         
         TCOP::~TCOP( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void TCOP::ProcessData( void )

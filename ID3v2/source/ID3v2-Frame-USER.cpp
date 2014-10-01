@@ -53,10 +53,7 @@ namespace ID3v2
         
         USER::~USER( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void USER::ProcessData( void )

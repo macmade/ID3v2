@@ -42,6 +42,10 @@ namespace ID3v2
 {
     class ExtendedHeader
     {
+        public:
+            
+            virtual ~ExtendedHeader( void );
+            
         private:
             
             class  IMPL;

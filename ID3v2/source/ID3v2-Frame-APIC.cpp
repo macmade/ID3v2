@@ -53,10 +53,7 @@ namespace ID3v2
         
         APIC::~APIC( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void APIC::ProcessData( void )

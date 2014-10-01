@@ -36,6 +36,8 @@
  */
 
 #include <ID3v2.h>
+#include <ID3v2/ID3v2-PrivateTypes.h>
+#include <sstream>
 
 namespace ID3v2
 {
@@ -261,13 +263,15 @@ namespace ID3v2
         
         switch( flag )
         {
-            case FlagTagAlterPreservation:  return flags & 0x8000;
-            case FlagFileAlterPreservation: return flags & 0x4000;
-            case FlagReadOnly:              return flags & 0x2000;
-            case FlagCompression:           return flags & 0x0080;
-            case FlagEncryption:            return flags & 0x0040;
-            case FlagGroupingIdentity:      return flags & 0x0020;
+            case FlagTagAlterPreservation:  return ( flags & 0x8000 ) ? true : false;
+            case FlagFileAlterPreservation: return ( flags & 0x4000 ) ? true : false;
+            case FlagReadOnly:              return ( flags & 0x2000 ) ? true : false;
+            case FlagCompression:           return ( flags & 0x0080 ) ? true : false;
+            case FlagEncryption:            return ( flags & 0x0040 ) ? true : false;
+            case FlagGroupingIdentity:      return ( flags & 0x0020 ) ? true : false;
         }
+
+        return false;
     }
     
     Frame * Frame::IMPL::NewFrame( ID3v2Frame header, std::size_t size, char * data )
@@ -381,9 +385,6 @@ namespace ID3v2
     
     Frame::IMPL::~IMPL( void )
     {
-        if( this->data != NULL )
-        {
-            delete[] this->data;
-        }
+        delete[] this->data;
     }
 }

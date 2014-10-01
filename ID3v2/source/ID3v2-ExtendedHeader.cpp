@@ -39,5 +39,6 @@
 
 namespace ID3v2
 {
-    
+    ExtendedHeader::~ExtendedHeader( void )
+    {}
 }

@@ -36,6 +36,7 @@
  */
 
 #include <ID3v2.h>
+#include <ID3v2/ID3v2-PrivateTypes.h>
 
 namespace ID3v2
 {
@@ -127,10 +128,12 @@ namespace ID3v2
         
         switch( flag )
         {
-            case FlagUnsynchronisation:     return this->impl->header.flags & 0x80;
-            case FlagExtendedHeader:        return this->impl->header.flags & 0x40;
-            case FlagExperimentalIndicator: return this->impl->header.flags & 0x20;
+            case FlagUnsynchronisation:     return ( this->impl->header.flags & 0x80 ) ? true : false;
+            case FlagExtendedHeader:        return ( this->impl->header.flags & 0x40 ) ? true : false;
+            case FlagExperimentalIndicator: return ( this->impl->header.flags & 0x20 ) ? true : false;
         }
+        
+        return false;
     }
     
     std::size_t Tag::GetSize( void )
@@ -190,10 +193,7 @@ namespace ID3v2
         
         for( it = this->frames.begin(); it != this->frames.end(); ++it )
         {
-            if( *( it ) != NULL )
-            {
-                delete *( it );
-            }
+            delete *( it );
         }
     }
     
@@ -204,7 +204,11 @@ namespace ID3v2
         
         this->valid = false;
         
+        #ifdef _WIN32
+        fopen_s( &fh, path.c_str(), "rb" );
+        #else
         fh = fopen( path.c_str(), "rb" );
+        #endif
         
         if( fh == NULL )
         {

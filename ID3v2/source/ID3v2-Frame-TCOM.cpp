@@ -53,10 +53,7 @@ namespace ID3v2
         
         TCOM::~TCOM( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void TCOM::ProcessData( void )

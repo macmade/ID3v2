@@ -53,10 +53,7 @@ namespace ID3v2
         
         OWNE::~OWNE( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void OWNE::ProcessData( void )

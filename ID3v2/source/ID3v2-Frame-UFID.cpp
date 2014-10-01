@@ -53,10 +53,7 @@ namespace ID3v2
         
         UFID::~UFID( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void UFID::ProcessData( void )

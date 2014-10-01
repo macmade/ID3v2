@@ -53,10 +53,7 @@ namespace ID3v2
         
         Unknown::~Unknown( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void Unknown::ProcessData( void )

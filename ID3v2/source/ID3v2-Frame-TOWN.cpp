@@ -53,10 +53,7 @@ namespace ID3v2
         
         TOWN::~TOWN( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void TOWN::ProcessData( void )

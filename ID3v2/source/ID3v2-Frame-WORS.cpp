@@ -53,10 +53,7 @@ namespace ID3v2
         
         WORS::~WORS( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void WORS::ProcessData( void )
