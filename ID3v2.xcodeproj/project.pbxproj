@@ -35,18 +35,456 @@
 		05FCC75B19DB455900BC1FBE /* ID3v2-Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC75819DB455900BC1FBE /* ID3v2-Version.cpp */; };
 		05FCC75C19DB455900BC1FBE /* ID3v2-Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC75819DB455900BC1FBE /* ID3v2-Version.cpp */; };
 		05FCC75D19DB494A00BC1FBE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC6C819DB3E7A00BC1FBE /* main.cpp */; };
-		05FCC77619DB72DA00BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC77419DB72DA00BC1FBE /* ID3v2-Frame-COMM.cpp */; };
-		05FCC77719DB72DA00BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC77419DB72DA00BC1FBE /* ID3v2-Frame-COMM.cpp */; };
-		05FCC77819DB72DA00BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC77419DB72DA00BC1FBE /* ID3v2-Frame-COMM.cpp */; };
-		05FCC77919DB72DA00BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC77419DB72DA00BC1FBE /* ID3v2-Frame-COMM.cpp */; };
-		05FCC77A19DB72DA00BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC77519DB72DA00BC1FBE /* ID3v2-Frame-Unknown.cpp */; };
-		05FCC77B19DB72DA00BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC77519DB72DA00BC1FBE /* ID3v2-Frame-Unknown.cpp */; };
-		05FCC77C19DB72DA00BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC77519DB72DA00BC1FBE /* ID3v2-Frame-Unknown.cpp */; };
-		05FCC77D19DB72DA00BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC77519DB72DA00BC1FBE /* ID3v2-Frame-Unknown.cpp */; };
-		05FCC78019DB72E200BC1FBE /* ID3v2-Frame-COMM.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC77E19DB72E200BC1FBE /* ID3v2-Frame-COMM.h */; };
-		05FCC78119DB72E200BC1FBE /* ID3v2-Frame-COMM.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC77E19DB72E200BC1FBE /* ID3v2-Frame-COMM.h */; };
-		05FCC78219DB72E200BC1FBE /* ID3v2-Frame-Unknown.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC77F19DB72E200BC1FBE /* ID3v2-Frame-Unknown.h */; };
-		05FCC78319DB72E200BC1FBE /* ID3v2-Frame-Unknown.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC77F19DB72E200BC1FBE /* ID3v2-Frame-Unknown.h */; };
+		05FCC7CF19DB7C5F00BC1FBE /* ID3v2-Frame-AENC.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78419DB7C5F00BC1FBE /* ID3v2-Frame-AENC.h */; };
+		05FCC7D019DB7C5F00BC1FBE /* ID3v2-Frame-AENC.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78419DB7C5F00BC1FBE /* ID3v2-Frame-AENC.h */; };
+		05FCC7D119DB7C5F00BC1FBE /* ID3v2-Frame-APIC.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78519DB7C5F00BC1FBE /* ID3v2-Frame-APIC.h */; };
+		05FCC7D219DB7C5F00BC1FBE /* ID3v2-Frame-APIC.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78519DB7C5F00BC1FBE /* ID3v2-Frame-APIC.h */; };
+		05FCC7D319DB7C5F00BC1FBE /* ID3v2-Frame-COMM.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78619DB7C5F00BC1FBE /* ID3v2-Frame-COMM.h */; };
+		05FCC7D419DB7C5F00BC1FBE /* ID3v2-Frame-COMM.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78619DB7C5F00BC1FBE /* ID3v2-Frame-COMM.h */; };
+		05FCC7D519DB7C5F00BC1FBE /* ID3v2-Frame-COMR.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78719DB7C5F00BC1FBE /* ID3v2-Frame-COMR.h */; };
+		05FCC7D619DB7C5F00BC1FBE /* ID3v2-Frame-COMR.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78719DB7C5F00BC1FBE /* ID3v2-Frame-COMR.h */; };
+		05FCC7D719DB7C5F00BC1FBE /* ID3v2-Frame-ENCR.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78819DB7C5F00BC1FBE /* ID3v2-Frame-ENCR.h */; };
+		05FCC7D819DB7C5F00BC1FBE /* ID3v2-Frame-ENCR.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78819DB7C5F00BC1FBE /* ID3v2-Frame-ENCR.h */; };
+		05FCC7D919DB7C6000BC1FBE /* ID3v2-Frame-EQUA.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78919DB7C5F00BC1FBE /* ID3v2-Frame-EQUA.h */; };
+		05FCC7DA19DB7C6000BC1FBE /* ID3v2-Frame-EQUA.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78919DB7C5F00BC1FBE /* ID3v2-Frame-EQUA.h */; };
+		05FCC7DB19DB7C6000BC1FBE /* ID3v2-Frame-ETCO.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78A19DB7C5F00BC1FBE /* ID3v2-Frame-ETCO.h */; };
+		05FCC7DC19DB7C6000BC1FBE /* ID3v2-Frame-ETCO.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78A19DB7C5F00BC1FBE /* ID3v2-Frame-ETCO.h */; };
+		05FCC7DD19DB7C6000BC1FBE /* ID3v2-Frame-GEOB.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78B19DB7C5F00BC1FBE /* ID3v2-Frame-GEOB.h */; };
+		05FCC7DE19DB7C6000BC1FBE /* ID3v2-Frame-GEOB.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78B19DB7C5F00BC1FBE /* ID3v2-Frame-GEOB.h */; };
+		05FCC7DF19DB7C6000BC1FBE /* ID3v2-Frame-GRID.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78C19DB7C5F00BC1FBE /* ID3v2-Frame-GRID.h */; };
+		05FCC7E019DB7C6000BC1FBE /* ID3v2-Frame-GRID.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78C19DB7C5F00BC1FBE /* ID3v2-Frame-GRID.h */; };
+		05FCC7E119DB7C6000BC1FBE /* ID3v2-Frame-IPLS.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78D19DB7C5F00BC1FBE /* ID3v2-Frame-IPLS.h */; };
+		05FCC7E219DB7C6000BC1FBE /* ID3v2-Frame-IPLS.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78D19DB7C5F00BC1FBE /* ID3v2-Frame-IPLS.h */; };
+		05FCC7E319DB7C6000BC1FBE /* ID3v2-Frame-LINK.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78E19DB7C5F00BC1FBE /* ID3v2-Frame-LINK.h */; };
+		05FCC7E419DB7C6000BC1FBE /* ID3v2-Frame-LINK.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78E19DB7C5F00BC1FBE /* ID3v2-Frame-LINK.h */; };
+		05FCC7E519DB7C6000BC1FBE /* ID3v2-Frame-MCDI.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78F19DB7C5F00BC1FBE /* ID3v2-Frame-MCDI.h */; };
+		05FCC7E619DB7C6000BC1FBE /* ID3v2-Frame-MCDI.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC78F19DB7C5F00BC1FBE /* ID3v2-Frame-MCDI.h */; };
+		05FCC7E719DB7C6000BC1FBE /* ID3v2-Frame-MLLT.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79019DB7C5F00BC1FBE /* ID3v2-Frame-MLLT.h */; };
+		05FCC7E819DB7C6000BC1FBE /* ID3v2-Frame-MLLT.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79019DB7C5F00BC1FBE /* ID3v2-Frame-MLLT.h */; };
+		05FCC7E919DB7C6000BC1FBE /* ID3v2-Frame-OWNE.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79119DB7C5F00BC1FBE /* ID3v2-Frame-OWNE.h */; };
+		05FCC7EA19DB7C6000BC1FBE /* ID3v2-Frame-OWNE.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79119DB7C5F00BC1FBE /* ID3v2-Frame-OWNE.h */; };
+		05FCC7EB19DB7C6000BC1FBE /* ID3v2-Frame-PCNT.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79219DB7C5F00BC1FBE /* ID3v2-Frame-PCNT.h */; };
+		05FCC7EC19DB7C6000BC1FBE /* ID3v2-Frame-PCNT.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79219DB7C5F00BC1FBE /* ID3v2-Frame-PCNT.h */; };
+		05FCC7ED19DB7C6000BC1FBE /* ID3v2-Frame-POPM.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79319DB7C5F00BC1FBE /* ID3v2-Frame-POPM.h */; };
+		05FCC7EE19DB7C6000BC1FBE /* ID3v2-Frame-POPM.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79319DB7C5F00BC1FBE /* ID3v2-Frame-POPM.h */; };
+		05FCC7EF19DB7C6000BC1FBE /* ID3v2-Frame-POSS.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79419DB7C5F00BC1FBE /* ID3v2-Frame-POSS.h */; };
+		05FCC7F019DB7C6000BC1FBE /* ID3v2-Frame-POSS.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79419DB7C5F00BC1FBE /* ID3v2-Frame-POSS.h */; };
+		05FCC7F119DB7C6000BC1FBE /* ID3v2-Frame-PRIV.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79519DB7C5F00BC1FBE /* ID3v2-Frame-PRIV.h */; };
+		05FCC7F219DB7C6000BC1FBE /* ID3v2-Frame-PRIV.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79519DB7C5F00BC1FBE /* ID3v2-Frame-PRIV.h */; };
+		05FCC7F319DB7C6000BC1FBE /* ID3v2-Frame-RBUF.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79619DB7C5F00BC1FBE /* ID3v2-Frame-RBUF.h */; };
+		05FCC7F419DB7C6000BC1FBE /* ID3v2-Frame-RBUF.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79619DB7C5F00BC1FBE /* ID3v2-Frame-RBUF.h */; };
+		05FCC7F519DB7C6000BC1FBE /* ID3v2-Frame-RVAD.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79719DB7C5F00BC1FBE /* ID3v2-Frame-RVAD.h */; };
+		05FCC7F619DB7C6000BC1FBE /* ID3v2-Frame-RVAD.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79719DB7C5F00BC1FBE /* ID3v2-Frame-RVAD.h */; };
+		05FCC7F719DB7C6000BC1FBE /* ID3v2-Frame-RVRB.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79819DB7C5F00BC1FBE /* ID3v2-Frame-RVRB.h */; };
+		05FCC7F819DB7C6000BC1FBE /* ID3v2-Frame-RVRB.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79819DB7C5F00BC1FBE /* ID3v2-Frame-RVRB.h */; };
+		05FCC7F919DB7C6000BC1FBE /* ID3v2-Frame-SYLT.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79919DB7C5F00BC1FBE /* ID3v2-Frame-SYLT.h */; };
+		05FCC7FA19DB7C6000BC1FBE /* ID3v2-Frame-SYLT.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79919DB7C5F00BC1FBE /* ID3v2-Frame-SYLT.h */; };
+		05FCC7FB19DB7C6000BC1FBE /* ID3v2-Frame-SYTC.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79A19DB7C5F00BC1FBE /* ID3v2-Frame-SYTC.h */; };
+		05FCC7FC19DB7C6000BC1FBE /* ID3v2-Frame-SYTC.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79A19DB7C5F00BC1FBE /* ID3v2-Frame-SYTC.h */; };
+		05FCC7FD19DB7C6000BC1FBE /* ID3v2-Frame-TALB.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79B19DB7C5F00BC1FBE /* ID3v2-Frame-TALB.h */; };
+		05FCC7FE19DB7C6000BC1FBE /* ID3v2-Frame-TALB.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79B19DB7C5F00BC1FBE /* ID3v2-Frame-TALB.h */; };
+		05FCC7FF19DB7C6000BC1FBE /* ID3v2-Frame-TBPM.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79C19DB7C5F00BC1FBE /* ID3v2-Frame-TBPM.h */; };
+		05FCC80019DB7C6000BC1FBE /* ID3v2-Frame-TBPM.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79C19DB7C5F00BC1FBE /* ID3v2-Frame-TBPM.h */; };
+		05FCC80119DB7C6000BC1FBE /* ID3v2-Frame-TCOM.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79D19DB7C5F00BC1FBE /* ID3v2-Frame-TCOM.h */; };
+		05FCC80219DB7C6000BC1FBE /* ID3v2-Frame-TCOM.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79D19DB7C5F00BC1FBE /* ID3v2-Frame-TCOM.h */; };
+		05FCC80319DB7C6000BC1FBE /* ID3v2-Frame-TCON.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79E19DB7C5F00BC1FBE /* ID3v2-Frame-TCON.h */; };
+		05FCC80419DB7C6000BC1FBE /* ID3v2-Frame-TCON.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79E19DB7C5F00BC1FBE /* ID3v2-Frame-TCON.h */; };
+		05FCC80519DB7C6000BC1FBE /* ID3v2-Frame-TCOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79F19DB7C5F00BC1FBE /* ID3v2-Frame-TCOP.h */; };
+		05FCC80619DB7C6000BC1FBE /* ID3v2-Frame-TCOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC79F19DB7C5F00BC1FBE /* ID3v2-Frame-TCOP.h */; };
+		05FCC80719DB7C6000BC1FBE /* ID3v2-Frame-TDAT.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A019DB7C5F00BC1FBE /* ID3v2-Frame-TDAT.h */; };
+		05FCC80819DB7C6000BC1FBE /* ID3v2-Frame-TDAT.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A019DB7C5F00BC1FBE /* ID3v2-Frame-TDAT.h */; };
+		05FCC80919DB7C6000BC1FBE /* ID3v2-Frame-TDLY.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A119DB7C5F00BC1FBE /* ID3v2-Frame-TDLY.h */; };
+		05FCC80A19DB7C6000BC1FBE /* ID3v2-Frame-TDLY.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A119DB7C5F00BC1FBE /* ID3v2-Frame-TDLY.h */; };
+		05FCC80B19DB7C6000BC1FBE /* ID3v2-Frame-TENC.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A219DB7C5F00BC1FBE /* ID3v2-Frame-TENC.h */; };
+		05FCC80C19DB7C6000BC1FBE /* ID3v2-Frame-TENC.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A219DB7C5F00BC1FBE /* ID3v2-Frame-TENC.h */; };
+		05FCC80D19DB7C6000BC1FBE /* ID3v2-Frame-TEXT.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A319DB7C5F00BC1FBE /* ID3v2-Frame-TEXT.h */; };
+		05FCC80E19DB7C6000BC1FBE /* ID3v2-Frame-TEXT.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A319DB7C5F00BC1FBE /* ID3v2-Frame-TEXT.h */; };
+		05FCC80F19DB7C6000BC1FBE /* ID3v2-Frame-TFLT.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A419DB7C5F00BC1FBE /* ID3v2-Frame-TFLT.h */; };
+		05FCC81019DB7C6000BC1FBE /* ID3v2-Frame-TFLT.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A419DB7C5F00BC1FBE /* ID3v2-Frame-TFLT.h */; };
+		05FCC81119DB7C6000BC1FBE /* ID3v2-Frame-TIME.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A519DB7C5F00BC1FBE /* ID3v2-Frame-TIME.h */; };
+		05FCC81219DB7C6000BC1FBE /* ID3v2-Frame-TIME.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A519DB7C5F00BC1FBE /* ID3v2-Frame-TIME.h */; };
+		05FCC81319DB7C6000BC1FBE /* ID3v2-Frame-TIT1.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A619DB7C5F00BC1FBE /* ID3v2-Frame-TIT1.h */; };
+		05FCC81419DB7C6000BC1FBE /* ID3v2-Frame-TIT1.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A619DB7C5F00BC1FBE /* ID3v2-Frame-TIT1.h */; };
+		05FCC81519DB7C6000BC1FBE /* ID3v2-Frame-TIT2.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A719DB7C5F00BC1FBE /* ID3v2-Frame-TIT2.h */; };
+		05FCC81619DB7C6000BC1FBE /* ID3v2-Frame-TIT2.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A719DB7C5F00BC1FBE /* ID3v2-Frame-TIT2.h */; };
+		05FCC81719DB7C6000BC1FBE /* ID3v2-Frame-TIT3.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A819DB7C5F00BC1FBE /* ID3v2-Frame-TIT3.h */; };
+		05FCC81819DB7C6000BC1FBE /* ID3v2-Frame-TIT3.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A819DB7C5F00BC1FBE /* ID3v2-Frame-TIT3.h */; };
+		05FCC81919DB7C6000BC1FBE /* ID3v2-Frame-TKEY.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A919DB7C5F00BC1FBE /* ID3v2-Frame-TKEY.h */; };
+		05FCC81A19DB7C6000BC1FBE /* ID3v2-Frame-TKEY.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7A919DB7C5F00BC1FBE /* ID3v2-Frame-TKEY.h */; };
+		05FCC81B19DB7C6000BC1FBE /* ID3v2-Frame-TLAN.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7AA19DB7C5F00BC1FBE /* ID3v2-Frame-TLAN.h */; };
+		05FCC81C19DB7C6000BC1FBE /* ID3v2-Frame-TLAN.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7AA19DB7C5F00BC1FBE /* ID3v2-Frame-TLAN.h */; };
+		05FCC81D19DB7C6000BC1FBE /* ID3v2-Frame-TLEN.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7AB19DB7C5F00BC1FBE /* ID3v2-Frame-TLEN.h */; };
+		05FCC81E19DB7C6000BC1FBE /* ID3v2-Frame-TLEN.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7AB19DB7C5F00BC1FBE /* ID3v2-Frame-TLEN.h */; };
+		05FCC81F19DB7C6000BC1FBE /* ID3v2-Frame-TMED.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7AC19DB7C5F00BC1FBE /* ID3v2-Frame-TMED.h */; };
+		05FCC82019DB7C6000BC1FBE /* ID3v2-Frame-TMED.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7AC19DB7C5F00BC1FBE /* ID3v2-Frame-TMED.h */; };
+		05FCC82119DB7C6000BC1FBE /* ID3v2-Frame-TOAL.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7AD19DB7C5F00BC1FBE /* ID3v2-Frame-TOAL.h */; };
+		05FCC82219DB7C6000BC1FBE /* ID3v2-Frame-TOAL.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7AD19DB7C5F00BC1FBE /* ID3v2-Frame-TOAL.h */; };
+		05FCC82319DB7C6000BC1FBE /* ID3v2-Frame-TOFN.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7AE19DB7C5F00BC1FBE /* ID3v2-Frame-TOFN.h */; };
+		05FCC82419DB7C6000BC1FBE /* ID3v2-Frame-TOFN.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7AE19DB7C5F00BC1FBE /* ID3v2-Frame-TOFN.h */; };
+		05FCC82519DB7C6000BC1FBE /* ID3v2-Frame-TOLY.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7AF19DB7C5F00BC1FBE /* ID3v2-Frame-TOLY.h */; };
+		05FCC82619DB7C6000BC1FBE /* ID3v2-Frame-TOLY.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7AF19DB7C5F00BC1FBE /* ID3v2-Frame-TOLY.h */; };
+		05FCC82719DB7C6000BC1FBE /* ID3v2-Frame-TOPE.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B019DB7C5F00BC1FBE /* ID3v2-Frame-TOPE.h */; };
+		05FCC82819DB7C6000BC1FBE /* ID3v2-Frame-TOPE.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B019DB7C5F00BC1FBE /* ID3v2-Frame-TOPE.h */; };
+		05FCC82919DB7C6000BC1FBE /* ID3v2-Frame-TORY.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B119DB7C5F00BC1FBE /* ID3v2-Frame-TORY.h */; };
+		05FCC82A19DB7C6000BC1FBE /* ID3v2-Frame-TORY.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B119DB7C5F00BC1FBE /* ID3v2-Frame-TORY.h */; };
+		05FCC82B19DB7C6000BC1FBE /* ID3v2-Frame-TOWN.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B219DB7C5F00BC1FBE /* ID3v2-Frame-TOWN.h */; };
+		05FCC82C19DB7C6000BC1FBE /* ID3v2-Frame-TOWN.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B219DB7C5F00BC1FBE /* ID3v2-Frame-TOWN.h */; };
+		05FCC82D19DB7C6000BC1FBE /* ID3v2-Frame-TPE1.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B319DB7C5F00BC1FBE /* ID3v2-Frame-TPE1.h */; };
+		05FCC82E19DB7C6000BC1FBE /* ID3v2-Frame-TPE1.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B319DB7C5F00BC1FBE /* ID3v2-Frame-TPE1.h */; };
+		05FCC82F19DB7C6000BC1FBE /* ID3v2-Frame-TPE2.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B419DB7C5F00BC1FBE /* ID3v2-Frame-TPE2.h */; };
+		05FCC83019DB7C6000BC1FBE /* ID3v2-Frame-TPE2.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B419DB7C5F00BC1FBE /* ID3v2-Frame-TPE2.h */; };
+		05FCC83119DB7C6000BC1FBE /* ID3v2-Frame-TPE3.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B519DB7C5F00BC1FBE /* ID3v2-Frame-TPE3.h */; };
+		05FCC83219DB7C6000BC1FBE /* ID3v2-Frame-TPE3.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B519DB7C5F00BC1FBE /* ID3v2-Frame-TPE3.h */; };
+		05FCC83319DB7C6000BC1FBE /* ID3v2-Frame-TPE4.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B619DB7C5F00BC1FBE /* ID3v2-Frame-TPE4.h */; };
+		05FCC83419DB7C6000BC1FBE /* ID3v2-Frame-TPE4.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B619DB7C5F00BC1FBE /* ID3v2-Frame-TPE4.h */; };
+		05FCC83519DB7C6000BC1FBE /* ID3v2-Frame-TPOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B719DB7C5F00BC1FBE /* ID3v2-Frame-TPOS.h */; };
+		05FCC83619DB7C6000BC1FBE /* ID3v2-Frame-TPOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B719DB7C5F00BC1FBE /* ID3v2-Frame-TPOS.h */; };
+		05FCC83719DB7C6000BC1FBE /* ID3v2-Frame-TPUB.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B819DB7C5F00BC1FBE /* ID3v2-Frame-TPUB.h */; };
+		05FCC83819DB7C6000BC1FBE /* ID3v2-Frame-TPUB.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B819DB7C5F00BC1FBE /* ID3v2-Frame-TPUB.h */; };
+		05FCC83919DB7C6000BC1FBE /* ID3v2-Frame-TRCK.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B919DB7C5F00BC1FBE /* ID3v2-Frame-TRCK.h */; };
+		05FCC83A19DB7C6000BC1FBE /* ID3v2-Frame-TRCK.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7B919DB7C5F00BC1FBE /* ID3v2-Frame-TRCK.h */; };
+		05FCC83B19DB7C6000BC1FBE /* ID3v2-Frame-TRDA.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7BA19DB7C5F00BC1FBE /* ID3v2-Frame-TRDA.h */; };
+		05FCC83C19DB7C6000BC1FBE /* ID3v2-Frame-TRDA.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7BA19DB7C5F00BC1FBE /* ID3v2-Frame-TRDA.h */; };
+		05FCC83D19DB7C6000BC1FBE /* ID3v2-Frame-TRSN.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7BB19DB7C5F00BC1FBE /* ID3v2-Frame-TRSN.h */; };
+		05FCC83E19DB7C6000BC1FBE /* ID3v2-Frame-TRSN.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7BB19DB7C5F00BC1FBE /* ID3v2-Frame-TRSN.h */; };
+		05FCC83F19DB7C6000BC1FBE /* ID3v2-Frame-TRSO.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7BC19DB7C5F00BC1FBE /* ID3v2-Frame-TRSO.h */; };
+		05FCC84019DB7C6000BC1FBE /* ID3v2-Frame-TRSO.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7BC19DB7C5F00BC1FBE /* ID3v2-Frame-TRSO.h */; };
+		05FCC84119DB7C6000BC1FBE /* ID3v2-Frame-TSIZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7BD19DB7C5F00BC1FBE /* ID3v2-Frame-TSIZ.h */; };
+		05FCC84219DB7C6000BC1FBE /* ID3v2-Frame-TSIZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7BD19DB7C5F00BC1FBE /* ID3v2-Frame-TSIZ.h */; };
+		05FCC84319DB7C6000BC1FBE /* ID3v2-Frame-TSRC.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7BE19DB7C5F00BC1FBE /* ID3v2-Frame-TSRC.h */; };
+		05FCC84419DB7C6000BC1FBE /* ID3v2-Frame-TSRC.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7BE19DB7C5F00BC1FBE /* ID3v2-Frame-TSRC.h */; };
+		05FCC84519DB7C6000BC1FBE /* ID3v2-Frame-TSSE.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7BF19DB7C5F00BC1FBE /* ID3v2-Frame-TSSE.h */; };
+		05FCC84619DB7C6000BC1FBE /* ID3v2-Frame-TSSE.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7BF19DB7C5F00BC1FBE /* ID3v2-Frame-TSSE.h */; };
+		05FCC84719DB7C6000BC1FBE /* ID3v2-Frame-TXXX.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C019DB7C5F00BC1FBE /* ID3v2-Frame-TXXX.h */; };
+		05FCC84819DB7C6000BC1FBE /* ID3v2-Frame-TXXX.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C019DB7C5F00BC1FBE /* ID3v2-Frame-TXXX.h */; };
+		05FCC84919DB7C6000BC1FBE /* ID3v2-Frame-TYER.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C119DB7C5F00BC1FBE /* ID3v2-Frame-TYER.h */; };
+		05FCC84A19DB7C6000BC1FBE /* ID3v2-Frame-TYER.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C119DB7C5F00BC1FBE /* ID3v2-Frame-TYER.h */; };
+		05FCC84B19DB7C6000BC1FBE /* ID3v2-Frame-UFID.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C219DB7C5F00BC1FBE /* ID3v2-Frame-UFID.h */; };
+		05FCC84C19DB7C6000BC1FBE /* ID3v2-Frame-UFID.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C219DB7C5F00BC1FBE /* ID3v2-Frame-UFID.h */; };
+		05FCC84D19DB7C6000BC1FBE /* ID3v2-Frame-Unknown.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C319DB7C5F00BC1FBE /* ID3v2-Frame-Unknown.h */; };
+		05FCC84E19DB7C6000BC1FBE /* ID3v2-Frame-Unknown.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C319DB7C5F00BC1FBE /* ID3v2-Frame-Unknown.h */; };
+		05FCC84F19DB7C6000BC1FBE /* ID3v2-Frame-USER.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C419DB7C5F00BC1FBE /* ID3v2-Frame-USER.h */; };
+		05FCC85019DB7C6000BC1FBE /* ID3v2-Frame-USER.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C419DB7C5F00BC1FBE /* ID3v2-Frame-USER.h */; };
+		05FCC85119DB7C6000BC1FBE /* ID3v2-Frame-USLT.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C519DB7C5F00BC1FBE /* ID3v2-Frame-USLT.h */; };
+		05FCC85219DB7C6000BC1FBE /* ID3v2-Frame-USLT.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C519DB7C5F00BC1FBE /* ID3v2-Frame-USLT.h */; };
+		05FCC85319DB7C6000BC1FBE /* ID3v2-Frame-WCOM.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C619DB7C5F00BC1FBE /* ID3v2-Frame-WCOM.h */; };
+		05FCC85419DB7C6000BC1FBE /* ID3v2-Frame-WCOM.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C619DB7C5F00BC1FBE /* ID3v2-Frame-WCOM.h */; };
+		05FCC85519DB7C6000BC1FBE /* ID3v2-Frame-WCOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C719DB7C5F00BC1FBE /* ID3v2-Frame-WCOP.h */; };
+		05FCC85619DB7C6000BC1FBE /* ID3v2-Frame-WCOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C719DB7C5F00BC1FBE /* ID3v2-Frame-WCOP.h */; };
+		05FCC85719DB7C6000BC1FBE /* ID3v2-Frame-WOAF.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C819DB7C5F00BC1FBE /* ID3v2-Frame-WOAF.h */; };
+		05FCC85819DB7C6000BC1FBE /* ID3v2-Frame-WOAF.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C819DB7C5F00BC1FBE /* ID3v2-Frame-WOAF.h */; };
+		05FCC85919DB7C6000BC1FBE /* ID3v2-Frame-WOAR.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C919DB7C5F00BC1FBE /* ID3v2-Frame-WOAR.h */; };
+		05FCC85A19DB7C6000BC1FBE /* ID3v2-Frame-WOAR.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7C919DB7C5F00BC1FBE /* ID3v2-Frame-WOAR.h */; };
+		05FCC85B19DB7C6000BC1FBE /* ID3v2-Frame-WOAS.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7CA19DB7C5F00BC1FBE /* ID3v2-Frame-WOAS.h */; };
+		05FCC85C19DB7C6000BC1FBE /* ID3v2-Frame-WOAS.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7CA19DB7C5F00BC1FBE /* ID3v2-Frame-WOAS.h */; };
+		05FCC85D19DB7C6000BC1FBE /* ID3v2-Frame-WORS.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7CB19DB7C5F00BC1FBE /* ID3v2-Frame-WORS.h */; };
+		05FCC85E19DB7C6000BC1FBE /* ID3v2-Frame-WORS.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7CB19DB7C5F00BC1FBE /* ID3v2-Frame-WORS.h */; };
+		05FCC85F19DB7C6000BC1FBE /* ID3v2-Frame-WPAY.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7CC19DB7C5F00BC1FBE /* ID3v2-Frame-WPAY.h */; };
+		05FCC86019DB7C6000BC1FBE /* ID3v2-Frame-WPAY.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7CC19DB7C5F00BC1FBE /* ID3v2-Frame-WPAY.h */; };
+		05FCC86119DB7C6000BC1FBE /* ID3v2-Frame-WPUB.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7CD19DB7C5F00BC1FBE /* ID3v2-Frame-WPUB.h */; };
+		05FCC86219DB7C6000BC1FBE /* ID3v2-Frame-WPUB.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7CD19DB7C5F00BC1FBE /* ID3v2-Frame-WPUB.h */; };
+		05FCC86319DB7C6000BC1FBE /* ID3v2-Frame-WXXX.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7CE19DB7C5F00BC1FBE /* ID3v2-Frame-WXXX.h */; };
+		05FCC86419DB7C6000BC1FBE /* ID3v2-Frame-WXXX.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC7CE19DB7C5F00BC1FBE /* ID3v2-Frame-WXXX.h */; };
+		05FCC8B019DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86519DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp */; };
+		05FCC8B119DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86519DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp */; };
+		05FCC8B219DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86519DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp */; };
+		05FCC8B319DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86519DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp */; };
+		05FCC8B419DB7C6900BC1FBE /* ID3v2-Frame-APIC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86619DB7C6900BC1FBE /* ID3v2-Frame-APIC.cpp */; };
+		05FCC8B519DB7C6900BC1FBE /* ID3v2-Frame-APIC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86619DB7C6900BC1FBE /* ID3v2-Frame-APIC.cpp */; };
+		05FCC8B619DB7C6900BC1FBE /* ID3v2-Frame-APIC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86619DB7C6900BC1FBE /* ID3v2-Frame-APIC.cpp */; };
+		05FCC8B719DB7C6900BC1FBE /* ID3v2-Frame-APIC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86619DB7C6900BC1FBE /* ID3v2-Frame-APIC.cpp */; };
+		05FCC8B819DB7C6900BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86719DB7C6900BC1FBE /* ID3v2-Frame-COMM.cpp */; };
+		05FCC8B919DB7C6900BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86719DB7C6900BC1FBE /* ID3v2-Frame-COMM.cpp */; };
+		05FCC8BA19DB7C6900BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86719DB7C6900BC1FBE /* ID3v2-Frame-COMM.cpp */; };
+		05FCC8BB19DB7C6900BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86719DB7C6900BC1FBE /* ID3v2-Frame-COMM.cpp */; };
+		05FCC8BC19DB7C6900BC1FBE /* ID3v2-Frame-COMR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86819DB7C6900BC1FBE /* ID3v2-Frame-COMR.cpp */; };
+		05FCC8BD19DB7C6900BC1FBE /* ID3v2-Frame-COMR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86819DB7C6900BC1FBE /* ID3v2-Frame-COMR.cpp */; };
+		05FCC8BE19DB7C6900BC1FBE /* ID3v2-Frame-COMR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86819DB7C6900BC1FBE /* ID3v2-Frame-COMR.cpp */; };
+		05FCC8BF19DB7C6900BC1FBE /* ID3v2-Frame-COMR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86819DB7C6900BC1FBE /* ID3v2-Frame-COMR.cpp */; };
+		05FCC8C019DB7C6900BC1FBE /* ID3v2-Frame-ENCR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86919DB7C6900BC1FBE /* ID3v2-Frame-ENCR.cpp */; };
+		05FCC8C119DB7C6900BC1FBE /* ID3v2-Frame-ENCR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86919DB7C6900BC1FBE /* ID3v2-Frame-ENCR.cpp */; };
+		05FCC8C219DB7C6900BC1FBE /* ID3v2-Frame-ENCR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86919DB7C6900BC1FBE /* ID3v2-Frame-ENCR.cpp */; };
+		05FCC8C319DB7C6900BC1FBE /* ID3v2-Frame-ENCR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86919DB7C6900BC1FBE /* ID3v2-Frame-ENCR.cpp */; };
+		05FCC8C419DB7C6900BC1FBE /* ID3v2-Frame-EQUA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86A19DB7C6900BC1FBE /* ID3v2-Frame-EQUA.cpp */; };
+		05FCC8C519DB7C6900BC1FBE /* ID3v2-Frame-EQUA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86A19DB7C6900BC1FBE /* ID3v2-Frame-EQUA.cpp */; };
+		05FCC8C619DB7C6900BC1FBE /* ID3v2-Frame-EQUA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86A19DB7C6900BC1FBE /* ID3v2-Frame-EQUA.cpp */; };
+		05FCC8C719DB7C6900BC1FBE /* ID3v2-Frame-EQUA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86A19DB7C6900BC1FBE /* ID3v2-Frame-EQUA.cpp */; };
+		05FCC8C819DB7C6900BC1FBE /* ID3v2-Frame-ETCO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86B19DB7C6900BC1FBE /* ID3v2-Frame-ETCO.cpp */; };
+		05FCC8C919DB7C6900BC1FBE /* ID3v2-Frame-ETCO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86B19DB7C6900BC1FBE /* ID3v2-Frame-ETCO.cpp */; };
+		05FCC8CA19DB7C6900BC1FBE /* ID3v2-Frame-ETCO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86B19DB7C6900BC1FBE /* ID3v2-Frame-ETCO.cpp */; };
+		05FCC8CB19DB7C6900BC1FBE /* ID3v2-Frame-ETCO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86B19DB7C6900BC1FBE /* ID3v2-Frame-ETCO.cpp */; };
+		05FCC8CC19DB7C6900BC1FBE /* ID3v2-Frame-GEOB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86C19DB7C6900BC1FBE /* ID3v2-Frame-GEOB.cpp */; };
+		05FCC8CD19DB7C6900BC1FBE /* ID3v2-Frame-GEOB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86C19DB7C6900BC1FBE /* ID3v2-Frame-GEOB.cpp */; };
+		05FCC8CE19DB7C6900BC1FBE /* ID3v2-Frame-GEOB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86C19DB7C6900BC1FBE /* ID3v2-Frame-GEOB.cpp */; };
+		05FCC8CF19DB7C6900BC1FBE /* ID3v2-Frame-GEOB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86C19DB7C6900BC1FBE /* ID3v2-Frame-GEOB.cpp */; };
+		05FCC8D019DB7C6900BC1FBE /* ID3v2-Frame-GRID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86D19DB7C6900BC1FBE /* ID3v2-Frame-GRID.cpp */; };
+		05FCC8D119DB7C6900BC1FBE /* ID3v2-Frame-GRID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86D19DB7C6900BC1FBE /* ID3v2-Frame-GRID.cpp */; };
+		05FCC8D219DB7C6900BC1FBE /* ID3v2-Frame-GRID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86D19DB7C6900BC1FBE /* ID3v2-Frame-GRID.cpp */; };
+		05FCC8D319DB7C6900BC1FBE /* ID3v2-Frame-GRID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86D19DB7C6900BC1FBE /* ID3v2-Frame-GRID.cpp */; };
+		05FCC8D419DB7C6900BC1FBE /* ID3v2-Frame-IPLS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86E19DB7C6900BC1FBE /* ID3v2-Frame-IPLS.cpp */; };
+		05FCC8D519DB7C6900BC1FBE /* ID3v2-Frame-IPLS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86E19DB7C6900BC1FBE /* ID3v2-Frame-IPLS.cpp */; };
+		05FCC8D619DB7C6900BC1FBE /* ID3v2-Frame-IPLS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86E19DB7C6900BC1FBE /* ID3v2-Frame-IPLS.cpp */; };
+		05FCC8D719DB7C6900BC1FBE /* ID3v2-Frame-IPLS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86E19DB7C6900BC1FBE /* ID3v2-Frame-IPLS.cpp */; };
+		05FCC8D819DB7C6900BC1FBE /* ID3v2-Frame-LINK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86F19DB7C6900BC1FBE /* ID3v2-Frame-LINK.cpp */; };
+		05FCC8D919DB7C6900BC1FBE /* ID3v2-Frame-LINK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86F19DB7C6900BC1FBE /* ID3v2-Frame-LINK.cpp */; };
+		05FCC8DA19DB7C6900BC1FBE /* ID3v2-Frame-LINK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86F19DB7C6900BC1FBE /* ID3v2-Frame-LINK.cpp */; };
+		05FCC8DB19DB7C6900BC1FBE /* ID3v2-Frame-LINK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC86F19DB7C6900BC1FBE /* ID3v2-Frame-LINK.cpp */; };
+		05FCC8DC19DB7C6900BC1FBE /* ID3v2-Frame-MCDI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87019DB7C6900BC1FBE /* ID3v2-Frame-MCDI.cpp */; };
+		05FCC8DD19DB7C6900BC1FBE /* ID3v2-Frame-MCDI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87019DB7C6900BC1FBE /* ID3v2-Frame-MCDI.cpp */; };
+		05FCC8DE19DB7C6900BC1FBE /* ID3v2-Frame-MCDI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87019DB7C6900BC1FBE /* ID3v2-Frame-MCDI.cpp */; };
+		05FCC8DF19DB7C6900BC1FBE /* ID3v2-Frame-MCDI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87019DB7C6900BC1FBE /* ID3v2-Frame-MCDI.cpp */; };
+		05FCC8E019DB7C6900BC1FBE /* ID3v2-Frame-MLLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87119DB7C6900BC1FBE /* ID3v2-Frame-MLLT.cpp */; };
+		05FCC8E119DB7C6900BC1FBE /* ID3v2-Frame-MLLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87119DB7C6900BC1FBE /* ID3v2-Frame-MLLT.cpp */; };
+		05FCC8E219DB7C6900BC1FBE /* ID3v2-Frame-MLLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87119DB7C6900BC1FBE /* ID3v2-Frame-MLLT.cpp */; };
+		05FCC8E319DB7C6900BC1FBE /* ID3v2-Frame-MLLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87119DB7C6900BC1FBE /* ID3v2-Frame-MLLT.cpp */; };
+		05FCC8E419DB7C6900BC1FBE /* ID3v2-Frame-OWNE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87219DB7C6900BC1FBE /* ID3v2-Frame-OWNE.cpp */; };
+		05FCC8E519DB7C6900BC1FBE /* ID3v2-Frame-OWNE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87219DB7C6900BC1FBE /* ID3v2-Frame-OWNE.cpp */; };
+		05FCC8E619DB7C6900BC1FBE /* ID3v2-Frame-OWNE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87219DB7C6900BC1FBE /* ID3v2-Frame-OWNE.cpp */; };
+		05FCC8E719DB7C6900BC1FBE /* ID3v2-Frame-OWNE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87219DB7C6900BC1FBE /* ID3v2-Frame-OWNE.cpp */; };
+		05FCC8E819DB7C6900BC1FBE /* ID3v2-Frame-PCNT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87319DB7C6900BC1FBE /* ID3v2-Frame-PCNT.cpp */; };
+		05FCC8E919DB7C6900BC1FBE /* ID3v2-Frame-PCNT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87319DB7C6900BC1FBE /* ID3v2-Frame-PCNT.cpp */; };
+		05FCC8EA19DB7C6900BC1FBE /* ID3v2-Frame-PCNT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87319DB7C6900BC1FBE /* ID3v2-Frame-PCNT.cpp */; };
+		05FCC8EB19DB7C6900BC1FBE /* ID3v2-Frame-PCNT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87319DB7C6900BC1FBE /* ID3v2-Frame-PCNT.cpp */; };
+		05FCC8EC19DB7C6900BC1FBE /* ID3v2-Frame-POPM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87419DB7C6900BC1FBE /* ID3v2-Frame-POPM.cpp */; };
+		05FCC8ED19DB7C6900BC1FBE /* ID3v2-Frame-POPM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87419DB7C6900BC1FBE /* ID3v2-Frame-POPM.cpp */; };
+		05FCC8EE19DB7C6900BC1FBE /* ID3v2-Frame-POPM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87419DB7C6900BC1FBE /* ID3v2-Frame-POPM.cpp */; };
+		05FCC8EF19DB7C6900BC1FBE /* ID3v2-Frame-POPM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87419DB7C6900BC1FBE /* ID3v2-Frame-POPM.cpp */; };
+		05FCC8F019DB7C6900BC1FBE /* ID3v2-Frame-POSS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87519DB7C6900BC1FBE /* ID3v2-Frame-POSS.cpp */; };
+		05FCC8F119DB7C6900BC1FBE /* ID3v2-Frame-POSS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87519DB7C6900BC1FBE /* ID3v2-Frame-POSS.cpp */; };
+		05FCC8F219DB7C6900BC1FBE /* ID3v2-Frame-POSS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87519DB7C6900BC1FBE /* ID3v2-Frame-POSS.cpp */; };
+		05FCC8F319DB7C6900BC1FBE /* ID3v2-Frame-POSS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87519DB7C6900BC1FBE /* ID3v2-Frame-POSS.cpp */; };
+		05FCC8F419DB7C6900BC1FBE /* ID3v2-Frame-PRIV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87619DB7C6900BC1FBE /* ID3v2-Frame-PRIV.cpp */; };
+		05FCC8F519DB7C6900BC1FBE /* ID3v2-Frame-PRIV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87619DB7C6900BC1FBE /* ID3v2-Frame-PRIV.cpp */; };
+		05FCC8F619DB7C6900BC1FBE /* ID3v2-Frame-PRIV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87619DB7C6900BC1FBE /* ID3v2-Frame-PRIV.cpp */; };
+		05FCC8F719DB7C6900BC1FBE /* ID3v2-Frame-PRIV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87619DB7C6900BC1FBE /* ID3v2-Frame-PRIV.cpp */; };
+		05FCC8F819DB7C6900BC1FBE /* ID3v2-Frame-RBUF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87719DB7C6900BC1FBE /* ID3v2-Frame-RBUF.cpp */; };
+		05FCC8F919DB7C6900BC1FBE /* ID3v2-Frame-RBUF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87719DB7C6900BC1FBE /* ID3v2-Frame-RBUF.cpp */; };
+		05FCC8FA19DB7C6900BC1FBE /* ID3v2-Frame-RBUF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87719DB7C6900BC1FBE /* ID3v2-Frame-RBUF.cpp */; };
+		05FCC8FB19DB7C6900BC1FBE /* ID3v2-Frame-RBUF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87719DB7C6900BC1FBE /* ID3v2-Frame-RBUF.cpp */; };
+		05FCC8FC19DB7C6900BC1FBE /* ID3v2-Frame-RVAD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87819DB7C6900BC1FBE /* ID3v2-Frame-RVAD.cpp */; };
+		05FCC8FD19DB7C6900BC1FBE /* ID3v2-Frame-RVAD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87819DB7C6900BC1FBE /* ID3v2-Frame-RVAD.cpp */; };
+		05FCC8FE19DB7C6900BC1FBE /* ID3v2-Frame-RVAD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87819DB7C6900BC1FBE /* ID3v2-Frame-RVAD.cpp */; };
+		05FCC8FF19DB7C6900BC1FBE /* ID3v2-Frame-RVAD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87819DB7C6900BC1FBE /* ID3v2-Frame-RVAD.cpp */; };
+		05FCC90019DB7C6900BC1FBE /* ID3v2-Frame-RVRB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87919DB7C6900BC1FBE /* ID3v2-Frame-RVRB.cpp */; };
+		05FCC90119DB7C6900BC1FBE /* ID3v2-Frame-RVRB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87919DB7C6900BC1FBE /* ID3v2-Frame-RVRB.cpp */; };
+		05FCC90219DB7C6900BC1FBE /* ID3v2-Frame-RVRB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87919DB7C6900BC1FBE /* ID3v2-Frame-RVRB.cpp */; };
+		05FCC90319DB7C6900BC1FBE /* ID3v2-Frame-RVRB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87919DB7C6900BC1FBE /* ID3v2-Frame-RVRB.cpp */; };
+		05FCC90419DB7C6900BC1FBE /* ID3v2-Frame-SYLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87A19DB7C6900BC1FBE /* ID3v2-Frame-SYLT.cpp */; };
+		05FCC90519DB7C6900BC1FBE /* ID3v2-Frame-SYLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87A19DB7C6900BC1FBE /* ID3v2-Frame-SYLT.cpp */; };
+		05FCC90619DB7C6900BC1FBE /* ID3v2-Frame-SYLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87A19DB7C6900BC1FBE /* ID3v2-Frame-SYLT.cpp */; };
+		05FCC90719DB7C6900BC1FBE /* ID3v2-Frame-SYLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87A19DB7C6900BC1FBE /* ID3v2-Frame-SYLT.cpp */; };
+		05FCC90819DB7C6900BC1FBE /* ID3v2-Frame-SYTC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87B19DB7C6900BC1FBE /* ID3v2-Frame-SYTC.cpp */; };
+		05FCC90919DB7C6900BC1FBE /* ID3v2-Frame-SYTC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87B19DB7C6900BC1FBE /* ID3v2-Frame-SYTC.cpp */; };
+		05FCC90A19DB7C6900BC1FBE /* ID3v2-Frame-SYTC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87B19DB7C6900BC1FBE /* ID3v2-Frame-SYTC.cpp */; };
+		05FCC90B19DB7C6900BC1FBE /* ID3v2-Frame-SYTC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87B19DB7C6900BC1FBE /* ID3v2-Frame-SYTC.cpp */; };
+		05FCC90C19DB7C6900BC1FBE /* ID3v2-Frame-TALB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87C19DB7C6900BC1FBE /* ID3v2-Frame-TALB.cpp */; };
+		05FCC90D19DB7C6900BC1FBE /* ID3v2-Frame-TALB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87C19DB7C6900BC1FBE /* ID3v2-Frame-TALB.cpp */; };
+		05FCC90E19DB7C6900BC1FBE /* ID3v2-Frame-TALB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87C19DB7C6900BC1FBE /* ID3v2-Frame-TALB.cpp */; };
+		05FCC90F19DB7C6900BC1FBE /* ID3v2-Frame-TALB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87C19DB7C6900BC1FBE /* ID3v2-Frame-TALB.cpp */; };
+		05FCC91019DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87D19DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp */; };
+		05FCC91119DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87D19DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp */; };
+		05FCC91219DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87D19DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp */; };
+		05FCC91319DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87D19DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp */; };
+		05FCC91419DB7C6900BC1FBE /* ID3v2-Frame-TCOM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87E19DB7C6900BC1FBE /* ID3v2-Frame-TCOM.cpp */; };
+		05FCC91519DB7C6900BC1FBE /* ID3v2-Frame-TCOM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87E19DB7C6900BC1FBE /* ID3v2-Frame-TCOM.cpp */; };
+		05FCC91619DB7C6900BC1FBE /* ID3v2-Frame-TCOM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87E19DB7C6900BC1FBE /* ID3v2-Frame-TCOM.cpp */; };
+		05FCC91719DB7C6900BC1FBE /* ID3v2-Frame-TCOM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87E19DB7C6900BC1FBE /* ID3v2-Frame-TCOM.cpp */; };
+		05FCC91819DB7C6900BC1FBE /* ID3v2-Frame-TCON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87F19DB7C6900BC1FBE /* ID3v2-Frame-TCON.cpp */; };
+		05FCC91919DB7C6900BC1FBE /* ID3v2-Frame-TCON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87F19DB7C6900BC1FBE /* ID3v2-Frame-TCON.cpp */; };
+		05FCC91A19DB7C6900BC1FBE /* ID3v2-Frame-TCON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87F19DB7C6900BC1FBE /* ID3v2-Frame-TCON.cpp */; };
+		05FCC91B19DB7C6900BC1FBE /* ID3v2-Frame-TCON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC87F19DB7C6900BC1FBE /* ID3v2-Frame-TCON.cpp */; };
+		05FCC91C19DB7C6900BC1FBE /* ID3v2-Frame-TCOP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88019DB7C6900BC1FBE /* ID3v2-Frame-TCOP.cpp */; };
+		05FCC91D19DB7C6900BC1FBE /* ID3v2-Frame-TCOP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88019DB7C6900BC1FBE /* ID3v2-Frame-TCOP.cpp */; };
+		05FCC91E19DB7C6900BC1FBE /* ID3v2-Frame-TCOP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88019DB7C6900BC1FBE /* ID3v2-Frame-TCOP.cpp */; };
+		05FCC91F19DB7C6900BC1FBE /* ID3v2-Frame-TCOP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88019DB7C6900BC1FBE /* ID3v2-Frame-TCOP.cpp */; };
+		05FCC92019DB7C6900BC1FBE /* ID3v2-Frame-TDAT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88119DB7C6900BC1FBE /* ID3v2-Frame-TDAT.cpp */; };
+		05FCC92119DB7C6900BC1FBE /* ID3v2-Frame-TDAT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88119DB7C6900BC1FBE /* ID3v2-Frame-TDAT.cpp */; };
+		05FCC92219DB7C6900BC1FBE /* ID3v2-Frame-TDAT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88119DB7C6900BC1FBE /* ID3v2-Frame-TDAT.cpp */; };
+		05FCC92319DB7C6900BC1FBE /* ID3v2-Frame-TDAT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88119DB7C6900BC1FBE /* ID3v2-Frame-TDAT.cpp */; };
+		05FCC92419DB7C6900BC1FBE /* ID3v2-Frame-TDLY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88219DB7C6900BC1FBE /* ID3v2-Frame-TDLY.cpp */; };
+		05FCC92519DB7C6900BC1FBE /* ID3v2-Frame-TDLY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88219DB7C6900BC1FBE /* ID3v2-Frame-TDLY.cpp */; };
+		05FCC92619DB7C6900BC1FBE /* ID3v2-Frame-TDLY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88219DB7C6900BC1FBE /* ID3v2-Frame-TDLY.cpp */; };
+		05FCC92719DB7C6900BC1FBE /* ID3v2-Frame-TDLY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88219DB7C6900BC1FBE /* ID3v2-Frame-TDLY.cpp */; };
+		05FCC92819DB7C6900BC1FBE /* ID3v2-Frame-TENC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88319DB7C6900BC1FBE /* ID3v2-Frame-TENC.cpp */; };
+		05FCC92919DB7C6900BC1FBE /* ID3v2-Frame-TENC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88319DB7C6900BC1FBE /* ID3v2-Frame-TENC.cpp */; };
+		05FCC92A19DB7C6900BC1FBE /* ID3v2-Frame-TENC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88319DB7C6900BC1FBE /* ID3v2-Frame-TENC.cpp */; };
+		05FCC92B19DB7C6900BC1FBE /* ID3v2-Frame-TENC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88319DB7C6900BC1FBE /* ID3v2-Frame-TENC.cpp */; };
+		05FCC92C19DB7C6900BC1FBE /* ID3v2-Frame-TEXT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88419DB7C6900BC1FBE /* ID3v2-Frame-TEXT.cpp */; };
+		05FCC92D19DB7C6900BC1FBE /* ID3v2-Frame-TEXT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88419DB7C6900BC1FBE /* ID3v2-Frame-TEXT.cpp */; };
+		05FCC92E19DB7C6900BC1FBE /* ID3v2-Frame-TEXT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88419DB7C6900BC1FBE /* ID3v2-Frame-TEXT.cpp */; };
+		05FCC92F19DB7C6900BC1FBE /* ID3v2-Frame-TEXT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88419DB7C6900BC1FBE /* ID3v2-Frame-TEXT.cpp */; };
+		05FCC93019DB7C6900BC1FBE /* ID3v2-Frame-TFLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88519DB7C6900BC1FBE /* ID3v2-Frame-TFLT.cpp */; };
+		05FCC93119DB7C6900BC1FBE /* ID3v2-Frame-TFLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88519DB7C6900BC1FBE /* ID3v2-Frame-TFLT.cpp */; };
+		05FCC93219DB7C6900BC1FBE /* ID3v2-Frame-TFLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88519DB7C6900BC1FBE /* ID3v2-Frame-TFLT.cpp */; };
+		05FCC93319DB7C6900BC1FBE /* ID3v2-Frame-TFLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88519DB7C6900BC1FBE /* ID3v2-Frame-TFLT.cpp */; };
+		05FCC93419DB7C6900BC1FBE /* ID3v2-Frame-TIME.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88619DB7C6900BC1FBE /* ID3v2-Frame-TIME.cpp */; };
+		05FCC93519DB7C6900BC1FBE /* ID3v2-Frame-TIME.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88619DB7C6900BC1FBE /* ID3v2-Frame-TIME.cpp */; };
+		05FCC93619DB7C6900BC1FBE /* ID3v2-Frame-TIME.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88619DB7C6900BC1FBE /* ID3v2-Frame-TIME.cpp */; };
+		05FCC93719DB7C6900BC1FBE /* ID3v2-Frame-TIME.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88619DB7C6900BC1FBE /* ID3v2-Frame-TIME.cpp */; };
+		05FCC93819DB7C6900BC1FBE /* ID3v2-Frame-TIT1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88719DB7C6900BC1FBE /* ID3v2-Frame-TIT1.cpp */; };
+		05FCC93919DB7C6900BC1FBE /* ID3v2-Frame-TIT1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88719DB7C6900BC1FBE /* ID3v2-Frame-TIT1.cpp */; };
+		05FCC93A19DB7C6900BC1FBE /* ID3v2-Frame-TIT1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88719DB7C6900BC1FBE /* ID3v2-Frame-TIT1.cpp */; };
+		05FCC93B19DB7C6900BC1FBE /* ID3v2-Frame-TIT1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88719DB7C6900BC1FBE /* ID3v2-Frame-TIT1.cpp */; };
+		05FCC93C19DB7C6900BC1FBE /* ID3v2-Frame-TIT2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88819DB7C6900BC1FBE /* ID3v2-Frame-TIT2.cpp */; };
+		05FCC93D19DB7C6900BC1FBE /* ID3v2-Frame-TIT2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88819DB7C6900BC1FBE /* ID3v2-Frame-TIT2.cpp */; };
+		05FCC93E19DB7C6900BC1FBE /* ID3v2-Frame-TIT2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88819DB7C6900BC1FBE /* ID3v2-Frame-TIT2.cpp */; };
+		05FCC93F19DB7C6900BC1FBE /* ID3v2-Frame-TIT2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88819DB7C6900BC1FBE /* ID3v2-Frame-TIT2.cpp */; };
+		05FCC94019DB7C6900BC1FBE /* ID3v2-Frame-TIT3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88919DB7C6900BC1FBE /* ID3v2-Frame-TIT3.cpp */; };
+		05FCC94119DB7C6900BC1FBE /* ID3v2-Frame-TIT3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88919DB7C6900BC1FBE /* ID3v2-Frame-TIT3.cpp */; };
+		05FCC94219DB7C6900BC1FBE /* ID3v2-Frame-TIT3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88919DB7C6900BC1FBE /* ID3v2-Frame-TIT3.cpp */; };
+		05FCC94319DB7C6900BC1FBE /* ID3v2-Frame-TIT3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88919DB7C6900BC1FBE /* ID3v2-Frame-TIT3.cpp */; };
+		05FCC94419DB7C6900BC1FBE /* ID3v2-Frame-TKEY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88A19DB7C6900BC1FBE /* ID3v2-Frame-TKEY.cpp */; };
+		05FCC94519DB7C6900BC1FBE /* ID3v2-Frame-TKEY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88A19DB7C6900BC1FBE /* ID3v2-Frame-TKEY.cpp */; };
+		05FCC94619DB7C6900BC1FBE /* ID3v2-Frame-TKEY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88A19DB7C6900BC1FBE /* ID3v2-Frame-TKEY.cpp */; };
+		05FCC94719DB7C6900BC1FBE /* ID3v2-Frame-TKEY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88A19DB7C6900BC1FBE /* ID3v2-Frame-TKEY.cpp */; };
+		05FCC94819DB7C6900BC1FBE /* ID3v2-Frame-TLAN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88B19DB7C6900BC1FBE /* ID3v2-Frame-TLAN.cpp */; };
+		05FCC94919DB7C6900BC1FBE /* ID3v2-Frame-TLAN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88B19DB7C6900BC1FBE /* ID3v2-Frame-TLAN.cpp */; };
+		05FCC94A19DB7C6900BC1FBE /* ID3v2-Frame-TLAN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88B19DB7C6900BC1FBE /* ID3v2-Frame-TLAN.cpp */; };
+		05FCC94B19DB7C6900BC1FBE /* ID3v2-Frame-TLAN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88B19DB7C6900BC1FBE /* ID3v2-Frame-TLAN.cpp */; };
+		05FCC94C19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88C19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp */; };
+		05FCC94D19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88C19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp */; };
+		05FCC94E19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88C19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp */; };
+		05FCC94F19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88C19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp */; };
+		05FCC95019DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88D19DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp */; };
+		05FCC95119DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88D19DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp */; };
+		05FCC95219DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88D19DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp */; };
+		05FCC95319DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88D19DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp */; };
+		05FCC95419DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88E19DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp */; };
+		05FCC95519DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88E19DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp */; };
+		05FCC95619DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88E19DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp */; };
+		05FCC95719DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88E19DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp */; };
+		05FCC95819DB7C6900BC1FBE /* ID3v2-Frame-TOFN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88F19DB7C6900BC1FBE /* ID3v2-Frame-TOFN.cpp */; };
+		05FCC95919DB7C6900BC1FBE /* ID3v2-Frame-TOFN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88F19DB7C6900BC1FBE /* ID3v2-Frame-TOFN.cpp */; };
+		05FCC95A19DB7C6900BC1FBE /* ID3v2-Frame-TOFN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88F19DB7C6900BC1FBE /* ID3v2-Frame-TOFN.cpp */; };
+		05FCC95B19DB7C6900BC1FBE /* ID3v2-Frame-TOFN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC88F19DB7C6900BC1FBE /* ID3v2-Frame-TOFN.cpp */; };
+		05FCC95C19DB7C6900BC1FBE /* ID3v2-Frame-TOLY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89019DB7C6900BC1FBE /* ID3v2-Frame-TOLY.cpp */; };
+		05FCC95D19DB7C6900BC1FBE /* ID3v2-Frame-TOLY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89019DB7C6900BC1FBE /* ID3v2-Frame-TOLY.cpp */; };
+		05FCC95E19DB7C6900BC1FBE /* ID3v2-Frame-TOLY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89019DB7C6900BC1FBE /* ID3v2-Frame-TOLY.cpp */; };
+		05FCC95F19DB7C6900BC1FBE /* ID3v2-Frame-TOLY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89019DB7C6900BC1FBE /* ID3v2-Frame-TOLY.cpp */; };
+		05FCC96019DB7C6900BC1FBE /* ID3v2-Frame-TOPE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89119DB7C6900BC1FBE /* ID3v2-Frame-TOPE.cpp */; };
+		05FCC96119DB7C6900BC1FBE /* ID3v2-Frame-TOPE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89119DB7C6900BC1FBE /* ID3v2-Frame-TOPE.cpp */; };
+		05FCC96219DB7C6900BC1FBE /* ID3v2-Frame-TOPE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89119DB7C6900BC1FBE /* ID3v2-Frame-TOPE.cpp */; };
+		05FCC96319DB7C6900BC1FBE /* ID3v2-Frame-TOPE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89119DB7C6900BC1FBE /* ID3v2-Frame-TOPE.cpp */; };
+		05FCC96419DB7C6900BC1FBE /* ID3v2-Frame-TORY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89219DB7C6900BC1FBE /* ID3v2-Frame-TORY.cpp */; };
+		05FCC96519DB7C6900BC1FBE /* ID3v2-Frame-TORY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89219DB7C6900BC1FBE /* ID3v2-Frame-TORY.cpp */; };
+		05FCC96619DB7C6900BC1FBE /* ID3v2-Frame-TORY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89219DB7C6900BC1FBE /* ID3v2-Frame-TORY.cpp */; };
+		05FCC96719DB7C6900BC1FBE /* ID3v2-Frame-TORY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89219DB7C6900BC1FBE /* ID3v2-Frame-TORY.cpp */; };
+		05FCC96819DB7C6900BC1FBE /* ID3v2-Frame-TOWN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89319DB7C6900BC1FBE /* ID3v2-Frame-TOWN.cpp */; };
+		05FCC96919DB7C6900BC1FBE /* ID3v2-Frame-TOWN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89319DB7C6900BC1FBE /* ID3v2-Frame-TOWN.cpp */; };
+		05FCC96A19DB7C6900BC1FBE /* ID3v2-Frame-TOWN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89319DB7C6900BC1FBE /* ID3v2-Frame-TOWN.cpp */; };
+		05FCC96B19DB7C6900BC1FBE /* ID3v2-Frame-TOWN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89319DB7C6900BC1FBE /* ID3v2-Frame-TOWN.cpp */; };
+		05FCC96C19DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89419DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp */; };
+		05FCC96D19DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89419DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp */; };
+		05FCC96E19DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89419DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp */; };
+		05FCC96F19DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89419DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp */; };
+		05FCC97019DB7C6900BC1FBE /* ID3v2-Frame-TPE2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89519DB7C6900BC1FBE /* ID3v2-Frame-TPE2.cpp */; };
+		05FCC97119DB7C6900BC1FBE /* ID3v2-Frame-TPE2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89519DB7C6900BC1FBE /* ID3v2-Frame-TPE2.cpp */; };
+		05FCC97219DB7C6900BC1FBE /* ID3v2-Frame-TPE2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89519DB7C6900BC1FBE /* ID3v2-Frame-TPE2.cpp */; };
+		05FCC97319DB7C6900BC1FBE /* ID3v2-Frame-TPE2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89519DB7C6900BC1FBE /* ID3v2-Frame-TPE2.cpp */; };
+		05FCC97419DB7C6900BC1FBE /* ID3v2-Frame-TPE3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89619DB7C6900BC1FBE /* ID3v2-Frame-TPE3.cpp */; };
+		05FCC97519DB7C6900BC1FBE /* ID3v2-Frame-TPE3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89619DB7C6900BC1FBE /* ID3v2-Frame-TPE3.cpp */; };
+		05FCC97619DB7C6900BC1FBE /* ID3v2-Frame-TPE3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89619DB7C6900BC1FBE /* ID3v2-Frame-TPE3.cpp */; };
+		05FCC97719DB7C6900BC1FBE /* ID3v2-Frame-TPE3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89619DB7C6900BC1FBE /* ID3v2-Frame-TPE3.cpp */; };
+		05FCC97819DB7C6900BC1FBE /* ID3v2-Frame-TPE4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89719DB7C6900BC1FBE /* ID3v2-Frame-TPE4.cpp */; };
+		05FCC97919DB7C6900BC1FBE /* ID3v2-Frame-TPE4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89719DB7C6900BC1FBE /* ID3v2-Frame-TPE4.cpp */; };
+		05FCC97A19DB7C6900BC1FBE /* ID3v2-Frame-TPE4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89719DB7C6900BC1FBE /* ID3v2-Frame-TPE4.cpp */; };
+		05FCC97B19DB7C6900BC1FBE /* ID3v2-Frame-TPE4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89719DB7C6900BC1FBE /* ID3v2-Frame-TPE4.cpp */; };
+		05FCC97C19DB7C6900BC1FBE /* ID3v2-Frame-TPOS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89819DB7C6900BC1FBE /* ID3v2-Frame-TPOS.cpp */; };
+		05FCC97D19DB7C6900BC1FBE /* ID3v2-Frame-TPOS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89819DB7C6900BC1FBE /* ID3v2-Frame-TPOS.cpp */; };
+		05FCC97E19DB7C6900BC1FBE /* ID3v2-Frame-TPOS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89819DB7C6900BC1FBE /* ID3v2-Frame-TPOS.cpp */; };
+		05FCC97F19DB7C6900BC1FBE /* ID3v2-Frame-TPOS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89819DB7C6900BC1FBE /* ID3v2-Frame-TPOS.cpp */; };
+		05FCC98019DB7C6900BC1FBE /* ID3v2-Frame-TPUB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89919DB7C6900BC1FBE /* ID3v2-Frame-TPUB.cpp */; };
+		05FCC98119DB7C6900BC1FBE /* ID3v2-Frame-TPUB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89919DB7C6900BC1FBE /* ID3v2-Frame-TPUB.cpp */; };
+		05FCC98219DB7C6900BC1FBE /* ID3v2-Frame-TPUB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89919DB7C6900BC1FBE /* ID3v2-Frame-TPUB.cpp */; };
+		05FCC98319DB7C6900BC1FBE /* ID3v2-Frame-TPUB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89919DB7C6900BC1FBE /* ID3v2-Frame-TPUB.cpp */; };
+		05FCC98419DB7C6900BC1FBE /* ID3v2-Frame-TRCK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89A19DB7C6900BC1FBE /* ID3v2-Frame-TRCK.cpp */; };
+		05FCC98519DB7C6900BC1FBE /* ID3v2-Frame-TRCK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89A19DB7C6900BC1FBE /* ID3v2-Frame-TRCK.cpp */; };
+		05FCC98619DB7C6900BC1FBE /* ID3v2-Frame-TRCK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89A19DB7C6900BC1FBE /* ID3v2-Frame-TRCK.cpp */; };
+		05FCC98719DB7C6900BC1FBE /* ID3v2-Frame-TRCK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89A19DB7C6900BC1FBE /* ID3v2-Frame-TRCK.cpp */; };
+		05FCC98819DB7C6900BC1FBE /* ID3v2-Frame-TRDA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89B19DB7C6900BC1FBE /* ID3v2-Frame-TRDA.cpp */; };
+		05FCC98919DB7C6900BC1FBE /* ID3v2-Frame-TRDA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89B19DB7C6900BC1FBE /* ID3v2-Frame-TRDA.cpp */; };
+		05FCC98A19DB7C6900BC1FBE /* ID3v2-Frame-TRDA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89B19DB7C6900BC1FBE /* ID3v2-Frame-TRDA.cpp */; };
+		05FCC98B19DB7C6900BC1FBE /* ID3v2-Frame-TRDA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89B19DB7C6900BC1FBE /* ID3v2-Frame-TRDA.cpp */; };
+		05FCC98C19DB7C6900BC1FBE /* ID3v2-Frame-TRSN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89C19DB7C6900BC1FBE /* ID3v2-Frame-TRSN.cpp */; };
+		05FCC98D19DB7C6900BC1FBE /* ID3v2-Frame-TRSN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89C19DB7C6900BC1FBE /* ID3v2-Frame-TRSN.cpp */; };
+		05FCC98E19DB7C6900BC1FBE /* ID3v2-Frame-TRSN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89C19DB7C6900BC1FBE /* ID3v2-Frame-TRSN.cpp */; };
+		05FCC98F19DB7C6900BC1FBE /* ID3v2-Frame-TRSN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89C19DB7C6900BC1FBE /* ID3v2-Frame-TRSN.cpp */; };
+		05FCC99019DB7C6900BC1FBE /* ID3v2-Frame-TRSO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89D19DB7C6900BC1FBE /* ID3v2-Frame-TRSO.cpp */; };
+		05FCC99119DB7C6900BC1FBE /* ID3v2-Frame-TRSO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89D19DB7C6900BC1FBE /* ID3v2-Frame-TRSO.cpp */; };
+		05FCC99219DB7C6900BC1FBE /* ID3v2-Frame-TRSO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89D19DB7C6900BC1FBE /* ID3v2-Frame-TRSO.cpp */; };
+		05FCC99319DB7C6900BC1FBE /* ID3v2-Frame-TRSO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89D19DB7C6900BC1FBE /* ID3v2-Frame-TRSO.cpp */; };
+		05FCC99419DB7C6900BC1FBE /* ID3v2-Frame-TSIZ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89E19DB7C6900BC1FBE /* ID3v2-Frame-TSIZ.cpp */; };
+		05FCC99519DB7C6900BC1FBE /* ID3v2-Frame-TSIZ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89E19DB7C6900BC1FBE /* ID3v2-Frame-TSIZ.cpp */; };
+		05FCC99619DB7C6900BC1FBE /* ID3v2-Frame-TSIZ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89E19DB7C6900BC1FBE /* ID3v2-Frame-TSIZ.cpp */; };
+		05FCC99719DB7C6900BC1FBE /* ID3v2-Frame-TSIZ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89E19DB7C6900BC1FBE /* ID3v2-Frame-TSIZ.cpp */; };
+		05FCC99819DB7C6900BC1FBE /* ID3v2-Frame-TSRC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89F19DB7C6900BC1FBE /* ID3v2-Frame-TSRC.cpp */; };
+		05FCC99919DB7C6900BC1FBE /* ID3v2-Frame-TSRC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89F19DB7C6900BC1FBE /* ID3v2-Frame-TSRC.cpp */; };
+		05FCC99A19DB7C6900BC1FBE /* ID3v2-Frame-TSRC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89F19DB7C6900BC1FBE /* ID3v2-Frame-TSRC.cpp */; };
+		05FCC99B19DB7C6900BC1FBE /* ID3v2-Frame-TSRC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC89F19DB7C6900BC1FBE /* ID3v2-Frame-TSRC.cpp */; };
+		05FCC99C19DB7C6900BC1FBE /* ID3v2-Frame-TSSE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A019DB7C6900BC1FBE /* ID3v2-Frame-TSSE.cpp */; };
+		05FCC99D19DB7C6900BC1FBE /* ID3v2-Frame-TSSE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A019DB7C6900BC1FBE /* ID3v2-Frame-TSSE.cpp */; };
+		05FCC99E19DB7C6900BC1FBE /* ID3v2-Frame-TSSE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A019DB7C6900BC1FBE /* ID3v2-Frame-TSSE.cpp */; };
+		05FCC99F19DB7C6900BC1FBE /* ID3v2-Frame-TSSE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A019DB7C6900BC1FBE /* ID3v2-Frame-TSSE.cpp */; };
+		05FCC9A019DB7C6900BC1FBE /* ID3v2-Frame-TXXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A119DB7C6900BC1FBE /* ID3v2-Frame-TXXX.cpp */; };
+		05FCC9A119DB7C6900BC1FBE /* ID3v2-Frame-TXXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A119DB7C6900BC1FBE /* ID3v2-Frame-TXXX.cpp */; };
+		05FCC9A219DB7C6900BC1FBE /* ID3v2-Frame-TXXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A119DB7C6900BC1FBE /* ID3v2-Frame-TXXX.cpp */; };
+		05FCC9A319DB7C6900BC1FBE /* ID3v2-Frame-TXXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A119DB7C6900BC1FBE /* ID3v2-Frame-TXXX.cpp */; };
+		05FCC9A419DB7C6900BC1FBE /* ID3v2-Frame-TYER.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A219DB7C6900BC1FBE /* ID3v2-Frame-TYER.cpp */; };
+		05FCC9A519DB7C6900BC1FBE /* ID3v2-Frame-TYER.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A219DB7C6900BC1FBE /* ID3v2-Frame-TYER.cpp */; };
+		05FCC9A619DB7C6900BC1FBE /* ID3v2-Frame-TYER.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A219DB7C6900BC1FBE /* ID3v2-Frame-TYER.cpp */; };
+		05FCC9A719DB7C6900BC1FBE /* ID3v2-Frame-TYER.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A219DB7C6900BC1FBE /* ID3v2-Frame-TYER.cpp */; };
+		05FCC9A819DB7C6900BC1FBE /* ID3v2-Frame-UFID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A319DB7C6900BC1FBE /* ID3v2-Frame-UFID.cpp */; };
+		05FCC9A919DB7C6900BC1FBE /* ID3v2-Frame-UFID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A319DB7C6900BC1FBE /* ID3v2-Frame-UFID.cpp */; };
+		05FCC9AA19DB7C6900BC1FBE /* ID3v2-Frame-UFID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A319DB7C6900BC1FBE /* ID3v2-Frame-UFID.cpp */; };
+		05FCC9AB19DB7C6900BC1FBE /* ID3v2-Frame-UFID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A319DB7C6900BC1FBE /* ID3v2-Frame-UFID.cpp */; };
+		05FCC9AC19DB7C6900BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A419DB7C6900BC1FBE /* ID3v2-Frame-Unknown.cpp */; };
+		05FCC9AD19DB7C6900BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A419DB7C6900BC1FBE /* ID3v2-Frame-Unknown.cpp */; };
+		05FCC9AE19DB7C6900BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A419DB7C6900BC1FBE /* ID3v2-Frame-Unknown.cpp */; };
+		05FCC9AF19DB7C6900BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A419DB7C6900BC1FBE /* ID3v2-Frame-Unknown.cpp */; };
+		05FCC9B019DB7C6900BC1FBE /* ID3v2-Frame-USER.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A519DB7C6900BC1FBE /* ID3v2-Frame-USER.cpp */; };
+		05FCC9B119DB7C6900BC1FBE /* ID3v2-Frame-USER.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A519DB7C6900BC1FBE /* ID3v2-Frame-USER.cpp */; };
+		05FCC9B219DB7C6900BC1FBE /* ID3v2-Frame-USER.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A519DB7C6900BC1FBE /* ID3v2-Frame-USER.cpp */; };
+		05FCC9B319DB7C6900BC1FBE /* ID3v2-Frame-USER.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A519DB7C6900BC1FBE /* ID3v2-Frame-USER.cpp */; };
+		05FCC9B419DB7C6900BC1FBE /* ID3v2-Frame-USLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A619DB7C6900BC1FBE /* ID3v2-Frame-USLT.cpp */; };
+		05FCC9B519DB7C6900BC1FBE /* ID3v2-Frame-USLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A619DB7C6900BC1FBE /* ID3v2-Frame-USLT.cpp */; };
+		05FCC9B619DB7C6900BC1FBE /* ID3v2-Frame-USLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A619DB7C6900BC1FBE /* ID3v2-Frame-USLT.cpp */; };
+		05FCC9B719DB7C6900BC1FBE /* ID3v2-Frame-USLT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A619DB7C6900BC1FBE /* ID3v2-Frame-USLT.cpp */; };
+		05FCC9B819DB7C6900BC1FBE /* ID3v2-Frame-WCOM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A719DB7C6900BC1FBE /* ID3v2-Frame-WCOM.cpp */; };
+		05FCC9B919DB7C6900BC1FBE /* ID3v2-Frame-WCOM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A719DB7C6900BC1FBE /* ID3v2-Frame-WCOM.cpp */; };
+		05FCC9BA19DB7C6900BC1FBE /* ID3v2-Frame-WCOM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A719DB7C6900BC1FBE /* ID3v2-Frame-WCOM.cpp */; };
+		05FCC9BB19DB7C6900BC1FBE /* ID3v2-Frame-WCOM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A719DB7C6900BC1FBE /* ID3v2-Frame-WCOM.cpp */; };
+		05FCC9BC19DB7C6900BC1FBE /* ID3v2-Frame-WCOP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A819DB7C6900BC1FBE /* ID3v2-Frame-WCOP.cpp */; };
+		05FCC9BD19DB7C6900BC1FBE /* ID3v2-Frame-WCOP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A819DB7C6900BC1FBE /* ID3v2-Frame-WCOP.cpp */; };
+		05FCC9BE19DB7C6900BC1FBE /* ID3v2-Frame-WCOP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A819DB7C6900BC1FBE /* ID3v2-Frame-WCOP.cpp */; };
+		05FCC9BF19DB7C6900BC1FBE /* ID3v2-Frame-WCOP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A819DB7C6900BC1FBE /* ID3v2-Frame-WCOP.cpp */; };
+		05FCC9C019DB7C6900BC1FBE /* ID3v2-Frame-WOAF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A919DB7C6900BC1FBE /* ID3v2-Frame-WOAF.cpp */; };
+		05FCC9C119DB7C6900BC1FBE /* ID3v2-Frame-WOAF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A919DB7C6900BC1FBE /* ID3v2-Frame-WOAF.cpp */; };
+		05FCC9C219DB7C6900BC1FBE /* ID3v2-Frame-WOAF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A919DB7C6900BC1FBE /* ID3v2-Frame-WOAF.cpp */; };
+		05FCC9C319DB7C6900BC1FBE /* ID3v2-Frame-WOAF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8A919DB7C6900BC1FBE /* ID3v2-Frame-WOAF.cpp */; };
+		05FCC9C419DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AA19DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp */; };
+		05FCC9C519DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AA19DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp */; };
+		05FCC9C619DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AA19DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp */; };
+		05FCC9C719DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AA19DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp */; };
+		05FCC9C819DB7C6900BC1FBE /* ID3v2-Frame-WOAS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AB19DB7C6900BC1FBE /* ID3v2-Frame-WOAS.cpp */; };
+		05FCC9C919DB7C6900BC1FBE /* ID3v2-Frame-WOAS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AB19DB7C6900BC1FBE /* ID3v2-Frame-WOAS.cpp */; };
+		05FCC9CA19DB7C6900BC1FBE /* ID3v2-Frame-WOAS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AB19DB7C6900BC1FBE /* ID3v2-Frame-WOAS.cpp */; };
+		05FCC9CB19DB7C6900BC1FBE /* ID3v2-Frame-WOAS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AB19DB7C6900BC1FBE /* ID3v2-Frame-WOAS.cpp */; };
+		05FCC9CC19DB7C6900BC1FBE /* ID3v2-Frame-WORS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AC19DB7C6900BC1FBE /* ID3v2-Frame-WORS.cpp */; };
+		05FCC9CD19DB7C6900BC1FBE /* ID3v2-Frame-WORS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AC19DB7C6900BC1FBE /* ID3v2-Frame-WORS.cpp */; };
+		05FCC9CE19DB7C6900BC1FBE /* ID3v2-Frame-WORS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AC19DB7C6900BC1FBE /* ID3v2-Frame-WORS.cpp */; };
+		05FCC9CF19DB7C6900BC1FBE /* ID3v2-Frame-WORS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AC19DB7C6900BC1FBE /* ID3v2-Frame-WORS.cpp */; };
+		05FCC9D019DB7C6900BC1FBE /* ID3v2-Frame-WPAY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AD19DB7C6900BC1FBE /* ID3v2-Frame-WPAY.cpp */; };
+		05FCC9D119DB7C6900BC1FBE /* ID3v2-Frame-WPAY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AD19DB7C6900BC1FBE /* ID3v2-Frame-WPAY.cpp */; };
+		05FCC9D219DB7C6900BC1FBE /* ID3v2-Frame-WPAY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AD19DB7C6900BC1FBE /* ID3v2-Frame-WPAY.cpp */; };
+		05FCC9D319DB7C6900BC1FBE /* ID3v2-Frame-WPAY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AD19DB7C6900BC1FBE /* ID3v2-Frame-WPAY.cpp */; };
+		05FCC9D419DB7C6900BC1FBE /* ID3v2-Frame-WPUB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AE19DB7C6900BC1FBE /* ID3v2-Frame-WPUB.cpp */; };
+		05FCC9D519DB7C6900BC1FBE /* ID3v2-Frame-WPUB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AE19DB7C6900BC1FBE /* ID3v2-Frame-WPUB.cpp */; };
+		05FCC9D619DB7C6900BC1FBE /* ID3v2-Frame-WPUB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AE19DB7C6900BC1FBE /* ID3v2-Frame-WPUB.cpp */; };
+		05FCC9D719DB7C6900BC1FBE /* ID3v2-Frame-WPUB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AE19DB7C6900BC1FBE /* ID3v2-Frame-WPUB.cpp */; };
+		05FCC9D819DB7C6900BC1FBE /* ID3v2-Frame-WXXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AF19DB7C6900BC1FBE /* ID3v2-Frame-WXXX.cpp */; };
+		05FCC9D919DB7C6900BC1FBE /* ID3v2-Frame-WXXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AF19DB7C6900BC1FBE /* ID3v2-Frame-WXXX.cpp */; };
+		05FCC9DA19DB7C6900BC1FBE /* ID3v2-Frame-WXXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AF19DB7C6900BC1FBE /* ID3v2-Frame-WXXX.cpp */; };
+		05FCC9DB19DB7C6900BC1FBE /* ID3v2-Frame-WXXX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC8AF19DB7C6900BC1FBE /* ID3v2-Frame-WXXX.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,10 +559,156 @@
 		05FCC75519DB454C00BC1FBE /* ID3v2-Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Version.h"; sourceTree = "<group>"; };
 		05FCC75819DB455900BC1FBE /* ID3v2-Version.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Version.cpp"; sourceTree = "<group>"; };
 		05FCC75E19DB4D8D00BC1FBE /* ID3v2-PrivateTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ID3v2-PrivateTypes.h"; sourceTree = "<group>"; };
-		05FCC77419DB72DA00BC1FBE /* ID3v2-Frame-COMM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-COMM.cpp"; sourceTree = "<group>"; };
-		05FCC77519DB72DA00BC1FBE /* ID3v2-Frame-Unknown.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-Unknown.cpp"; sourceTree = "<group>"; };
-		05FCC77E19DB72E200BC1FBE /* ID3v2-Frame-COMM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-COMM.h"; sourceTree = "<group>"; };
-		05FCC77F19DB72E200BC1FBE /* ID3v2-Frame-Unknown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-Unknown.h"; sourceTree = "<group>"; };
+		05FCC78419DB7C5F00BC1FBE /* ID3v2-Frame-AENC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-AENC.h"; sourceTree = "<group>"; };
+		05FCC78519DB7C5F00BC1FBE /* ID3v2-Frame-APIC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-APIC.h"; sourceTree = "<group>"; };
+		05FCC78619DB7C5F00BC1FBE /* ID3v2-Frame-COMM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-COMM.h"; sourceTree = "<group>"; };
+		05FCC78719DB7C5F00BC1FBE /* ID3v2-Frame-COMR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-COMR.h"; sourceTree = "<group>"; };
+		05FCC78819DB7C5F00BC1FBE /* ID3v2-Frame-ENCR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-ENCR.h"; sourceTree = "<group>"; };
+		05FCC78919DB7C5F00BC1FBE /* ID3v2-Frame-EQUA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-EQUA.h"; sourceTree = "<group>"; };
+		05FCC78A19DB7C5F00BC1FBE /* ID3v2-Frame-ETCO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-ETCO.h"; sourceTree = "<group>"; };
+		05FCC78B19DB7C5F00BC1FBE /* ID3v2-Frame-GEOB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-GEOB.h"; sourceTree = "<group>"; };
+		05FCC78C19DB7C5F00BC1FBE /* ID3v2-Frame-GRID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-GRID.h"; sourceTree = "<group>"; };
+		05FCC78D19DB7C5F00BC1FBE /* ID3v2-Frame-IPLS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-IPLS.h"; sourceTree = "<group>"; };
+		05FCC78E19DB7C5F00BC1FBE /* ID3v2-Frame-LINK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-LINK.h"; sourceTree = "<group>"; };
+		05FCC78F19DB7C5F00BC1FBE /* ID3v2-Frame-MCDI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-MCDI.h"; sourceTree = "<group>"; };
+		05FCC79019DB7C5F00BC1FBE /* ID3v2-Frame-MLLT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-MLLT.h"; sourceTree = "<group>"; };
+		05FCC79119DB7C5F00BC1FBE /* ID3v2-Frame-OWNE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-OWNE.h"; sourceTree = "<group>"; };
+		05FCC79219DB7C5F00BC1FBE /* ID3v2-Frame-PCNT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-PCNT.h"; sourceTree = "<group>"; };
+		05FCC79319DB7C5F00BC1FBE /* ID3v2-Frame-POPM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-POPM.h"; sourceTree = "<group>"; };
+		05FCC79419DB7C5F00BC1FBE /* ID3v2-Frame-POSS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-POSS.h"; sourceTree = "<group>"; };
+		05FCC79519DB7C5F00BC1FBE /* ID3v2-Frame-PRIV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-PRIV.h"; sourceTree = "<group>"; };
+		05FCC79619DB7C5F00BC1FBE /* ID3v2-Frame-RBUF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-RBUF.h"; sourceTree = "<group>"; };
+		05FCC79719DB7C5F00BC1FBE /* ID3v2-Frame-RVAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-RVAD.h"; sourceTree = "<group>"; };
+		05FCC79819DB7C5F00BC1FBE /* ID3v2-Frame-RVRB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-RVRB.h"; sourceTree = "<group>"; };
+		05FCC79919DB7C5F00BC1FBE /* ID3v2-Frame-SYLT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-SYLT.h"; sourceTree = "<group>"; };
+		05FCC79A19DB7C5F00BC1FBE /* ID3v2-Frame-SYTC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-SYTC.h"; sourceTree = "<group>"; };
+		05FCC79B19DB7C5F00BC1FBE /* ID3v2-Frame-TALB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TALB.h"; sourceTree = "<group>"; };
+		05FCC79C19DB7C5F00BC1FBE /* ID3v2-Frame-TBPM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TBPM.h"; sourceTree = "<group>"; };
+		05FCC79D19DB7C5F00BC1FBE /* ID3v2-Frame-TCOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TCOM.h"; sourceTree = "<group>"; };
+		05FCC79E19DB7C5F00BC1FBE /* ID3v2-Frame-TCON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TCON.h"; sourceTree = "<group>"; };
+		05FCC79F19DB7C5F00BC1FBE /* ID3v2-Frame-TCOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TCOP.h"; sourceTree = "<group>"; };
+		05FCC7A019DB7C5F00BC1FBE /* ID3v2-Frame-TDAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TDAT.h"; sourceTree = "<group>"; };
+		05FCC7A119DB7C5F00BC1FBE /* ID3v2-Frame-TDLY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TDLY.h"; sourceTree = "<group>"; };
+		05FCC7A219DB7C5F00BC1FBE /* ID3v2-Frame-TENC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TENC.h"; sourceTree = "<group>"; };
+		05FCC7A319DB7C5F00BC1FBE /* ID3v2-Frame-TEXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TEXT.h"; sourceTree = "<group>"; };
+		05FCC7A419DB7C5F00BC1FBE /* ID3v2-Frame-TFLT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TFLT.h"; sourceTree = "<group>"; };
+		05FCC7A519DB7C5F00BC1FBE /* ID3v2-Frame-TIME.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TIME.h"; sourceTree = "<group>"; };
+		05FCC7A619DB7C5F00BC1FBE /* ID3v2-Frame-TIT1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TIT1.h"; sourceTree = "<group>"; };
+		05FCC7A719DB7C5F00BC1FBE /* ID3v2-Frame-TIT2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TIT2.h"; sourceTree = "<group>"; };
+		05FCC7A819DB7C5F00BC1FBE /* ID3v2-Frame-TIT3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TIT3.h"; sourceTree = "<group>"; };
+		05FCC7A919DB7C5F00BC1FBE /* ID3v2-Frame-TKEY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TKEY.h"; sourceTree = "<group>"; };
+		05FCC7AA19DB7C5F00BC1FBE /* ID3v2-Frame-TLAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TLAN.h"; sourceTree = "<group>"; };
+		05FCC7AB19DB7C5F00BC1FBE /* ID3v2-Frame-TLEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TLEN.h"; sourceTree = "<group>"; };
+		05FCC7AC19DB7C5F00BC1FBE /* ID3v2-Frame-TMED.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TMED.h"; sourceTree = "<group>"; };
+		05FCC7AD19DB7C5F00BC1FBE /* ID3v2-Frame-TOAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TOAL.h"; sourceTree = "<group>"; };
+		05FCC7AE19DB7C5F00BC1FBE /* ID3v2-Frame-TOFN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TOFN.h"; sourceTree = "<group>"; };
+		05FCC7AF19DB7C5F00BC1FBE /* ID3v2-Frame-TOLY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TOLY.h"; sourceTree = "<group>"; };
+		05FCC7B019DB7C5F00BC1FBE /* ID3v2-Frame-TOPE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TOPE.h"; sourceTree = "<group>"; };
+		05FCC7B119DB7C5F00BC1FBE /* ID3v2-Frame-TORY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TORY.h"; sourceTree = "<group>"; };
+		05FCC7B219DB7C5F00BC1FBE /* ID3v2-Frame-TOWN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TOWN.h"; sourceTree = "<group>"; };
+		05FCC7B319DB7C5F00BC1FBE /* ID3v2-Frame-TPE1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TPE1.h"; sourceTree = "<group>"; };
+		05FCC7B419DB7C5F00BC1FBE /* ID3v2-Frame-TPE2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TPE2.h"; sourceTree = "<group>"; };
+		05FCC7B519DB7C5F00BC1FBE /* ID3v2-Frame-TPE3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TPE3.h"; sourceTree = "<group>"; };
+		05FCC7B619DB7C5F00BC1FBE /* ID3v2-Frame-TPE4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TPE4.h"; sourceTree = "<group>"; };
+		05FCC7B719DB7C5F00BC1FBE /* ID3v2-Frame-TPOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TPOS.h"; sourceTree = "<group>"; };
+		05FCC7B819DB7C5F00BC1FBE /* ID3v2-Frame-TPUB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TPUB.h"; sourceTree = "<group>"; };
+		05FCC7B919DB7C5F00BC1FBE /* ID3v2-Frame-TRCK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TRCK.h"; sourceTree = "<group>"; };
+		05FCC7BA19DB7C5F00BC1FBE /* ID3v2-Frame-TRDA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TRDA.h"; sourceTree = "<group>"; };
+		05FCC7BB19DB7C5F00BC1FBE /* ID3v2-Frame-TRSN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TRSN.h"; sourceTree = "<group>"; };
+		05FCC7BC19DB7C5F00BC1FBE /* ID3v2-Frame-TRSO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TRSO.h"; sourceTree = "<group>"; };
+		05FCC7BD19DB7C5F00BC1FBE /* ID3v2-Frame-TSIZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TSIZ.h"; sourceTree = "<group>"; };
+		05FCC7BE19DB7C5F00BC1FBE /* ID3v2-Frame-TSRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TSRC.h"; sourceTree = "<group>"; };
+		05FCC7BF19DB7C5F00BC1FBE /* ID3v2-Frame-TSSE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TSSE.h"; sourceTree = "<group>"; };
+		05FCC7C019DB7C5F00BC1FBE /* ID3v2-Frame-TXXX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TXXX.h"; sourceTree = "<group>"; };
+		05FCC7C119DB7C5F00BC1FBE /* ID3v2-Frame-TYER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-TYER.h"; sourceTree = "<group>"; };
+		05FCC7C219DB7C5F00BC1FBE /* ID3v2-Frame-UFID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-UFID.h"; sourceTree = "<group>"; };
+		05FCC7C319DB7C5F00BC1FBE /* ID3v2-Frame-Unknown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-Unknown.h"; sourceTree = "<group>"; };
+		05FCC7C419DB7C5F00BC1FBE /* ID3v2-Frame-USER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-USER.h"; sourceTree = "<group>"; };
+		05FCC7C519DB7C5F00BC1FBE /* ID3v2-Frame-USLT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-USLT.h"; sourceTree = "<group>"; };
+		05FCC7C619DB7C5F00BC1FBE /* ID3v2-Frame-WCOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-WCOM.h"; sourceTree = "<group>"; };
+		05FCC7C719DB7C5F00BC1FBE /* ID3v2-Frame-WCOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-WCOP.h"; sourceTree = "<group>"; };
+		05FCC7C819DB7C5F00BC1FBE /* ID3v2-Frame-WOAF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-WOAF.h"; sourceTree = "<group>"; };
+		05FCC7C919DB7C5F00BC1FBE /* ID3v2-Frame-WOAR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-WOAR.h"; sourceTree = "<group>"; };
+		05FCC7CA19DB7C5F00BC1FBE /* ID3v2-Frame-WOAS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-WOAS.h"; sourceTree = "<group>"; };
+		05FCC7CB19DB7C5F00BC1FBE /* ID3v2-Frame-WORS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-WORS.h"; sourceTree = "<group>"; };
+		05FCC7CC19DB7C5F00BC1FBE /* ID3v2-Frame-WPAY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-WPAY.h"; sourceTree = "<group>"; };
+		05FCC7CD19DB7C5F00BC1FBE /* ID3v2-Frame-WPUB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-WPUB.h"; sourceTree = "<group>"; };
+		05FCC7CE19DB7C5F00BC1FBE /* ID3v2-Frame-WXXX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame-WXXX.h"; sourceTree = "<group>"; };
+		05FCC86519DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-AENC.cpp"; sourceTree = "<group>"; };
+		05FCC86619DB7C6900BC1FBE /* ID3v2-Frame-APIC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-APIC.cpp"; sourceTree = "<group>"; };
+		05FCC86719DB7C6900BC1FBE /* ID3v2-Frame-COMM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-COMM.cpp"; sourceTree = "<group>"; };
+		05FCC86819DB7C6900BC1FBE /* ID3v2-Frame-COMR.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-COMR.cpp"; sourceTree = "<group>"; };
+		05FCC86919DB7C6900BC1FBE /* ID3v2-Frame-ENCR.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-ENCR.cpp"; sourceTree = "<group>"; };
+		05FCC86A19DB7C6900BC1FBE /* ID3v2-Frame-EQUA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-EQUA.cpp"; sourceTree = "<group>"; };
+		05FCC86B19DB7C6900BC1FBE /* ID3v2-Frame-ETCO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-ETCO.cpp"; sourceTree = "<group>"; };
+		05FCC86C19DB7C6900BC1FBE /* ID3v2-Frame-GEOB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-GEOB.cpp"; sourceTree = "<group>"; };
+		05FCC86D19DB7C6900BC1FBE /* ID3v2-Frame-GRID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-GRID.cpp"; sourceTree = "<group>"; };
+		05FCC86E19DB7C6900BC1FBE /* ID3v2-Frame-IPLS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-IPLS.cpp"; sourceTree = "<group>"; };
+		05FCC86F19DB7C6900BC1FBE /* ID3v2-Frame-LINK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-LINK.cpp"; sourceTree = "<group>"; };
+		05FCC87019DB7C6900BC1FBE /* ID3v2-Frame-MCDI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-MCDI.cpp"; sourceTree = "<group>"; };
+		05FCC87119DB7C6900BC1FBE /* ID3v2-Frame-MLLT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-MLLT.cpp"; sourceTree = "<group>"; };
+		05FCC87219DB7C6900BC1FBE /* ID3v2-Frame-OWNE.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-OWNE.cpp"; sourceTree = "<group>"; };
+		05FCC87319DB7C6900BC1FBE /* ID3v2-Frame-PCNT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-PCNT.cpp"; sourceTree = "<group>"; };
+		05FCC87419DB7C6900BC1FBE /* ID3v2-Frame-POPM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-POPM.cpp"; sourceTree = "<group>"; };
+		05FCC87519DB7C6900BC1FBE /* ID3v2-Frame-POSS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-POSS.cpp"; sourceTree = "<group>"; };
+		05FCC87619DB7C6900BC1FBE /* ID3v2-Frame-PRIV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-PRIV.cpp"; sourceTree = "<group>"; };
+		05FCC87719DB7C6900BC1FBE /* ID3v2-Frame-RBUF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-RBUF.cpp"; sourceTree = "<group>"; };
+		05FCC87819DB7C6900BC1FBE /* ID3v2-Frame-RVAD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-RVAD.cpp"; sourceTree = "<group>"; };
+		05FCC87919DB7C6900BC1FBE /* ID3v2-Frame-RVRB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-RVRB.cpp"; sourceTree = "<group>"; };
+		05FCC87A19DB7C6900BC1FBE /* ID3v2-Frame-SYLT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-SYLT.cpp"; sourceTree = "<group>"; };
+		05FCC87B19DB7C6900BC1FBE /* ID3v2-Frame-SYTC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-SYTC.cpp"; sourceTree = "<group>"; };
+		05FCC87C19DB7C6900BC1FBE /* ID3v2-Frame-TALB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TALB.cpp"; sourceTree = "<group>"; };
+		05FCC87D19DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TBPM.cpp"; sourceTree = "<group>"; };
+		05FCC87E19DB7C6900BC1FBE /* ID3v2-Frame-TCOM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TCOM.cpp"; sourceTree = "<group>"; };
+		05FCC87F19DB7C6900BC1FBE /* ID3v2-Frame-TCON.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TCON.cpp"; sourceTree = "<group>"; };
+		05FCC88019DB7C6900BC1FBE /* ID3v2-Frame-TCOP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TCOP.cpp"; sourceTree = "<group>"; };
+		05FCC88119DB7C6900BC1FBE /* ID3v2-Frame-TDAT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TDAT.cpp"; sourceTree = "<group>"; };
+		05FCC88219DB7C6900BC1FBE /* ID3v2-Frame-TDLY.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TDLY.cpp"; sourceTree = "<group>"; };
+		05FCC88319DB7C6900BC1FBE /* ID3v2-Frame-TENC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TENC.cpp"; sourceTree = "<group>"; };
+		05FCC88419DB7C6900BC1FBE /* ID3v2-Frame-TEXT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TEXT.cpp"; sourceTree = "<group>"; };
+		05FCC88519DB7C6900BC1FBE /* ID3v2-Frame-TFLT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TFLT.cpp"; sourceTree = "<group>"; };
+		05FCC88619DB7C6900BC1FBE /* ID3v2-Frame-TIME.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TIME.cpp"; sourceTree = "<group>"; };
+		05FCC88719DB7C6900BC1FBE /* ID3v2-Frame-TIT1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TIT1.cpp"; sourceTree = "<group>"; };
+		05FCC88819DB7C6900BC1FBE /* ID3v2-Frame-TIT2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TIT2.cpp"; sourceTree = "<group>"; };
+		05FCC88919DB7C6900BC1FBE /* ID3v2-Frame-TIT3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TIT3.cpp"; sourceTree = "<group>"; };
+		05FCC88A19DB7C6900BC1FBE /* ID3v2-Frame-TKEY.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TKEY.cpp"; sourceTree = "<group>"; };
+		05FCC88B19DB7C6900BC1FBE /* ID3v2-Frame-TLAN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TLAN.cpp"; sourceTree = "<group>"; };
+		05FCC88C19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TLEN.cpp"; sourceTree = "<group>"; };
+		05FCC88D19DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TMED.cpp"; sourceTree = "<group>"; };
+		05FCC88E19DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TOAL.cpp"; sourceTree = "<group>"; };
+		05FCC88F19DB7C6900BC1FBE /* ID3v2-Frame-TOFN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TOFN.cpp"; sourceTree = "<group>"; };
+		05FCC89019DB7C6900BC1FBE /* ID3v2-Frame-TOLY.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TOLY.cpp"; sourceTree = "<group>"; };
+		05FCC89119DB7C6900BC1FBE /* ID3v2-Frame-TOPE.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TOPE.cpp"; sourceTree = "<group>"; };
+		05FCC89219DB7C6900BC1FBE /* ID3v2-Frame-TORY.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TORY.cpp"; sourceTree = "<group>"; };
+		05FCC89319DB7C6900BC1FBE /* ID3v2-Frame-TOWN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TOWN.cpp"; sourceTree = "<group>"; };
+		05FCC89419DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TPE1.cpp"; sourceTree = "<group>"; };
+		05FCC89519DB7C6900BC1FBE /* ID3v2-Frame-TPE2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TPE2.cpp"; sourceTree = "<group>"; };
+		05FCC89619DB7C6900BC1FBE /* ID3v2-Frame-TPE3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TPE3.cpp"; sourceTree = "<group>"; };
+		05FCC89719DB7C6900BC1FBE /* ID3v2-Frame-TPE4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TPE4.cpp"; sourceTree = "<group>"; };
+		05FCC89819DB7C6900BC1FBE /* ID3v2-Frame-TPOS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TPOS.cpp"; sourceTree = "<group>"; };
+		05FCC89919DB7C6900BC1FBE /* ID3v2-Frame-TPUB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TPUB.cpp"; sourceTree = "<group>"; };
+		05FCC89A19DB7C6900BC1FBE /* ID3v2-Frame-TRCK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TRCK.cpp"; sourceTree = "<group>"; };
+		05FCC89B19DB7C6900BC1FBE /* ID3v2-Frame-TRDA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TRDA.cpp"; sourceTree = "<group>"; };
+		05FCC89C19DB7C6900BC1FBE /* ID3v2-Frame-TRSN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TRSN.cpp"; sourceTree = "<group>"; };
+		05FCC89D19DB7C6900BC1FBE /* ID3v2-Frame-TRSO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TRSO.cpp"; sourceTree = "<group>"; };
+		05FCC89E19DB7C6900BC1FBE /* ID3v2-Frame-TSIZ.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TSIZ.cpp"; sourceTree = "<group>"; };
+		05FCC89F19DB7C6900BC1FBE /* ID3v2-Frame-TSRC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TSRC.cpp"; sourceTree = "<group>"; };
+		05FCC8A019DB7C6900BC1FBE /* ID3v2-Frame-TSSE.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TSSE.cpp"; sourceTree = "<group>"; };
+		05FCC8A119DB7C6900BC1FBE /* ID3v2-Frame-TXXX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TXXX.cpp"; sourceTree = "<group>"; };
+		05FCC8A219DB7C6900BC1FBE /* ID3v2-Frame-TYER.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-TYER.cpp"; sourceTree = "<group>"; };
+		05FCC8A319DB7C6900BC1FBE /* ID3v2-Frame-UFID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-UFID.cpp"; sourceTree = "<group>"; };
+		05FCC8A419DB7C6900BC1FBE /* ID3v2-Frame-Unknown.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-Unknown.cpp"; sourceTree = "<group>"; };
+		05FCC8A519DB7C6900BC1FBE /* ID3v2-Frame-USER.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-USER.cpp"; sourceTree = "<group>"; };
+		05FCC8A619DB7C6900BC1FBE /* ID3v2-Frame-USLT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-USLT.cpp"; sourceTree = "<group>"; };
+		05FCC8A719DB7C6900BC1FBE /* ID3v2-Frame-WCOM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-WCOM.cpp"; sourceTree = "<group>"; };
+		05FCC8A819DB7C6900BC1FBE /* ID3v2-Frame-WCOP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-WCOP.cpp"; sourceTree = "<group>"; };
+		05FCC8A919DB7C6900BC1FBE /* ID3v2-Frame-WOAF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-WOAF.cpp"; sourceTree = "<group>"; };
+		05FCC8AA19DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-WOAR.cpp"; sourceTree = "<group>"; };
+		05FCC8AB19DB7C6900BC1FBE /* ID3v2-Frame-WOAS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-WOAS.cpp"; sourceTree = "<group>"; };
+		05FCC8AC19DB7C6900BC1FBE /* ID3v2-Frame-WORS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-WORS.cpp"; sourceTree = "<group>"; };
+		05FCC8AD19DB7C6900BC1FBE /* ID3v2-Frame-WPAY.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-WPAY.cpp"; sourceTree = "<group>"; };
+		05FCC8AE19DB7C6900BC1FBE /* ID3v2-Frame-WPUB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-WPUB.cpp"; sourceTree = "<group>"; };
+		05FCC8AF19DB7C6900BC1FBE /* ID3v2-Frame-WXXX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame-WXXX.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,8 +808,81 @@
 				05FCC74719DB410A00BC1FBE /* ID3v2-Frame.cpp */,
 				05FCC74819DB410A00BC1FBE /* ID3v2-Tag.cpp */,
 				05FCC75819DB455900BC1FBE /* ID3v2-Version.cpp */,
-				05FCC77419DB72DA00BC1FBE /* ID3v2-Frame-COMM.cpp */,
-				05FCC77519DB72DA00BC1FBE /* ID3v2-Frame-Unknown.cpp */,
+				05FCC86519DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp */,
+				05FCC86619DB7C6900BC1FBE /* ID3v2-Frame-APIC.cpp */,
+				05FCC86719DB7C6900BC1FBE /* ID3v2-Frame-COMM.cpp */,
+				05FCC86819DB7C6900BC1FBE /* ID3v2-Frame-COMR.cpp */,
+				05FCC86919DB7C6900BC1FBE /* ID3v2-Frame-ENCR.cpp */,
+				05FCC86A19DB7C6900BC1FBE /* ID3v2-Frame-EQUA.cpp */,
+				05FCC86B19DB7C6900BC1FBE /* ID3v2-Frame-ETCO.cpp */,
+				05FCC86C19DB7C6900BC1FBE /* ID3v2-Frame-GEOB.cpp */,
+				05FCC86D19DB7C6900BC1FBE /* ID3v2-Frame-GRID.cpp */,
+				05FCC86E19DB7C6900BC1FBE /* ID3v2-Frame-IPLS.cpp */,
+				05FCC86F19DB7C6900BC1FBE /* ID3v2-Frame-LINK.cpp */,
+				05FCC87019DB7C6900BC1FBE /* ID3v2-Frame-MCDI.cpp */,
+				05FCC87119DB7C6900BC1FBE /* ID3v2-Frame-MLLT.cpp */,
+				05FCC87219DB7C6900BC1FBE /* ID3v2-Frame-OWNE.cpp */,
+				05FCC87319DB7C6900BC1FBE /* ID3v2-Frame-PCNT.cpp */,
+				05FCC87419DB7C6900BC1FBE /* ID3v2-Frame-POPM.cpp */,
+				05FCC87519DB7C6900BC1FBE /* ID3v2-Frame-POSS.cpp */,
+				05FCC87619DB7C6900BC1FBE /* ID3v2-Frame-PRIV.cpp */,
+				05FCC87719DB7C6900BC1FBE /* ID3v2-Frame-RBUF.cpp */,
+				05FCC87819DB7C6900BC1FBE /* ID3v2-Frame-RVAD.cpp */,
+				05FCC87919DB7C6900BC1FBE /* ID3v2-Frame-RVRB.cpp */,
+				05FCC87A19DB7C6900BC1FBE /* ID3v2-Frame-SYLT.cpp */,
+				05FCC87B19DB7C6900BC1FBE /* ID3v2-Frame-SYTC.cpp */,
+				05FCC87C19DB7C6900BC1FBE /* ID3v2-Frame-TALB.cpp */,
+				05FCC87D19DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp */,
+				05FCC87E19DB7C6900BC1FBE /* ID3v2-Frame-TCOM.cpp */,
+				05FCC87F19DB7C6900BC1FBE /* ID3v2-Frame-TCON.cpp */,
+				05FCC88019DB7C6900BC1FBE /* ID3v2-Frame-TCOP.cpp */,
+				05FCC88119DB7C6900BC1FBE /* ID3v2-Frame-TDAT.cpp */,
+				05FCC88219DB7C6900BC1FBE /* ID3v2-Frame-TDLY.cpp */,
+				05FCC88319DB7C6900BC1FBE /* ID3v2-Frame-TENC.cpp */,
+				05FCC88419DB7C6900BC1FBE /* ID3v2-Frame-TEXT.cpp */,
+				05FCC88519DB7C6900BC1FBE /* ID3v2-Frame-TFLT.cpp */,
+				05FCC88619DB7C6900BC1FBE /* ID3v2-Frame-TIME.cpp */,
+				05FCC88719DB7C6900BC1FBE /* ID3v2-Frame-TIT1.cpp */,
+				05FCC88819DB7C6900BC1FBE /* ID3v2-Frame-TIT2.cpp */,
+				05FCC88919DB7C6900BC1FBE /* ID3v2-Frame-TIT3.cpp */,
+				05FCC88A19DB7C6900BC1FBE /* ID3v2-Frame-TKEY.cpp */,
+				05FCC88B19DB7C6900BC1FBE /* ID3v2-Frame-TLAN.cpp */,
+				05FCC88C19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp */,
+				05FCC88D19DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp */,
+				05FCC88E19DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp */,
+				05FCC88F19DB7C6900BC1FBE /* ID3v2-Frame-TOFN.cpp */,
+				05FCC89019DB7C6900BC1FBE /* ID3v2-Frame-TOLY.cpp */,
+				05FCC89119DB7C6900BC1FBE /* ID3v2-Frame-TOPE.cpp */,
+				05FCC89219DB7C6900BC1FBE /* ID3v2-Frame-TORY.cpp */,
+				05FCC89319DB7C6900BC1FBE /* ID3v2-Frame-TOWN.cpp */,
+				05FCC89419DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp */,
+				05FCC89519DB7C6900BC1FBE /* ID3v2-Frame-TPE2.cpp */,
+				05FCC89619DB7C6900BC1FBE /* ID3v2-Frame-TPE3.cpp */,
+				05FCC89719DB7C6900BC1FBE /* ID3v2-Frame-TPE4.cpp */,
+				05FCC89819DB7C6900BC1FBE /* ID3v2-Frame-TPOS.cpp */,
+				05FCC89919DB7C6900BC1FBE /* ID3v2-Frame-TPUB.cpp */,
+				05FCC89A19DB7C6900BC1FBE /* ID3v2-Frame-TRCK.cpp */,
+				05FCC89B19DB7C6900BC1FBE /* ID3v2-Frame-TRDA.cpp */,
+				05FCC89C19DB7C6900BC1FBE /* ID3v2-Frame-TRSN.cpp */,
+				05FCC89D19DB7C6900BC1FBE /* ID3v2-Frame-TRSO.cpp */,
+				05FCC89E19DB7C6900BC1FBE /* ID3v2-Frame-TSIZ.cpp */,
+				05FCC89F19DB7C6900BC1FBE /* ID3v2-Frame-TSRC.cpp */,
+				05FCC8A019DB7C6900BC1FBE /* ID3v2-Frame-TSSE.cpp */,
+				05FCC8A119DB7C6900BC1FBE /* ID3v2-Frame-TXXX.cpp */,
+				05FCC8A219DB7C6900BC1FBE /* ID3v2-Frame-TYER.cpp */,
+				05FCC8A319DB7C6900BC1FBE /* ID3v2-Frame-UFID.cpp */,
+				05FCC8A419DB7C6900BC1FBE /* ID3v2-Frame-Unknown.cpp */,
+				05FCC8A519DB7C6900BC1FBE /* ID3v2-Frame-USER.cpp */,
+				05FCC8A619DB7C6900BC1FBE /* ID3v2-Frame-USLT.cpp */,
+				05FCC8A719DB7C6900BC1FBE /* ID3v2-Frame-WCOM.cpp */,
+				05FCC8A819DB7C6900BC1FBE /* ID3v2-Frame-WCOP.cpp */,
+				05FCC8A919DB7C6900BC1FBE /* ID3v2-Frame-WOAF.cpp */,
+				05FCC8AA19DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp */,
+				05FCC8AB19DB7C6900BC1FBE /* ID3v2-Frame-WOAS.cpp */,
+				05FCC8AC19DB7C6900BC1FBE /* ID3v2-Frame-WORS.cpp */,
+				05FCC8AD19DB7C6900BC1FBE /* ID3v2-Frame-WPAY.cpp */,
+				05FCC8AE19DB7C6900BC1FBE /* ID3v2-Frame-WPUB.cpp */,
+				05FCC8AF19DB7C6900BC1FBE /* ID3v2-Frame-WXXX.cpp */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -246,8 +903,81 @@
 				05FCC73C19DB40E900BC1FBE /* ID3v2-Tag.h */,
 				05FCC75519DB454C00BC1FBE /* ID3v2-Version.h */,
 				05FCC75E19DB4D8D00BC1FBE /* ID3v2-PrivateTypes.h */,
-				05FCC77E19DB72E200BC1FBE /* ID3v2-Frame-COMM.h */,
-				05FCC77F19DB72E200BC1FBE /* ID3v2-Frame-Unknown.h */,
+				05FCC78419DB7C5F00BC1FBE /* ID3v2-Frame-AENC.h */,
+				05FCC78519DB7C5F00BC1FBE /* ID3v2-Frame-APIC.h */,
+				05FCC78619DB7C5F00BC1FBE /* ID3v2-Frame-COMM.h */,
+				05FCC78719DB7C5F00BC1FBE /* ID3v2-Frame-COMR.h */,
+				05FCC78819DB7C5F00BC1FBE /* ID3v2-Frame-ENCR.h */,
+				05FCC78919DB7C5F00BC1FBE /* ID3v2-Frame-EQUA.h */,
+				05FCC78A19DB7C5F00BC1FBE /* ID3v2-Frame-ETCO.h */,
+				05FCC78B19DB7C5F00BC1FBE /* ID3v2-Frame-GEOB.h */,
+				05FCC78C19DB7C5F00BC1FBE /* ID3v2-Frame-GRID.h */,
+				05FCC78D19DB7C5F00BC1FBE /* ID3v2-Frame-IPLS.h */,
+				05FCC78E19DB7C5F00BC1FBE /* ID3v2-Frame-LINK.h */,
+				05FCC78F19DB7C5F00BC1FBE /* ID3v2-Frame-MCDI.h */,
+				05FCC79019DB7C5F00BC1FBE /* ID3v2-Frame-MLLT.h */,
+				05FCC79119DB7C5F00BC1FBE /* ID3v2-Frame-OWNE.h */,
+				05FCC79219DB7C5F00BC1FBE /* ID3v2-Frame-PCNT.h */,
+				05FCC79319DB7C5F00BC1FBE /* ID3v2-Frame-POPM.h */,
+				05FCC79419DB7C5F00BC1FBE /* ID3v2-Frame-POSS.h */,
+				05FCC79519DB7C5F00BC1FBE /* ID3v2-Frame-PRIV.h */,
+				05FCC79619DB7C5F00BC1FBE /* ID3v2-Frame-RBUF.h */,
+				05FCC79719DB7C5F00BC1FBE /* ID3v2-Frame-RVAD.h */,
+				05FCC79819DB7C5F00BC1FBE /* ID3v2-Frame-RVRB.h */,
+				05FCC79919DB7C5F00BC1FBE /* ID3v2-Frame-SYLT.h */,
+				05FCC79A19DB7C5F00BC1FBE /* ID3v2-Frame-SYTC.h */,
+				05FCC79B19DB7C5F00BC1FBE /* ID3v2-Frame-TALB.h */,
+				05FCC79C19DB7C5F00BC1FBE /* ID3v2-Frame-TBPM.h */,
+				05FCC79D19DB7C5F00BC1FBE /* ID3v2-Frame-TCOM.h */,
+				05FCC79E19DB7C5F00BC1FBE /* ID3v2-Frame-TCON.h */,
+				05FCC79F19DB7C5F00BC1FBE /* ID3v2-Frame-TCOP.h */,
+				05FCC7A019DB7C5F00BC1FBE /* ID3v2-Frame-TDAT.h */,
+				05FCC7A119DB7C5F00BC1FBE /* ID3v2-Frame-TDLY.h */,
+				05FCC7A219DB7C5F00BC1FBE /* ID3v2-Frame-TENC.h */,
+				05FCC7A319DB7C5F00BC1FBE /* ID3v2-Frame-TEXT.h */,
+				05FCC7A419DB7C5F00BC1FBE /* ID3v2-Frame-TFLT.h */,
+				05FCC7A519DB7C5F00BC1FBE /* ID3v2-Frame-TIME.h */,
+				05FCC7A619DB7C5F00BC1FBE /* ID3v2-Frame-TIT1.h */,
+				05FCC7A719DB7C5F00BC1FBE /* ID3v2-Frame-TIT2.h */,
+				05FCC7A819DB7C5F00BC1FBE /* ID3v2-Frame-TIT3.h */,
+				05FCC7A919DB7C5F00BC1FBE /* ID3v2-Frame-TKEY.h */,
+				05FCC7AA19DB7C5F00BC1FBE /* ID3v2-Frame-TLAN.h */,
+				05FCC7AB19DB7C5F00BC1FBE /* ID3v2-Frame-TLEN.h */,
+				05FCC7AC19DB7C5F00BC1FBE /* ID3v2-Frame-TMED.h */,
+				05FCC7AD19DB7C5F00BC1FBE /* ID3v2-Frame-TOAL.h */,
+				05FCC7AE19DB7C5F00BC1FBE /* ID3v2-Frame-TOFN.h */,
+				05FCC7AF19DB7C5F00BC1FBE /* ID3v2-Frame-TOLY.h */,
+				05FCC7B019DB7C5F00BC1FBE /* ID3v2-Frame-TOPE.h */,
+				05FCC7B119DB7C5F00BC1FBE /* ID3v2-Frame-TORY.h */,
+				05FCC7B219DB7C5F00BC1FBE /* ID3v2-Frame-TOWN.h */,
+				05FCC7B319DB7C5F00BC1FBE /* ID3v2-Frame-TPE1.h */,
+				05FCC7B419DB7C5F00BC1FBE /* ID3v2-Frame-TPE2.h */,
+				05FCC7B519DB7C5F00BC1FBE /* ID3v2-Frame-TPE3.h */,
+				05FCC7B619DB7C5F00BC1FBE /* ID3v2-Frame-TPE4.h */,
+				05FCC7B719DB7C5F00BC1FBE /* ID3v2-Frame-TPOS.h */,
+				05FCC7B819DB7C5F00BC1FBE /* ID3v2-Frame-TPUB.h */,
+				05FCC7B919DB7C5F00BC1FBE /* ID3v2-Frame-TRCK.h */,
+				05FCC7BA19DB7C5F00BC1FBE /* ID3v2-Frame-TRDA.h */,
+				05FCC7BB19DB7C5F00BC1FBE /* ID3v2-Frame-TRSN.h */,
+				05FCC7BC19DB7C5F00BC1FBE /* ID3v2-Frame-TRSO.h */,
+				05FCC7BD19DB7C5F00BC1FBE /* ID3v2-Frame-TSIZ.h */,
+				05FCC7BE19DB7C5F00BC1FBE /* ID3v2-Frame-TSRC.h */,
+				05FCC7BF19DB7C5F00BC1FBE /* ID3v2-Frame-TSSE.h */,
+				05FCC7C019DB7C5F00BC1FBE /* ID3v2-Frame-TXXX.h */,
+				05FCC7C119DB7C5F00BC1FBE /* ID3v2-Frame-TYER.h */,
+				05FCC7C219DB7C5F00BC1FBE /* ID3v2-Frame-UFID.h */,
+				05FCC7C319DB7C5F00BC1FBE /* ID3v2-Frame-Unknown.h */,
+				05FCC7C419DB7C5F00BC1FBE /* ID3v2-Frame-USER.h */,
+				05FCC7C519DB7C5F00BC1FBE /* ID3v2-Frame-USLT.h */,
+				05FCC7C619DB7C5F00BC1FBE /* ID3v2-Frame-WCOM.h */,
+				05FCC7C719DB7C5F00BC1FBE /* ID3v2-Frame-WCOP.h */,
+				05FCC7C819DB7C5F00BC1FBE /* ID3v2-Frame-WOAF.h */,
+				05FCC7C919DB7C5F00BC1FBE /* ID3v2-Frame-WOAR.h */,
+				05FCC7CA19DB7C5F00BC1FBE /* ID3v2-Frame-WOAS.h */,
+				05FCC7CB19DB7C5F00BC1FBE /* ID3v2-Frame-WORS.h */,
+				05FCC7CC19DB7C5F00BC1FBE /* ID3v2-Frame-WPAY.h */,
+				05FCC7CD19DB7C5F00BC1FBE /* ID3v2-Frame-WPUB.h */,
+				05FCC7CE19DB7C5F00BC1FBE /* ID3v2-Frame-WXXX.h */,
 			);
 			path = ID3v2;
 			sourceTree = "<group>";
@@ -266,13 +996,86 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FCC85F19DB7C6000BC1FBE /* ID3v2-Frame-WPAY.h in Headers */,
+				05FCC81119DB7C6000BC1FBE /* ID3v2-Frame-TIME.h in Headers */,
+				05FCC7E919DB7C6000BC1FBE /* ID3v2-Frame-OWNE.h in Headers */,
+				05FCC82119DB7C6000BC1FBE /* ID3v2-Frame-TOAL.h in Headers */,
+				05FCC83119DB7C6000BC1FBE /* ID3v2-Frame-TPE3.h in Headers */,
+				05FCC7DD19DB7C6000BC1FBE /* ID3v2-Frame-GEOB.h in Headers */,
+				05FCC7D519DB7C5F00BC1FBE /* ID3v2-Frame-COMR.h in Headers */,
+				05FCC7CF19DB7C5F00BC1FBE /* ID3v2-Frame-AENC.h in Headers */,
+				05FCC7FB19DB7C6000BC1FBE /* ID3v2-Frame-SYTC.h in Headers */,
+				05FCC7E319DB7C6000BC1FBE /* ID3v2-Frame-LINK.h in Headers */,
+				05FCC81719DB7C6000BC1FBE /* ID3v2-Frame-TIT3.h in Headers */,
+				05FCC83319DB7C6000BC1FBE /* ID3v2-Frame-TPE4.h in Headers */,
+				05FCC80519DB7C6000BC1FBE /* ID3v2-Frame-TCOP.h in Headers */,
+				05FCC7E119DB7C6000BC1FBE /* ID3v2-Frame-IPLS.h in Headers */,
+				05FCC84519DB7C6000BC1FBE /* ID3v2-Frame-TSSE.h in Headers */,
+				05FCC7ED19DB7C6000BC1FBE /* ID3v2-Frame-POPM.h in Headers */,
+				05FCC7FF19DB7C6000BC1FBE /* ID3v2-Frame-TBPM.h in Headers */,
+				05FCC82B19DB7C6000BC1FBE /* ID3v2-Frame-TOWN.h in Headers */,
+				05FCC80319DB7C6000BC1FBE /* ID3v2-Frame-TCON.h in Headers */,
+				05FCC86119DB7C6000BC1FBE /* ID3v2-Frame-WPUB.h in Headers */,
+				05FCC84319DB7C6000BC1FBE /* ID3v2-Frame-TSRC.h in Headers */,
+				05FCC85519DB7C6000BC1FBE /* ID3v2-Frame-WCOP.h in Headers */,
+				05FCC81D19DB7C6000BC1FBE /* ID3v2-Frame-TLEN.h in Headers */,
+				05FCC7E519DB7C6000BC1FBE /* ID3v2-Frame-MCDI.h in Headers */,
+				05FCC85D19DB7C6000BC1FBE /* ID3v2-Frame-WORS.h in Headers */,
+				05FCC7EF19DB7C6000BC1FBE /* ID3v2-Frame-POSS.h in Headers */,
+				05FCC80919DB7C6000BC1FBE /* ID3v2-Frame-TDLY.h in Headers */,
+				05FCC7D319DB7C5F00BC1FBE /* ID3v2-Frame-COMM.h in Headers */,
+				05FCC7D719DB7C5F00BC1FBE /* ID3v2-Frame-ENCR.h in Headers */,
+				05FCC85719DB7C6000BC1FBE /* ID3v2-Frame-WOAF.h in Headers */,
+				05FCC85B19DB7C6000BC1FBE /* ID3v2-Frame-WOAS.h in Headers */,
+				05FCC7D119DB7C5F00BC1FBE /* ID3v2-Frame-APIC.h in Headers */,
+				05FCC82D19DB7C6000BC1FBE /* ID3v2-Frame-TPE1.h in Headers */,
+				05FCC85319DB7C6000BC1FBE /* ID3v2-Frame-WCOM.h in Headers */,
+				05FCC7F319DB7C6000BC1FBE /* ID3v2-Frame-RBUF.h in Headers */,
+				05FCC81F19DB7C6000BC1FBE /* ID3v2-Frame-TMED.h in Headers */,
+				05FCC7F719DB7C6000BC1FBE /* ID3v2-Frame-RVRB.h in Headers */,
+				05FCC83B19DB7C6000BC1FBE /* ID3v2-Frame-TRDA.h in Headers */,
+				05FCC82919DB7C6000BC1FBE /* ID3v2-Frame-TORY.h in Headers */,
+				05FCC80B19DB7C6000BC1FBE /* ID3v2-Frame-TENC.h in Headers */,
+				05FCC84119DB7C6000BC1FBE /* ID3v2-Frame-TSIZ.h in Headers */,
 				05FCC73D19DB40E900BC1FBE /* ID3v2-ExtendedHeader.h in Headers */,
+				05FCC7E719DB7C6000BC1FBE /* ID3v2-Frame-MLLT.h in Headers */,
+				05FCC81319DB7C6000BC1FBE /* ID3v2-Frame-TIT1.h in Headers */,
+				05FCC7FD19DB7C6000BC1FBE /* ID3v2-Frame-TALB.h in Headers */,
+				05FCC80F19DB7C6000BC1FBE /* ID3v2-Frame-TFLT.h in Headers */,
 				05FCC74419DB40F000BC1FBE /* ID3v2.h in Headers */,
 				05FCC73F19DB40E900BC1FBE /* ID3v2-Frame.h in Headers */,
-				05FCC78019DB72E200BC1FBE /* ID3v2-Frame-COMM.h in Headers */,
+				05FCC7DB19DB7C6000BC1FBE /* ID3v2-Frame-ETCO.h in Headers */,
+				05FCC83719DB7C6000BC1FBE /* ID3v2-Frame-TPUB.h in Headers */,
+				05FCC80D19DB7C6000BC1FBE /* ID3v2-Frame-TEXT.h in Headers */,
+				05FCC7D919DB7C6000BC1FBE /* ID3v2-Frame-EQUA.h in Headers */,
+				05FCC81B19DB7C6000BC1FBE /* ID3v2-Frame-TLAN.h in Headers */,
+				05FCC82519DB7C6000BC1FBE /* ID3v2-Frame-TOLY.h in Headers */,
+				05FCC83919DB7C6000BC1FBE /* ID3v2-Frame-TRCK.h in Headers */,
+				05FCC82F19DB7C6000BC1FBE /* ID3v2-Frame-TPE2.h in Headers */,
+				05FCC84719DB7C6000BC1FBE /* ID3v2-Frame-TXXX.h in Headers */,
+				05FCC85919DB7C6000BC1FBE /* ID3v2-Frame-WOAR.h in Headers */,
+				05FCC83D19DB7C6000BC1FBE /* ID3v2-Frame-TRSN.h in Headers */,
+				05FCC83F19DB7C6000BC1FBE /* ID3v2-Frame-TRSO.h in Headers */,
+				05FCC7DF19DB7C6000BC1FBE /* ID3v2-Frame-GRID.h in Headers */,
+				05FCC7F919DB7C6000BC1FBE /* ID3v2-Frame-SYLT.h in Headers */,
+				05FCC81519DB7C6000BC1FBE /* ID3v2-Frame-TIT2.h in Headers */,
+				05FCC81919DB7C6000BC1FBE /* ID3v2-Frame-TKEY.h in Headers */,
+				05FCC80119DB7C6000BC1FBE /* ID3v2-Frame-TCOM.h in Headers */,
 				05FCC75619DB454C00BC1FBE /* ID3v2-Version.h in Headers */,
-				05FCC78219DB72E200BC1FBE /* ID3v2-Frame-Unknown.h in Headers */,
+				05FCC85119DB7C6000BC1FBE /* ID3v2-Frame-USLT.h in Headers */,
+				05FCC84F19DB7C6000BC1FBE /* ID3v2-Frame-USER.h in Headers */,
+				05FCC86319DB7C6000BC1FBE /* ID3v2-Frame-WXXX.h in Headers */,
+				05FCC82719DB7C6000BC1FBE /* ID3v2-Frame-TOPE.h in Headers */,
+				05FCC7EB19DB7C6000BC1FBE /* ID3v2-Frame-PCNT.h in Headers */,
+				05FCC80719DB7C6000BC1FBE /* ID3v2-Frame-TDAT.h in Headers */,
+				05FCC84B19DB7C6000BC1FBE /* ID3v2-Frame-UFID.h in Headers */,
+				05FCC84919DB7C6000BC1FBE /* ID3v2-Frame-TYER.h in Headers */,
+				05FCC82319DB7C6000BC1FBE /* ID3v2-Frame-TOFN.h in Headers */,
+				05FCC83519DB7C6000BC1FBE /* ID3v2-Frame-TPOS.h in Headers */,
+				05FCC84D19DB7C6000BC1FBE /* ID3v2-Frame-Unknown.h in Headers */,
 				05FCC74119DB40E900BC1FBE /* ID3v2-Tag.h in Headers */,
+				05FCC7F519DB7C6000BC1FBE /* ID3v2-Frame-RVAD.h in Headers */,
+				05FCC7F119DB7C6000BC1FBE /* ID3v2-Frame-PRIV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,13 +1083,86 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FCC86019DB7C6000BC1FBE /* ID3v2-Frame-WPAY.h in Headers */,
+				05FCC81219DB7C6000BC1FBE /* ID3v2-Frame-TIME.h in Headers */,
+				05FCC7EA19DB7C6000BC1FBE /* ID3v2-Frame-OWNE.h in Headers */,
+				05FCC82219DB7C6000BC1FBE /* ID3v2-Frame-TOAL.h in Headers */,
+				05FCC83219DB7C6000BC1FBE /* ID3v2-Frame-TPE3.h in Headers */,
+				05FCC7DE19DB7C6000BC1FBE /* ID3v2-Frame-GEOB.h in Headers */,
+				05FCC7D619DB7C5F00BC1FBE /* ID3v2-Frame-COMR.h in Headers */,
+				05FCC7D019DB7C5F00BC1FBE /* ID3v2-Frame-AENC.h in Headers */,
+				05FCC7FC19DB7C6000BC1FBE /* ID3v2-Frame-SYTC.h in Headers */,
+				05FCC7E419DB7C6000BC1FBE /* ID3v2-Frame-LINK.h in Headers */,
+				05FCC81819DB7C6000BC1FBE /* ID3v2-Frame-TIT3.h in Headers */,
+				05FCC83419DB7C6000BC1FBE /* ID3v2-Frame-TPE4.h in Headers */,
+				05FCC80619DB7C6000BC1FBE /* ID3v2-Frame-TCOP.h in Headers */,
+				05FCC7E219DB7C6000BC1FBE /* ID3v2-Frame-IPLS.h in Headers */,
+				05FCC84619DB7C6000BC1FBE /* ID3v2-Frame-TSSE.h in Headers */,
+				05FCC7EE19DB7C6000BC1FBE /* ID3v2-Frame-POPM.h in Headers */,
+				05FCC80019DB7C6000BC1FBE /* ID3v2-Frame-TBPM.h in Headers */,
+				05FCC82C19DB7C6000BC1FBE /* ID3v2-Frame-TOWN.h in Headers */,
+				05FCC80419DB7C6000BC1FBE /* ID3v2-Frame-TCON.h in Headers */,
+				05FCC86219DB7C6000BC1FBE /* ID3v2-Frame-WPUB.h in Headers */,
+				05FCC84419DB7C6000BC1FBE /* ID3v2-Frame-TSRC.h in Headers */,
+				05FCC85619DB7C6000BC1FBE /* ID3v2-Frame-WCOP.h in Headers */,
+				05FCC81E19DB7C6000BC1FBE /* ID3v2-Frame-TLEN.h in Headers */,
+				05FCC7E619DB7C6000BC1FBE /* ID3v2-Frame-MCDI.h in Headers */,
+				05FCC85E19DB7C6000BC1FBE /* ID3v2-Frame-WORS.h in Headers */,
+				05FCC7F019DB7C6000BC1FBE /* ID3v2-Frame-POSS.h in Headers */,
+				05FCC80A19DB7C6000BC1FBE /* ID3v2-Frame-TDLY.h in Headers */,
+				05FCC7D419DB7C5F00BC1FBE /* ID3v2-Frame-COMM.h in Headers */,
+				05FCC7D819DB7C5F00BC1FBE /* ID3v2-Frame-ENCR.h in Headers */,
+				05FCC85819DB7C6000BC1FBE /* ID3v2-Frame-WOAF.h in Headers */,
+				05FCC85C19DB7C6000BC1FBE /* ID3v2-Frame-WOAS.h in Headers */,
+				05FCC7D219DB7C5F00BC1FBE /* ID3v2-Frame-APIC.h in Headers */,
+				05FCC82E19DB7C6000BC1FBE /* ID3v2-Frame-TPE1.h in Headers */,
+				05FCC85419DB7C6000BC1FBE /* ID3v2-Frame-WCOM.h in Headers */,
+				05FCC7F419DB7C6000BC1FBE /* ID3v2-Frame-RBUF.h in Headers */,
+				05FCC82019DB7C6000BC1FBE /* ID3v2-Frame-TMED.h in Headers */,
+				05FCC7F819DB7C6000BC1FBE /* ID3v2-Frame-RVRB.h in Headers */,
+				05FCC83C19DB7C6000BC1FBE /* ID3v2-Frame-TRDA.h in Headers */,
+				05FCC82A19DB7C6000BC1FBE /* ID3v2-Frame-TORY.h in Headers */,
+				05FCC80C19DB7C6000BC1FBE /* ID3v2-Frame-TENC.h in Headers */,
+				05FCC84219DB7C6000BC1FBE /* ID3v2-Frame-TSIZ.h in Headers */,
 				05FCC73E19DB40E900BC1FBE /* ID3v2-ExtendedHeader.h in Headers */,
+				05FCC7E819DB7C6000BC1FBE /* ID3v2-Frame-MLLT.h in Headers */,
+				05FCC81419DB7C6000BC1FBE /* ID3v2-Frame-TIT1.h in Headers */,
+				05FCC7FE19DB7C6000BC1FBE /* ID3v2-Frame-TALB.h in Headers */,
+				05FCC81019DB7C6000BC1FBE /* ID3v2-Frame-TFLT.h in Headers */,
 				05FCC74519DB40F200BC1FBE /* ID3v2.h in Headers */,
 				05FCC74019DB40E900BC1FBE /* ID3v2-Frame.h in Headers */,
-				05FCC78119DB72E200BC1FBE /* ID3v2-Frame-COMM.h in Headers */,
+				05FCC7DC19DB7C6000BC1FBE /* ID3v2-Frame-ETCO.h in Headers */,
+				05FCC83819DB7C6000BC1FBE /* ID3v2-Frame-TPUB.h in Headers */,
+				05FCC80E19DB7C6000BC1FBE /* ID3v2-Frame-TEXT.h in Headers */,
+				05FCC7DA19DB7C6000BC1FBE /* ID3v2-Frame-EQUA.h in Headers */,
+				05FCC81C19DB7C6000BC1FBE /* ID3v2-Frame-TLAN.h in Headers */,
+				05FCC82619DB7C6000BC1FBE /* ID3v2-Frame-TOLY.h in Headers */,
+				05FCC83A19DB7C6000BC1FBE /* ID3v2-Frame-TRCK.h in Headers */,
+				05FCC83019DB7C6000BC1FBE /* ID3v2-Frame-TPE2.h in Headers */,
+				05FCC84819DB7C6000BC1FBE /* ID3v2-Frame-TXXX.h in Headers */,
+				05FCC85A19DB7C6000BC1FBE /* ID3v2-Frame-WOAR.h in Headers */,
+				05FCC83E19DB7C6000BC1FBE /* ID3v2-Frame-TRSN.h in Headers */,
+				05FCC84019DB7C6000BC1FBE /* ID3v2-Frame-TRSO.h in Headers */,
+				05FCC7E019DB7C6000BC1FBE /* ID3v2-Frame-GRID.h in Headers */,
+				05FCC7FA19DB7C6000BC1FBE /* ID3v2-Frame-SYLT.h in Headers */,
+				05FCC81619DB7C6000BC1FBE /* ID3v2-Frame-TIT2.h in Headers */,
+				05FCC81A19DB7C6000BC1FBE /* ID3v2-Frame-TKEY.h in Headers */,
+				05FCC80219DB7C6000BC1FBE /* ID3v2-Frame-TCOM.h in Headers */,
 				05FCC75719DB454C00BC1FBE /* ID3v2-Version.h in Headers */,
-				05FCC78319DB72E200BC1FBE /* ID3v2-Frame-Unknown.h in Headers */,
+				05FCC85219DB7C6000BC1FBE /* ID3v2-Frame-USLT.h in Headers */,
+				05FCC85019DB7C6000BC1FBE /* ID3v2-Frame-USER.h in Headers */,
+				05FCC86419DB7C6000BC1FBE /* ID3v2-Frame-WXXX.h in Headers */,
+				05FCC82819DB7C6000BC1FBE /* ID3v2-Frame-TOPE.h in Headers */,
+				05FCC7EC19DB7C6000BC1FBE /* ID3v2-Frame-PCNT.h in Headers */,
+				05FCC80819DB7C6000BC1FBE /* ID3v2-Frame-TDAT.h in Headers */,
+				05FCC84C19DB7C6000BC1FBE /* ID3v2-Frame-UFID.h in Headers */,
+				05FCC84A19DB7C6000BC1FBE /* ID3v2-Frame-TYER.h in Headers */,
+				05FCC82419DB7C6000BC1FBE /* ID3v2-Frame-TOFN.h in Headers */,
+				05FCC83619DB7C6000BC1FBE /* ID3v2-Frame-TPOS.h in Headers */,
+				05FCC84E19DB7C6000BC1FBE /* ID3v2-Frame-Unknown.h in Headers */,
 				05FCC74219DB40E900BC1FBE /* ID3v2-Tag.h in Headers */,
+				05FCC7F619DB7C6000BC1FBE /* ID3v2-Frame-RVAD.h in Headers */,
+				05FCC7F219DB7C6000BC1FBE /* ID3v2-Frame-PRIV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,12 +1312,85 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FCC9B019DB7C6900BC1FBE /* ID3v2-Frame-USER.cpp in Sources */,
+				05FCC9C019DB7C6900BC1FBE /* ID3v2-Frame-WOAF.cpp in Sources */,
+				05FCC8D819DB7C6900BC1FBE /* ID3v2-Frame-LINK.cpp in Sources */,
+				05FCC9C419DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp in Sources */,
+				05FCC94C19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp in Sources */,
+				05FCC95419DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp in Sources */,
 				05FCC74D19DB410A00BC1FBE /* ID3v2-Frame.cpp in Sources */,
-				05FCC77A19DB72DA00BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */,
+				05FCC96C19DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp in Sources */,
+				05FCC95019DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp in Sources */,
+				05FCC91019DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp in Sources */,
+				05FCC96819DB7C6900BC1FBE /* ID3v2-Frame-TOWN.cpp in Sources */,
+				05FCC97819DB7C6900BC1FBE /* ID3v2-Frame-TPE4.cpp in Sources */,
+				05FCC94019DB7C6900BC1FBE /* ID3v2-Frame-TIT3.cpp in Sources */,
+				05FCC97019DB7C6900BC1FBE /* ID3v2-Frame-TPE2.cpp in Sources */,
+				05FCC9B419DB7C6900BC1FBE /* ID3v2-Frame-USLT.cpp in Sources */,
+				05FCC8B419DB7C6900BC1FBE /* ID3v2-Frame-APIC.cpp in Sources */,
+				05FCC8E419DB7C6900BC1FBE /* ID3v2-Frame-OWNE.cpp in Sources */,
+				05FCC92819DB7C6900BC1FBE /* ID3v2-Frame-TENC.cpp in Sources */,
+				05FCC95819DB7C6900BC1FBE /* ID3v2-Frame-TOFN.cpp in Sources */,
+				05FCC94419DB7C6900BC1FBE /* ID3v2-Frame-TKEY.cpp in Sources */,
+				05FCC97C19DB7C6900BC1FBE /* ID3v2-Frame-TPOS.cpp in Sources */,
+				05FCC9D019DB7C6900BC1FBE /* ID3v2-Frame-WPAY.cpp in Sources */,
+				05FCC98C19DB7C6900BC1FBE /* ID3v2-Frame-TRSN.cpp in Sources */,
+				05FCC8D019DB7C6900BC1FBE /* ID3v2-Frame-GRID.cpp in Sources */,
+				05FCC99019DB7C6900BC1FBE /* ID3v2-Frame-TRSO.cpp in Sources */,
+				05FCC90819DB7C6900BC1FBE /* ID3v2-Frame-SYTC.cpp in Sources */,
+				05FCC9D419DB7C6900BC1FBE /* ID3v2-Frame-WPUB.cpp in Sources */,
+				05FCC9A019DB7C6900BC1FBE /* ID3v2-Frame-TXXX.cpp in Sources */,
+				05FCC9A819DB7C6900BC1FBE /* ID3v2-Frame-UFID.cpp in Sources */,
+				05FCC8E019DB7C6900BC1FBE /* ID3v2-Frame-MLLT.cpp in Sources */,
+				05FCC98419DB7C6900BC1FBE /* ID3v2-Frame-TRCK.cpp in Sources */,
+				05FCC9BC19DB7C6900BC1FBE /* ID3v2-Frame-WCOP.cpp in Sources */,
+				05FCC99819DB7C6900BC1FBE /* ID3v2-Frame-TSRC.cpp in Sources */,
+				05FCC91C19DB7C6900BC1FBE /* ID3v2-Frame-TCOP.cpp in Sources */,
+				05FCC98019DB7C6900BC1FBE /* ID3v2-Frame-TPUB.cpp in Sources */,
+				05FCC9CC19DB7C6900BC1FBE /* ID3v2-Frame-WORS.cpp in Sources */,
+				05FCC92419DB7C6900BC1FBE /* ID3v2-Frame-TDLY.cpp in Sources */,
+				05FCC90019DB7C6900BC1FBE /* ID3v2-Frame-RVRB.cpp in Sources */,
+				05FCC96419DB7C6900BC1FBE /* ID3v2-Frame-TORY.cpp in Sources */,
+				05FCC9A419DB7C6900BC1FBE /* ID3v2-Frame-TYER.cpp in Sources */,
+				05FCC8C019DB7C6900BC1FBE /* ID3v2-Frame-ENCR.cpp in Sources */,
+				05FCC98819DB7C6900BC1FBE /* ID3v2-Frame-TRDA.cpp in Sources */,
+				05FCC93819DB7C6900BC1FBE /* ID3v2-Frame-TIT1.cpp in Sources */,
+				05FCC8D419DB7C6900BC1FBE /* ID3v2-Frame-IPLS.cpp in Sources */,
+				05FCC92019DB7C6900BC1FBE /* ID3v2-Frame-TDAT.cpp in Sources */,
+				05FCC8E819DB7C6900BC1FBE /* ID3v2-Frame-PCNT.cpp in Sources */,
 				05FCC75919DB455900BC1FBE /* ID3v2-Version.cpp in Sources */,
+				05FCC8F819DB7C6900BC1FBE /* ID3v2-Frame-RBUF.cpp in Sources */,
+				05FCC8C419DB7C6900BC1FBE /* ID3v2-Frame-EQUA.cpp in Sources */,
+				05FCC93419DB7C6900BC1FBE /* ID3v2-Frame-TIME.cpp in Sources */,
+				05FCC9C819DB7C6900BC1FBE /* ID3v2-Frame-WOAS.cpp in Sources */,
+				05FCC99419DB7C6900BC1FBE /* ID3v2-Frame-TSIZ.cpp in Sources */,
+				05FCC8BC19DB7C6900BC1FBE /* ID3v2-Frame-COMR.cpp in Sources */,
 				05FCC74919DB410A00BC1FBE /* ID3v2-ExtendedHeader.cpp in Sources */,
-				05FCC77619DB72DA00BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */,
+				05FCC8CC19DB7C6900BC1FBE /* ID3v2-Frame-GEOB.cpp in Sources */,
+				05FCC8F019DB7C6900BC1FBE /* ID3v2-Frame-POSS.cpp in Sources */,
+				05FCC8B019DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp in Sources */,
+				05FCC93019DB7C6900BC1FBE /* ID3v2-Frame-TFLT.cpp in Sources */,
+				05FCC9D819DB7C6900BC1FBE /* ID3v2-Frame-WXXX.cpp in Sources */,
 				05FCC75119DB410A00BC1FBE /* ID3v2-Tag.cpp in Sources */,
+				05FCC91419DB7C6900BC1FBE /* ID3v2-Frame-TCOM.cpp in Sources */,
+				05FCC94819DB7C6900BC1FBE /* ID3v2-Frame-TLAN.cpp in Sources */,
+				05FCC99C19DB7C6900BC1FBE /* ID3v2-Frame-TSSE.cpp in Sources */,
+				05FCC93C19DB7C6900BC1FBE /* ID3v2-Frame-TIT2.cpp in Sources */,
+				05FCC8F419DB7C6900BC1FBE /* ID3v2-Frame-PRIV.cpp in Sources */,
+				05FCC90419DB7C6900BC1FBE /* ID3v2-Frame-SYLT.cpp in Sources */,
+				05FCC8C819DB7C6900BC1FBE /* ID3v2-Frame-ETCO.cpp in Sources */,
+				05FCC8B819DB7C6900BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */,
+				05FCC96019DB7C6900BC1FBE /* ID3v2-Frame-TOPE.cpp in Sources */,
+				05FCC91819DB7C6900BC1FBE /* ID3v2-Frame-TCON.cpp in Sources */,
+				05FCC95C19DB7C6900BC1FBE /* ID3v2-Frame-TOLY.cpp in Sources */,
+				05FCC9AC19DB7C6900BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */,
+				05FCC97419DB7C6900BC1FBE /* ID3v2-Frame-TPE3.cpp in Sources */,
+				05FCC9B819DB7C6900BC1FBE /* ID3v2-Frame-WCOM.cpp in Sources */,
+				05FCC8EC19DB7C6900BC1FBE /* ID3v2-Frame-POPM.cpp in Sources */,
+				05FCC90C19DB7C6900BC1FBE /* ID3v2-Frame-TALB.cpp in Sources */,
+				05FCC8DC19DB7C6900BC1FBE /* ID3v2-Frame-MCDI.cpp in Sources */,
+				05FCC8FC19DB7C6900BC1FBE /* ID3v2-Frame-RVAD.cpp in Sources */,
+				05FCC92C19DB7C6900BC1FBE /* ID3v2-Frame-TEXT.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,12 +1398,85 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FCC9B119DB7C6900BC1FBE /* ID3v2-Frame-USER.cpp in Sources */,
+				05FCC9C119DB7C6900BC1FBE /* ID3v2-Frame-WOAF.cpp in Sources */,
+				05FCC8D919DB7C6900BC1FBE /* ID3v2-Frame-LINK.cpp in Sources */,
+				05FCC9C519DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp in Sources */,
+				05FCC94D19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp in Sources */,
+				05FCC95519DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp in Sources */,
 				05FCC74E19DB410A00BC1FBE /* ID3v2-Frame.cpp in Sources */,
-				05FCC77B19DB72DA00BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */,
+				05FCC96D19DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp in Sources */,
+				05FCC95119DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp in Sources */,
+				05FCC91119DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp in Sources */,
+				05FCC96919DB7C6900BC1FBE /* ID3v2-Frame-TOWN.cpp in Sources */,
+				05FCC97919DB7C6900BC1FBE /* ID3v2-Frame-TPE4.cpp in Sources */,
+				05FCC94119DB7C6900BC1FBE /* ID3v2-Frame-TIT3.cpp in Sources */,
+				05FCC97119DB7C6900BC1FBE /* ID3v2-Frame-TPE2.cpp in Sources */,
+				05FCC9B519DB7C6900BC1FBE /* ID3v2-Frame-USLT.cpp in Sources */,
+				05FCC8B519DB7C6900BC1FBE /* ID3v2-Frame-APIC.cpp in Sources */,
+				05FCC8E519DB7C6900BC1FBE /* ID3v2-Frame-OWNE.cpp in Sources */,
+				05FCC92919DB7C6900BC1FBE /* ID3v2-Frame-TENC.cpp in Sources */,
+				05FCC95919DB7C6900BC1FBE /* ID3v2-Frame-TOFN.cpp in Sources */,
+				05FCC94519DB7C6900BC1FBE /* ID3v2-Frame-TKEY.cpp in Sources */,
+				05FCC97D19DB7C6900BC1FBE /* ID3v2-Frame-TPOS.cpp in Sources */,
+				05FCC9D119DB7C6900BC1FBE /* ID3v2-Frame-WPAY.cpp in Sources */,
+				05FCC98D19DB7C6900BC1FBE /* ID3v2-Frame-TRSN.cpp in Sources */,
+				05FCC8D119DB7C6900BC1FBE /* ID3v2-Frame-GRID.cpp in Sources */,
+				05FCC99119DB7C6900BC1FBE /* ID3v2-Frame-TRSO.cpp in Sources */,
+				05FCC90919DB7C6900BC1FBE /* ID3v2-Frame-SYTC.cpp in Sources */,
+				05FCC9D519DB7C6900BC1FBE /* ID3v2-Frame-WPUB.cpp in Sources */,
+				05FCC9A119DB7C6900BC1FBE /* ID3v2-Frame-TXXX.cpp in Sources */,
+				05FCC9A919DB7C6900BC1FBE /* ID3v2-Frame-UFID.cpp in Sources */,
+				05FCC8E119DB7C6900BC1FBE /* ID3v2-Frame-MLLT.cpp in Sources */,
+				05FCC98519DB7C6900BC1FBE /* ID3v2-Frame-TRCK.cpp in Sources */,
+				05FCC9BD19DB7C6900BC1FBE /* ID3v2-Frame-WCOP.cpp in Sources */,
+				05FCC99919DB7C6900BC1FBE /* ID3v2-Frame-TSRC.cpp in Sources */,
+				05FCC91D19DB7C6900BC1FBE /* ID3v2-Frame-TCOP.cpp in Sources */,
+				05FCC98119DB7C6900BC1FBE /* ID3v2-Frame-TPUB.cpp in Sources */,
+				05FCC9CD19DB7C6900BC1FBE /* ID3v2-Frame-WORS.cpp in Sources */,
+				05FCC92519DB7C6900BC1FBE /* ID3v2-Frame-TDLY.cpp in Sources */,
+				05FCC90119DB7C6900BC1FBE /* ID3v2-Frame-RVRB.cpp in Sources */,
+				05FCC96519DB7C6900BC1FBE /* ID3v2-Frame-TORY.cpp in Sources */,
+				05FCC9A519DB7C6900BC1FBE /* ID3v2-Frame-TYER.cpp in Sources */,
+				05FCC8C119DB7C6900BC1FBE /* ID3v2-Frame-ENCR.cpp in Sources */,
+				05FCC98919DB7C6900BC1FBE /* ID3v2-Frame-TRDA.cpp in Sources */,
+				05FCC93919DB7C6900BC1FBE /* ID3v2-Frame-TIT1.cpp in Sources */,
+				05FCC8D519DB7C6900BC1FBE /* ID3v2-Frame-IPLS.cpp in Sources */,
+				05FCC92119DB7C6900BC1FBE /* ID3v2-Frame-TDAT.cpp in Sources */,
+				05FCC8E919DB7C6900BC1FBE /* ID3v2-Frame-PCNT.cpp in Sources */,
 				05FCC75A19DB455900BC1FBE /* ID3v2-Version.cpp in Sources */,
+				05FCC8F919DB7C6900BC1FBE /* ID3v2-Frame-RBUF.cpp in Sources */,
+				05FCC8C519DB7C6900BC1FBE /* ID3v2-Frame-EQUA.cpp in Sources */,
+				05FCC93519DB7C6900BC1FBE /* ID3v2-Frame-TIME.cpp in Sources */,
+				05FCC9C919DB7C6900BC1FBE /* ID3v2-Frame-WOAS.cpp in Sources */,
+				05FCC99519DB7C6900BC1FBE /* ID3v2-Frame-TSIZ.cpp in Sources */,
+				05FCC8BD19DB7C6900BC1FBE /* ID3v2-Frame-COMR.cpp in Sources */,
 				05FCC74A19DB410A00BC1FBE /* ID3v2-ExtendedHeader.cpp in Sources */,
-				05FCC77719DB72DA00BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */,
+				05FCC8CD19DB7C6900BC1FBE /* ID3v2-Frame-GEOB.cpp in Sources */,
+				05FCC8F119DB7C6900BC1FBE /* ID3v2-Frame-POSS.cpp in Sources */,
+				05FCC8B119DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp in Sources */,
+				05FCC93119DB7C6900BC1FBE /* ID3v2-Frame-TFLT.cpp in Sources */,
+				05FCC9D919DB7C6900BC1FBE /* ID3v2-Frame-WXXX.cpp in Sources */,
 				05FCC75219DB410A00BC1FBE /* ID3v2-Tag.cpp in Sources */,
+				05FCC91519DB7C6900BC1FBE /* ID3v2-Frame-TCOM.cpp in Sources */,
+				05FCC94919DB7C6900BC1FBE /* ID3v2-Frame-TLAN.cpp in Sources */,
+				05FCC99D19DB7C6900BC1FBE /* ID3v2-Frame-TSSE.cpp in Sources */,
+				05FCC93D19DB7C6900BC1FBE /* ID3v2-Frame-TIT2.cpp in Sources */,
+				05FCC8F519DB7C6900BC1FBE /* ID3v2-Frame-PRIV.cpp in Sources */,
+				05FCC90519DB7C6900BC1FBE /* ID3v2-Frame-SYLT.cpp in Sources */,
+				05FCC8C919DB7C6900BC1FBE /* ID3v2-Frame-ETCO.cpp in Sources */,
+				05FCC8B919DB7C6900BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */,
+				05FCC96119DB7C6900BC1FBE /* ID3v2-Frame-TOPE.cpp in Sources */,
+				05FCC91919DB7C6900BC1FBE /* ID3v2-Frame-TCON.cpp in Sources */,
+				05FCC95D19DB7C6900BC1FBE /* ID3v2-Frame-TOLY.cpp in Sources */,
+				05FCC9AD19DB7C6900BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */,
+				05FCC97519DB7C6900BC1FBE /* ID3v2-Frame-TPE3.cpp in Sources */,
+				05FCC9B919DB7C6900BC1FBE /* ID3v2-Frame-WCOM.cpp in Sources */,
+				05FCC8ED19DB7C6900BC1FBE /* ID3v2-Frame-POPM.cpp in Sources */,
+				05FCC90D19DB7C6900BC1FBE /* ID3v2-Frame-TALB.cpp in Sources */,
+				05FCC8DD19DB7C6900BC1FBE /* ID3v2-Frame-MCDI.cpp in Sources */,
+				05FCC8FD19DB7C6900BC1FBE /* ID3v2-Frame-RVAD.cpp in Sources */,
+				05FCC92D19DB7C6900BC1FBE /* ID3v2-Frame-TEXT.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,12 +1484,85 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FCC9B219DB7C6900BC1FBE /* ID3v2-Frame-USER.cpp in Sources */,
+				05FCC9C219DB7C6900BC1FBE /* ID3v2-Frame-WOAF.cpp in Sources */,
+				05FCC8DA19DB7C6900BC1FBE /* ID3v2-Frame-LINK.cpp in Sources */,
+				05FCC9C619DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp in Sources */,
+				05FCC94E19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp in Sources */,
+				05FCC95619DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp in Sources */,
 				05FCC74F19DB410A00BC1FBE /* ID3v2-Frame.cpp in Sources */,
-				05FCC77C19DB72DA00BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */,
+				05FCC96E19DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp in Sources */,
+				05FCC95219DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp in Sources */,
+				05FCC91219DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp in Sources */,
+				05FCC96A19DB7C6900BC1FBE /* ID3v2-Frame-TOWN.cpp in Sources */,
+				05FCC97A19DB7C6900BC1FBE /* ID3v2-Frame-TPE4.cpp in Sources */,
+				05FCC94219DB7C6900BC1FBE /* ID3v2-Frame-TIT3.cpp in Sources */,
+				05FCC97219DB7C6900BC1FBE /* ID3v2-Frame-TPE2.cpp in Sources */,
+				05FCC9B619DB7C6900BC1FBE /* ID3v2-Frame-USLT.cpp in Sources */,
+				05FCC8B619DB7C6900BC1FBE /* ID3v2-Frame-APIC.cpp in Sources */,
+				05FCC8E619DB7C6900BC1FBE /* ID3v2-Frame-OWNE.cpp in Sources */,
+				05FCC92A19DB7C6900BC1FBE /* ID3v2-Frame-TENC.cpp in Sources */,
+				05FCC95A19DB7C6900BC1FBE /* ID3v2-Frame-TOFN.cpp in Sources */,
+				05FCC94619DB7C6900BC1FBE /* ID3v2-Frame-TKEY.cpp in Sources */,
+				05FCC97E19DB7C6900BC1FBE /* ID3v2-Frame-TPOS.cpp in Sources */,
+				05FCC9D219DB7C6900BC1FBE /* ID3v2-Frame-WPAY.cpp in Sources */,
+				05FCC98E19DB7C6900BC1FBE /* ID3v2-Frame-TRSN.cpp in Sources */,
+				05FCC8D219DB7C6900BC1FBE /* ID3v2-Frame-GRID.cpp in Sources */,
+				05FCC99219DB7C6900BC1FBE /* ID3v2-Frame-TRSO.cpp in Sources */,
+				05FCC90A19DB7C6900BC1FBE /* ID3v2-Frame-SYTC.cpp in Sources */,
+				05FCC9D619DB7C6900BC1FBE /* ID3v2-Frame-WPUB.cpp in Sources */,
+				05FCC9A219DB7C6900BC1FBE /* ID3v2-Frame-TXXX.cpp in Sources */,
+				05FCC9AA19DB7C6900BC1FBE /* ID3v2-Frame-UFID.cpp in Sources */,
+				05FCC8E219DB7C6900BC1FBE /* ID3v2-Frame-MLLT.cpp in Sources */,
+				05FCC98619DB7C6900BC1FBE /* ID3v2-Frame-TRCK.cpp in Sources */,
+				05FCC9BE19DB7C6900BC1FBE /* ID3v2-Frame-WCOP.cpp in Sources */,
+				05FCC99A19DB7C6900BC1FBE /* ID3v2-Frame-TSRC.cpp in Sources */,
+				05FCC91E19DB7C6900BC1FBE /* ID3v2-Frame-TCOP.cpp in Sources */,
+				05FCC98219DB7C6900BC1FBE /* ID3v2-Frame-TPUB.cpp in Sources */,
+				05FCC9CE19DB7C6900BC1FBE /* ID3v2-Frame-WORS.cpp in Sources */,
+				05FCC92619DB7C6900BC1FBE /* ID3v2-Frame-TDLY.cpp in Sources */,
+				05FCC90219DB7C6900BC1FBE /* ID3v2-Frame-RVRB.cpp in Sources */,
+				05FCC96619DB7C6900BC1FBE /* ID3v2-Frame-TORY.cpp in Sources */,
+				05FCC9A619DB7C6900BC1FBE /* ID3v2-Frame-TYER.cpp in Sources */,
+				05FCC8C219DB7C6900BC1FBE /* ID3v2-Frame-ENCR.cpp in Sources */,
+				05FCC98A19DB7C6900BC1FBE /* ID3v2-Frame-TRDA.cpp in Sources */,
+				05FCC93A19DB7C6900BC1FBE /* ID3v2-Frame-TIT1.cpp in Sources */,
+				05FCC8D619DB7C6900BC1FBE /* ID3v2-Frame-IPLS.cpp in Sources */,
+				05FCC92219DB7C6900BC1FBE /* ID3v2-Frame-TDAT.cpp in Sources */,
+				05FCC8EA19DB7C6900BC1FBE /* ID3v2-Frame-PCNT.cpp in Sources */,
 				05FCC75B19DB455900BC1FBE /* ID3v2-Version.cpp in Sources */,
+				05FCC8FA19DB7C6900BC1FBE /* ID3v2-Frame-RBUF.cpp in Sources */,
+				05FCC8C619DB7C6900BC1FBE /* ID3v2-Frame-EQUA.cpp in Sources */,
+				05FCC93619DB7C6900BC1FBE /* ID3v2-Frame-TIME.cpp in Sources */,
+				05FCC9CA19DB7C6900BC1FBE /* ID3v2-Frame-WOAS.cpp in Sources */,
+				05FCC99619DB7C6900BC1FBE /* ID3v2-Frame-TSIZ.cpp in Sources */,
+				05FCC8BE19DB7C6900BC1FBE /* ID3v2-Frame-COMR.cpp in Sources */,
 				05FCC74B19DB410A00BC1FBE /* ID3v2-ExtendedHeader.cpp in Sources */,
-				05FCC77819DB72DA00BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */,
+				05FCC8CE19DB7C6900BC1FBE /* ID3v2-Frame-GEOB.cpp in Sources */,
+				05FCC8F219DB7C6900BC1FBE /* ID3v2-Frame-POSS.cpp in Sources */,
+				05FCC8B219DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp in Sources */,
+				05FCC93219DB7C6900BC1FBE /* ID3v2-Frame-TFLT.cpp in Sources */,
+				05FCC9DA19DB7C6900BC1FBE /* ID3v2-Frame-WXXX.cpp in Sources */,
 				05FCC75319DB410A00BC1FBE /* ID3v2-Tag.cpp in Sources */,
+				05FCC91619DB7C6900BC1FBE /* ID3v2-Frame-TCOM.cpp in Sources */,
+				05FCC94A19DB7C6900BC1FBE /* ID3v2-Frame-TLAN.cpp in Sources */,
+				05FCC99E19DB7C6900BC1FBE /* ID3v2-Frame-TSSE.cpp in Sources */,
+				05FCC93E19DB7C6900BC1FBE /* ID3v2-Frame-TIT2.cpp in Sources */,
+				05FCC8F619DB7C6900BC1FBE /* ID3v2-Frame-PRIV.cpp in Sources */,
+				05FCC90619DB7C6900BC1FBE /* ID3v2-Frame-SYLT.cpp in Sources */,
+				05FCC8CA19DB7C6900BC1FBE /* ID3v2-Frame-ETCO.cpp in Sources */,
+				05FCC8BA19DB7C6900BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */,
+				05FCC96219DB7C6900BC1FBE /* ID3v2-Frame-TOPE.cpp in Sources */,
+				05FCC91A19DB7C6900BC1FBE /* ID3v2-Frame-TCON.cpp in Sources */,
+				05FCC95E19DB7C6900BC1FBE /* ID3v2-Frame-TOLY.cpp in Sources */,
+				05FCC9AE19DB7C6900BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */,
+				05FCC97619DB7C6900BC1FBE /* ID3v2-Frame-TPE3.cpp in Sources */,
+				05FCC9BA19DB7C6900BC1FBE /* ID3v2-Frame-WCOM.cpp in Sources */,
+				05FCC8EE19DB7C6900BC1FBE /* ID3v2-Frame-POPM.cpp in Sources */,
+				05FCC90E19DB7C6900BC1FBE /* ID3v2-Frame-TALB.cpp in Sources */,
+				05FCC8DE19DB7C6900BC1FBE /* ID3v2-Frame-MCDI.cpp in Sources */,
+				05FCC8FE19DB7C6900BC1FBE /* ID3v2-Frame-RVAD.cpp in Sources */,
+				05FCC92E19DB7C6900BC1FBE /* ID3v2-Frame-TEXT.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,12 +1570,85 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FCC9B319DB7C6900BC1FBE /* ID3v2-Frame-USER.cpp in Sources */,
+				05FCC9C319DB7C6900BC1FBE /* ID3v2-Frame-WOAF.cpp in Sources */,
+				05FCC8DB19DB7C6900BC1FBE /* ID3v2-Frame-LINK.cpp in Sources */,
+				05FCC9C719DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp in Sources */,
+				05FCC94F19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp in Sources */,
+				05FCC95719DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp in Sources */,
 				05FCC75019DB410A00BC1FBE /* ID3v2-Frame.cpp in Sources */,
-				05FCC77D19DB72DA00BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */,
+				05FCC96F19DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp in Sources */,
+				05FCC95319DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp in Sources */,
+				05FCC91319DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp in Sources */,
+				05FCC96B19DB7C6900BC1FBE /* ID3v2-Frame-TOWN.cpp in Sources */,
+				05FCC97B19DB7C6900BC1FBE /* ID3v2-Frame-TPE4.cpp in Sources */,
+				05FCC94319DB7C6900BC1FBE /* ID3v2-Frame-TIT3.cpp in Sources */,
+				05FCC97319DB7C6900BC1FBE /* ID3v2-Frame-TPE2.cpp in Sources */,
+				05FCC9B719DB7C6900BC1FBE /* ID3v2-Frame-USLT.cpp in Sources */,
+				05FCC8B719DB7C6900BC1FBE /* ID3v2-Frame-APIC.cpp in Sources */,
+				05FCC8E719DB7C6900BC1FBE /* ID3v2-Frame-OWNE.cpp in Sources */,
+				05FCC92B19DB7C6900BC1FBE /* ID3v2-Frame-TENC.cpp in Sources */,
+				05FCC95B19DB7C6900BC1FBE /* ID3v2-Frame-TOFN.cpp in Sources */,
+				05FCC94719DB7C6900BC1FBE /* ID3v2-Frame-TKEY.cpp in Sources */,
+				05FCC97F19DB7C6900BC1FBE /* ID3v2-Frame-TPOS.cpp in Sources */,
+				05FCC9D319DB7C6900BC1FBE /* ID3v2-Frame-WPAY.cpp in Sources */,
+				05FCC98F19DB7C6900BC1FBE /* ID3v2-Frame-TRSN.cpp in Sources */,
+				05FCC8D319DB7C6900BC1FBE /* ID3v2-Frame-GRID.cpp in Sources */,
+				05FCC99319DB7C6900BC1FBE /* ID3v2-Frame-TRSO.cpp in Sources */,
+				05FCC90B19DB7C6900BC1FBE /* ID3v2-Frame-SYTC.cpp in Sources */,
+				05FCC9D719DB7C6900BC1FBE /* ID3v2-Frame-WPUB.cpp in Sources */,
+				05FCC9A319DB7C6900BC1FBE /* ID3v2-Frame-TXXX.cpp in Sources */,
+				05FCC9AB19DB7C6900BC1FBE /* ID3v2-Frame-UFID.cpp in Sources */,
+				05FCC8E319DB7C6900BC1FBE /* ID3v2-Frame-MLLT.cpp in Sources */,
+				05FCC98719DB7C6900BC1FBE /* ID3v2-Frame-TRCK.cpp in Sources */,
+				05FCC9BF19DB7C6900BC1FBE /* ID3v2-Frame-WCOP.cpp in Sources */,
+				05FCC99B19DB7C6900BC1FBE /* ID3v2-Frame-TSRC.cpp in Sources */,
+				05FCC91F19DB7C6900BC1FBE /* ID3v2-Frame-TCOP.cpp in Sources */,
+				05FCC98319DB7C6900BC1FBE /* ID3v2-Frame-TPUB.cpp in Sources */,
+				05FCC9CF19DB7C6900BC1FBE /* ID3v2-Frame-WORS.cpp in Sources */,
+				05FCC92719DB7C6900BC1FBE /* ID3v2-Frame-TDLY.cpp in Sources */,
+				05FCC90319DB7C6900BC1FBE /* ID3v2-Frame-RVRB.cpp in Sources */,
+				05FCC96719DB7C6900BC1FBE /* ID3v2-Frame-TORY.cpp in Sources */,
+				05FCC9A719DB7C6900BC1FBE /* ID3v2-Frame-TYER.cpp in Sources */,
+				05FCC8C319DB7C6900BC1FBE /* ID3v2-Frame-ENCR.cpp in Sources */,
+				05FCC98B19DB7C6900BC1FBE /* ID3v2-Frame-TRDA.cpp in Sources */,
+				05FCC93B19DB7C6900BC1FBE /* ID3v2-Frame-TIT1.cpp in Sources */,
+				05FCC8D719DB7C6900BC1FBE /* ID3v2-Frame-IPLS.cpp in Sources */,
+				05FCC92319DB7C6900BC1FBE /* ID3v2-Frame-TDAT.cpp in Sources */,
+				05FCC8EB19DB7C6900BC1FBE /* ID3v2-Frame-PCNT.cpp in Sources */,
 				05FCC75C19DB455900BC1FBE /* ID3v2-Version.cpp in Sources */,
+				05FCC8FB19DB7C6900BC1FBE /* ID3v2-Frame-RBUF.cpp in Sources */,
+				05FCC8C719DB7C6900BC1FBE /* ID3v2-Frame-EQUA.cpp in Sources */,
+				05FCC93719DB7C6900BC1FBE /* ID3v2-Frame-TIME.cpp in Sources */,
+				05FCC9CB19DB7C6900BC1FBE /* ID3v2-Frame-WOAS.cpp in Sources */,
+				05FCC99719DB7C6900BC1FBE /* ID3v2-Frame-TSIZ.cpp in Sources */,
+				05FCC8BF19DB7C6900BC1FBE /* ID3v2-Frame-COMR.cpp in Sources */,
 				05FCC74C19DB410A00BC1FBE /* ID3v2-ExtendedHeader.cpp in Sources */,
-				05FCC77919DB72DA00BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */,
+				05FCC8CF19DB7C6900BC1FBE /* ID3v2-Frame-GEOB.cpp in Sources */,
+				05FCC8F319DB7C6900BC1FBE /* ID3v2-Frame-POSS.cpp in Sources */,
+				05FCC8B319DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp in Sources */,
+				05FCC93319DB7C6900BC1FBE /* ID3v2-Frame-TFLT.cpp in Sources */,
+				05FCC9DB19DB7C6900BC1FBE /* ID3v2-Frame-WXXX.cpp in Sources */,
 				05FCC75419DB410A00BC1FBE /* ID3v2-Tag.cpp in Sources */,
+				05FCC91719DB7C6900BC1FBE /* ID3v2-Frame-TCOM.cpp in Sources */,
+				05FCC94B19DB7C6900BC1FBE /* ID3v2-Frame-TLAN.cpp in Sources */,
+				05FCC99F19DB7C6900BC1FBE /* ID3v2-Frame-TSSE.cpp in Sources */,
+				05FCC93F19DB7C6900BC1FBE /* ID3v2-Frame-TIT2.cpp in Sources */,
+				05FCC8F719DB7C6900BC1FBE /* ID3v2-Frame-PRIV.cpp in Sources */,
+				05FCC90719DB7C6900BC1FBE /* ID3v2-Frame-SYLT.cpp in Sources */,
+				05FCC8CB19DB7C6900BC1FBE /* ID3v2-Frame-ETCO.cpp in Sources */,
+				05FCC8BB19DB7C6900BC1FBE /* ID3v2-Frame-COMM.cpp in Sources */,
+				05FCC96319DB7C6900BC1FBE /* ID3v2-Frame-TOPE.cpp in Sources */,
+				05FCC91B19DB7C6900BC1FBE /* ID3v2-Frame-TCON.cpp in Sources */,
+				05FCC95F19DB7C6900BC1FBE /* ID3v2-Frame-TOLY.cpp in Sources */,
+				05FCC9AF19DB7C6900BC1FBE /* ID3v2-Frame-Unknown.cpp in Sources */,
+				05FCC97719DB7C6900BC1FBE /* ID3v2-Frame-TPE3.cpp in Sources */,
+				05FCC9BB19DB7C6900BC1FBE /* ID3v2-Frame-WCOM.cpp in Sources */,
+				05FCC8EF19DB7C6900BC1FBE /* ID3v2-Frame-POPM.cpp in Sources */,
+				05FCC90F19DB7C6900BC1FBE /* ID3v2-Frame-TALB.cpp in Sources */,
+				05FCC8DF19DB7C6900BC1FBE /* ID3v2-Frame-MCDI.cpp in Sources */,
+				05FCC8FF19DB7C6900BC1FBE /* ID3v2-Frame-RVAD.cpp in Sources */,
+				05FCC92F19DB7C6900BC1FBE /* ID3v2-Frame-TEXT.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
