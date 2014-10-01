@@ -129,10 +129,7 @@ namespace ID3v2
     
     Frame::~Frame( void )
     {
-        if( this->impl != NULL )
-        {
-            delete this->impl;
-        }
+        delete this->impl;
     }
     
     std::string Frame::GetName( void ) const

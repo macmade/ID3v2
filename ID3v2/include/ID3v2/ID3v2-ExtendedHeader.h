@@ -40,13 +40,23 @@
 
 namespace ID3v2
 {
+    class Tag;
+    
     class ExtendedHeader
     {
+        friend class Tag;
+        
         public:
             
             virtual ~ExtendedHeader( void );
             
+            std::size_t GetSize( void );
+            
         private:
+            
+            static ExtendedHeader * NewExtendedHeaderFromFileHandle( FILE * fh );
+            
+            ExtendedHeader( void );
             
             class  IMPL;
             IMPL * impl;
