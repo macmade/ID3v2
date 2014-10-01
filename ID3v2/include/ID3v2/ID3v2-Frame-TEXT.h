@@ -38,11 +38,16 @@
 #ifndef __ID3V2_FRAME_TEXT__
 #define __ID3V2_FRAME_TEXT__
 
+/* Fix for WIN32 TEXT macro (winrt.h) */
+#ifdef TEXT
+#define __ID3V2_TEXT TEXT
+#undef TEXT
+#endif
+
 namespace ID3v2
 {
     namespace Frames
     {
-        /*
         class TEXT: public Frame
         {
             public:
@@ -59,8 +64,13 @@ namespace ID3v2
                 class  IMPL;
                 IMPL * impl;
         };
-        */
     }
 }
+
+/* Fix for WIN32 TEXT macro (winrt.h) */
+#ifdef __ID3V2_TEXT
+#define TEXT __ID3V2_TEXT
+#undef __ID3V2_TEXT
+#endif
 
 #endif /* __ID3V2_FRAME_TEXT__ */

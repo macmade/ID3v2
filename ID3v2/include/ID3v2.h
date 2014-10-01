@@ -78,9 +78,7 @@
 #include <ID3v2/ID3v2-Frame-TDAT.h>
 #include <ID3v2/ID3v2-Frame-TDLY.h>
 #include <ID3v2/ID3v2-Frame-TENC.h>
-/*
 #include <ID3v2/ID3v2-Frame-TEXT.h>
-*/
 #include <ID3v2/ID3v2-Frame-TFLT.h>
 #include <ID3v2/ID3v2-Frame-TIME.h>
 #include <ID3v2/ID3v2-Frame-TIT1.h>

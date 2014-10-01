@@ -318,9 +318,7 @@ namespace ID3v2
         else if( name == "TDAT" ) { frame = new Frames::TDAT(); }
         else if( name == "TDLY" ) { frame = new Frames::TDLY(); }
         else if( name == "TENC" ) { frame = new Frames::TENC(); }
-        /*
         else if( name == "TEXT" ) { frame = new Frames::TEXT(); }
-        */
         else if( name == "TFLT" ) { frame = new Frames::TFLT(); }
         else if( name == "TIME" ) { frame = new Frames::TIME(); }
         else if( name == "TIT1" ) { frame = new Frames::TIT1(); }
