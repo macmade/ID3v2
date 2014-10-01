@@ -128,10 +128,12 @@ namespace ID3v2
         
         switch( flag )
         {
-            case FlagUnsynchronisation:     return this->impl->header.flags & 0x80;
-            case FlagExtendedHeader:        return this->impl->header.flags & 0x40;
-            case FlagExperimentalIndicator: return this->impl->header.flags & 0x20;
+            case FlagUnsynchronisation:     return ( this->impl->header.flags & 0x80 ) ? true : false;
+            case FlagExtendedHeader:        return ( this->impl->header.flags & 0x40 ) ? true : false;
+            case FlagExperimentalIndicator: return ( this->impl->header.flags & 0x20 ) ? true : false;
         }
+        
+        return false;
     }
     
     std::size_t Tag::GetSize( void )
