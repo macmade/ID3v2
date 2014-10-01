@@ -53,10 +53,7 @@ namespace ID3v2
         
         TPE4::~TPE4( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void TPE4::ProcessData( void )

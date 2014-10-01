@@ -53,10 +53,7 @@ namespace ID3v2
         
         RBUF::~RBUF( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void RBUF::ProcessData( void )

@@ -53,10 +53,7 @@ namespace ID3v2
         
         TIME::~TIME( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void TIME::ProcessData( void )

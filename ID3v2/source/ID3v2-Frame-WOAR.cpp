@@ -53,10 +53,7 @@ namespace ID3v2
         
         WOAR::~WOAR( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void WOAR::ProcessData( void )

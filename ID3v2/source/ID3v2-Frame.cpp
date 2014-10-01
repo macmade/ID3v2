@@ -385,9 +385,6 @@ namespace ID3v2
     
     Frame::IMPL::~IMPL( void )
     {
-        if( this->data != NULL )
-        {
-            delete[] this->data;
-        }
+        delete[] this->data;
     }
 }

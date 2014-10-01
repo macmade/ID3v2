@@ -53,10 +53,7 @@ namespace ID3v2
         
         IPLS::~IPLS( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void IPLS::ProcessData( void )

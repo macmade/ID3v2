@@ -53,10 +53,7 @@ namespace ID3v2
         
         AENC::~AENC( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void AENC::ProcessData( void )

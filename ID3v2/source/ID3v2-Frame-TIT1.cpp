@@ -53,10 +53,7 @@ namespace ID3v2
         
         TIT1::~TIT1( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void TIT1::ProcessData( void )

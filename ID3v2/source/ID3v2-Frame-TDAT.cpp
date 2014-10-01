@@ -53,10 +53,7 @@ namespace ID3v2
         
         TDAT::~TDAT( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void TDAT::ProcessData( void )

@@ -53,10 +53,7 @@ namespace ID3v2
         
         MCDI::~MCDI( void )
         {
-            if( this->impl != NULL )
-            {
-                delete this->impl;
-            }
+            delete this->impl;
         }
         
         void MCDI::ProcessData( void )

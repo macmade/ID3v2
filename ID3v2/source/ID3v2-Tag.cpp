@@ -193,10 +193,7 @@ namespace ID3v2
         
         for( it = this->frames.begin(); it != this->frames.end(); ++it )
         {
-            if( *( it ) != NULL )
-            {
-                delete *( it );
-            }
+            delete *( it );
         }
     }
     
