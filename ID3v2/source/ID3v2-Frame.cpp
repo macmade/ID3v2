@@ -50,74 +50,109 @@ namespace ID3v2
     {
         public:
             
-            static Frame * NewFrame( ID3v2Frame header, std::size_t size, char * data );
+            static Frame * NewFrame( ID3v22Frame header, std::size_t size, char * data, Version version );
+            static Frame * NewFrame( ID3v23Frame header, std::size_t size, char * data, Version version );
             
             IMPL( void );
             ~IMPL( void );
             
-            ID3v2Frame  frame;
-            std::size_t frameSize;
-            char      * data;
+            ID3v22Frame  frame22;
+            ID3v23Frame  frame23;
+            std::size_t  frameSize;
+            char       * data;
+            Version      version;
     };
     
     #ifdef __clang__
     #pragma clang diagnostic pop
     #endif
     
-    Frame * Frame::NewFrameFromFileHandle( FILE * fh )
+    Frame * Frame::NewFrameFromFileHandle( FILE * fh, Version version )
     {
-        Frame     * frame;
-        ID3v2Frame  frameHeader;
-        std::size_t frameSize;
-        char      * data;
+        ID3v22Frame  frameHeader22;
+        ID3v23Frame  frameHeader23;
+        std::size_t  frameSize;
+        char       * data;
         
         if( fh == NULL )
         {
             return NULL;
         }
         
-        memset( &frameHeader, 0, sizeof( ID3v2Frame ) );
+        memset( &frameHeader22, 0, sizeof( ID3v22Frame ) );
+        memset( &frameHeader23, 0, sizeof( ID3v23Frame ) );
         
-        if( fread( &frameHeader, 1, sizeof( ID3v2Frame ), fh ) != sizeof( ID3v2Frame ) )
+        if( version < Version( 2, 3, 0 ) )
+        {
+            if( fread( &frameHeader22, 1, sizeof( ID3v22Frame ), fh ) != sizeof( ID3v22Frame ) )
+            {
+                goto error;
+            }
+            
+            {
+                std::size_t s1;
+                std::size_t s2;
+                std::size_t s3;
+                
+                s1   = static_cast< std::size_t >( frameHeader22.size[ 0 ] );
+                s2   = static_cast< std::size_t >( frameHeader22.size[ 1 ] );
+                s3   = static_cast< std::size_t >( frameHeader22.size[ 2 ] );
+                s1  &= 0xFF;
+                s2  &= 0xFF;
+                s3  &= 0xFF;
+                s1 <<= 16;
+                s2 <<= 8;
+                
+                frameSize = s1 | s2 | s3;
+            }
+        }
+        else
+        {
+            if( fread( &frameHeader23, 1, sizeof( ID3v23Frame ), fh ) != sizeof( ID3v23Frame ) )
+            {
+                goto error;
+            }
+            
+            {
+                std::size_t s1;
+                std::size_t s2;
+                std::size_t s3;
+                std::size_t s4;
+                
+                s1   = static_cast< std::size_t >( frameHeader23.size[ 0 ] );
+                s2   = static_cast< std::size_t >( frameHeader23.size[ 1 ] );
+                s3   = static_cast< std::size_t >( frameHeader23.size[ 2 ] );
+                s4   = static_cast< std::size_t >( frameHeader23.size[ 3 ] );
+                s1  &= 0xFF;
+                s2  &= 0xFF;
+                s3  &= 0xFF;
+                s4  &= 0xFF;
+                s1 <<= 24;
+                s2 <<= 16;
+                s3 <<= 8;
+                
+                frameSize = s1 | s2 | s3 | s4;
+            }
+        }
+        
+        data      = new char[ frameSize ];
+        
+        if( data == NULL )
         {
             goto error;
         }
         
+        if( fread( data, 1, frameSize, fh ) != frameSize )
         {
-            std::size_t s1;
-            std::size_t s2;
-            std::size_t s3;
-            std::size_t s4;
-            
-            s1   = static_cast< std::size_t >( frameHeader.size[ 0 ] );
-            s2   = static_cast< std::size_t >( frameHeader.size[ 1 ] );
-            s3   = static_cast< std::size_t >( frameHeader.size[ 2 ] );
-            s4   = static_cast< std::size_t >( frameHeader.size[ 3 ] );
-            s1  &= 0xFF;
-            s2  &= 0xFF;
-            s3  &= 0xFF;
-            s4  &= 0xFF;
-            s1 <<= 24;
-            s2 <<= 16;
-            s3 <<= 8;
-            
-            frameSize = s1 | s2 | s3 | s4;
-            data      = new char[ frameSize ];
-            
-            if( data == NULL )
-            {
-                goto error;
-            }
-            
-            if( fread( data, 1, frameSize, fh ) != frameSize )
-            {
-                goto error;
-            }
-            
-            return Frame::IMPL::NewFrame( frameHeader, frameSize, data );
+            goto error;
         }
         
-        return frame;
+        if( version < Version( 2, 3, 0 ) )
+        {
+            return Frame::IMPL::NewFrame( frameHeader22, frameSize, data, version );
+        }
+        
+        return Frame::IMPL::NewFrame( frameHeader23, frameSize, data, version );
         
         error:
         
@@ -136,10 +171,19 @@ namespace ID3v2
     {
         std::stringstream ss;
         
-        ss << this->impl->frame.id[ 0 ];
-        ss << this->impl->frame.id[ 1 ];
-        ss << this->impl->frame.id[ 2 ];
-        ss << this->impl->frame.id[ 3 ];
+        if( this->impl->version < Version( 2, 3, 0 ) )
+        {
+            ss << this->impl->frame22.id[ 0 ];
+            ss << this->impl->frame22.id[ 1 ];
+            ss << this->impl->frame22.id[ 2 ];
+        }
+        else
+        {
+            ss << this->impl->frame23.id[ 0 ];
+            ss << this->impl->frame23.id[ 1 ];
+            ss << this->impl->frame23.id[ 2 ];
+            ss << this->impl->frame23.id[ 3 ];
+        }
         
         return ss.str();
     }
@@ -243,8 +287,13 @@ namespace ID3v2
         unsigned short f1;
         unsigned short f2;
         
-        f1   = static_cast< unsigned short >( this->impl->frame.flags[ 0 ] );
-        f2   = static_cast< unsigned short >( this->impl->frame.flags[ 1 ] );
+        if( this->impl->version < Version( 2, 3, 0 ) )
+        {
+            
+        }
+        
+        f1   = static_cast< unsigned short >( this->impl->frame23.flags[ 0 ] );
+        f2   = static_cast< unsigned short >( this->impl->frame23.flags[ 1 ] );
         f1  &= 0xFF;
         f2  &= 0xFF;
         f1 <<= 8;
@@ -271,7 +320,33 @@ namespace ID3v2
         return false;
     }
     
-    Frame * Frame::IMPL::NewFrame( ID3v2Frame header, std::size_t size, char * data )
+    Frame * Frame::IMPL::NewFrame( ID3v22Frame header, std::size_t size, char * data, Version version )
+    {
+        Frame           * frame;
+        std::stringstream ss;
+        std::string       name;
+        
+        ss << header.id[ 0 ];
+        ss << header.id[ 1 ];
+        ss << header.id[ 2 ];
+        
+        name = ss.str();
+        
+        {
+            frame = new Frames::Unknown();
+        }
+        
+        frame->impl->frame22    = header;
+        frame->impl->frameSize  = size;
+        frame->impl->data       = data;
+        frame->impl->version    = version;
+        
+        frame->ProcessData();
+        
+        return frame;
+    }
+    
+    Frame * Frame::IMPL::NewFrame( ID3v23Frame header, std::size_t size, char * data, Version version )
     {
         Frame           * frame;
         std::stringstream ss;
@@ -363,21 +438,23 @@ namespace ID3v2
             frame = new Frames::Unknown();
         }
         
-        frame->impl->frame      = header;
+        frame->impl->frame23    = header;
         frame->impl->frameSize  = size;
         frame->impl->data       = data;
+        frame->impl->version    = version;
         
         frame->ProcessData();
         
         return frame;
     }
     
-    Frame::IMPL::IMPL( void )
+    Frame::IMPL::IMPL( void ): version( 0, 0, 0 )
     {
         this->frameSize = 0;
         this->data      = NULL;
         
-        memset( &( this->frame ), 0, sizeof( ID3v2Frame ) );
+        memset( &( this->frame22 ), 0, sizeof( ID3v22Frame ) );
+        memset( &( this->frame23 ), 0, sizeof( ID3v23Frame ) );
     }
     
     Frame::IMPL::~IMPL( void )

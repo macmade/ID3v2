@@ -57,10 +57,17 @@ ID3v2ExtendedHeader;
 
 typedef struct
 {
+    char   id[ 3 ];     /* Frame ID       $xx xx xx xx (four characters) */
+    char   size[ 3 ];   /* Size           $xx xx xx xx */
+}
+ID3v22Frame;
+
+typedef struct
+{
     char   id[ 4 ];     /* Frame ID       $xx xx xx xx (four characters) */
     char   size[ 4 ];   /* Size           $xx xx xx xx */
     char   flags[ 2 ];  /* Flags          $xx xx */
 }
-ID3v2Frame;
+ID3v23Frame;
 
 #endif /* __ID3V2_PRIVATE_TYPES__ */

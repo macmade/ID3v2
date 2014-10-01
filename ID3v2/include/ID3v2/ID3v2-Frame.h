@@ -75,7 +75,7 @@ namespace ID3v2
             
         private:
             
-            static Frame * NewFrameFromFileHandle( FILE * fh );
+            static Frame * NewFrameFromFileHandle( FILE * fh, Version version );
             
             class  IMPL;
             IMPL * impl;

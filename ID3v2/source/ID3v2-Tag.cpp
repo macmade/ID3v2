@@ -55,6 +55,7 @@ namespace ID3v2
             void ParseFile( std::string path );
             
             bool                   valid;
+            Version                version;
             ID3v2Header            header;
             std::size_t            headerSize;
             ExtendedHeader       * extendedHeader;
@@ -99,12 +100,7 @@ namespace ID3v2
             return Version( 0, 0, 0 );
         }
         
-        return Version
-        (
-            2,
-            static_cast< unsigned int >( this->impl->header.version[ 0 ] ),
-            static_cast< unsigned int >( this->impl->header.version[ 1 ] )
-        );
+        return this->impl->version;
     }
     
     unsigned char Tag::GetFlags( void ) const
@@ -187,7 +183,7 @@ namespace ID3v2
         return NULL;
     }
     
-    Tag::IMPL::IMPL( void )
+    Tag::IMPL::IMPL( void ): version( 0, 0, 0 )
     {
         this->valid             = false;
         this->headerSize        = 0;
@@ -210,8 +206,7 @@ namespace ID3v2
     
     void Tag::IMPL::ParseFile( std::string path )
     {
-        FILE      * fh;
-        std::size_t bytes;
+        FILE * fh;
         
         this->valid = false;
         
@@ -235,6 +230,13 @@ namespace ID3v2
         {
             goto end;
         }
+        
+        this->version = Version
+        (
+            2,
+            static_cast< unsigned int >( this->header.version[ 0 ] ),
+            static_cast< unsigned int >( this->header.version[ 1 ] )
+        );
         
         {
             std::size_t s1;
@@ -273,14 +275,12 @@ namespace ID3v2
             }
         }
         
-        bytes = 0;
-        
-        while( bytes < this->headerSize )
+        while( static_cast< std::size_t >( ftell( fh ) ) < this->headerSize )
         {
             {
                 Frame * frame;
                 
-                frame = Frame::NewFrameFromFileHandle( fh );
+                frame = Frame::NewFrameFromFileHandle( fh, this->version );
                 
                 if( frame == NULL )
                 {
@@ -293,8 +293,6 @@ namespace ID3v2
                 }
                 
                 this->frames.push_back( frame );
-                
-                bytes += frame->GetSize() + sizeof( ID3v2Frame );
             }
         }
         
