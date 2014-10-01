@@ -36,6 +36,7 @@
  */
 
 #include <ID3v2.h>
+#include <sstream>
 
 namespace ID3v2
 {

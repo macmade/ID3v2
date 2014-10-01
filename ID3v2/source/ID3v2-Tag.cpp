@@ -36,6 +36,7 @@
  */
 
 #include <ID3v2.h>
+#include <ID3v2/ID3v2-PrivateTypes.h>
 
 namespace ID3v2
 {
