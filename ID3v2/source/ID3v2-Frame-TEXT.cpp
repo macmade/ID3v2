@@ -41,6 +41,7 @@ namespace ID3v2
 {
     namespace Frames
     {
+        /*
         class TEXT::IMPL
         {
             public:
@@ -61,5 +62,6 @@ namespace ID3v2
         
         TEXT::IMPL::IMPL( void )
         {}
+        */
     }
 }

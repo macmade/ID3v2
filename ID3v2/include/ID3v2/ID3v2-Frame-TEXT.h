@@ -42,6 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
+        /*
         class TEXT: public Frame
         {
             public:
@@ -58,6 +59,7 @@ namespace ID3v2
                 class  IMPL;
                 IMPL * impl;
         };
+        */
     }
 }
 
