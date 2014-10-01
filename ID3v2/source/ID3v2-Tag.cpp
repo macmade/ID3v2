@@ -57,6 +57,7 @@ namespace ID3v2
             bool                   valid;
             ID3v2Header            header;
             std::size_t            headerSize;
+            ExtendedHeader       * extendedHeader;
             std::vector< Frame * > frames;
     };
     
@@ -76,10 +77,7 @@ namespace ID3v2
     
     Tag::~Tag( void )
     {
-        if( this->impl != NULL )
-        {
-            delete this->impl;
-        }
+        delete this->impl;
     }
     
     Tag & Tag::operator =( const Tag & tag )
@@ -146,6 +144,16 @@ namespace ID3v2
         return this->impl->headerSize;
     }
     
+    ExtendedHeader * Tag::GetExtendedHeader( void )
+    {
+        if( this->IsValid() == false )
+        {
+            return NULL;
+        }
+        
+        return this->impl->extendedHeader;
+    }
+    
     std::vector< Frame * > Tag::GetFrames( void ) const
     {
         if( this->IsValid() == false )
@@ -181,8 +189,9 @@ namespace ID3v2
     
     Tag::IMPL::IMPL( void )
     {
-        this->valid      = false;
-        this->headerSize = 0;
+        this->valid             = false;
+        this->headerSize        = 0;
+        this->extendedHeader    = NULL;
         
         memset( &( this->header ), 0, sizeof( ID3v2Header ) );
     }
@@ -190,6 +199,8 @@ namespace ID3v2
     Tag::IMPL::~IMPL( void )
     {
         std::vector< Frame * >::iterator it;
+        
+        delete this->extendedHeader;
         
         for( it = this->frames.begin(); it != this->frames.end(); ++it )
         {
@@ -244,6 +255,22 @@ namespace ID3v2
             s3 <<= 7;
             
             this->headerSize = s1 | s2 | s3 | s4;
+        }
+        
+        if( this->header.flags & 0x40 )
+        {
+            {
+                ExtendedHeader * exHeader;
+                
+                exHeader = ExtendedHeader::NewExtendedHeaderFromFileHandle( fh );
+                
+                if( exHeader == NULL )
+                {
+                    goto end;
+                }
+                
+                this->extendedHeader = exHeader;
+            }
         }
         
         bytes = 0;

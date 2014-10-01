@@ -36,9 +36,100 @@
  */
 
 #include <ID3v2.h>
+#include <ID3v2/ID3v2-PrivateTypes.h>
 
 namespace ID3v2
 {
+    #ifdef __clang__
+    #pragma clang diagnostic push
+    #pragma clang diagnostic ignored "-Wpadded"
+    #endif
+    
+    class ExtendedHeader::IMPL
+    {
+        public:
+            
+            IMPL( void );
+            ~IMPL( void );
+            
+            ID3v2ExtendedHeader header;
+            std::size_t         headerSize;
+    };
+    
+    #ifdef __clang__
+    #pragma clang diagnostic pop
+    #endif
+    
+    ExtendedHeader::ExtendedHeader( void ): impl( new IMPL )
+    {}
+    
     ExtendedHeader::~ExtendedHeader( void )
+    {
+        delete this->impl;
+    }
+    
+    std::size_t ExtendedHeader::GetSize( void )
+    {
+        return this->impl->headerSize;
+    }
+    
+    ExtendedHeader * ExtendedHeader::NewExtendedHeaderFromFileHandle( FILE * fh )
+    {
+        ExtendedHeader    * header;
+        ID3v2ExtendedHeader exHeader;
+        std::size_t         size;
+        
+        if( fh == NULL )
+        {
+            return NULL;
+        }
+        
+        if( fread( &exHeader, 1, sizeof( ID3v2ExtendedHeader ), fh ) != sizeof( ID3v2ExtendedHeader ) )
+        {
+            return NULL;
+        }
+        
+        {
+            std::size_t s1;
+            std::size_t s2;
+            std::size_t s3;
+            std::size_t s4;
+            
+            s1   = static_cast< std::size_t >( exHeader.size[ 0 ] );
+            s2   = static_cast< std::size_t >( exHeader.size[ 1 ] );
+            s3   = static_cast< std::size_t >( exHeader.size[ 2 ] );
+            s4   = static_cast< std::size_t >( exHeader.size[ 3 ] );
+            s1  &= 0x7F;
+            s2  &= 0x7F;
+            s3  &= 0x7F;
+            s4  &= 0x7F;
+            s1 <<= 21;
+            s2 <<= 14;
+            s3 <<= 7;
+            
+            size = s1 | s2 | s3 | s4;
+        }
+        
+        if( fseek( fh, static_cast< long >( size ), SEEK_CUR ) != 0 )
+        {
+            return NULL;
+        }
+        
+        header                   = new ExtendedHeader();
+        header->impl->headerSize = size;
+        
+        memcpy( &( header->impl->header ), &exHeader, sizeof( ID3v2ExtendedHeader ) );
+        
+        return header;
+    }
+    
+    ExtendedHeader::IMPL::IMPL( void )
+    {
+        this->headerSize = 0;
+        
+        memset( &( this->header ), 0, sizeof( ID3v2ExtendedHeader ) );
+    }
+    
+    ExtendedHeader::IMPL::~IMPL( void )
     {}
 }

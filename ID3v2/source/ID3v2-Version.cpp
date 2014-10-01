@@ -67,10 +67,7 @@ namespace ID3v2
     
     Version::~Version( void )
     {
-        if( this->impl != NULL )
-        {
-            delete this->impl;
-        }
+        delete this->impl;
     }
     
     Version & Version::operator =( const Version & version )
