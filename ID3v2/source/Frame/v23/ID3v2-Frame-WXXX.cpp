@@ -61,6 +61,11 @@ namespace ID3v2
             void WXXX::ProcessData( void )
             {}
             
+            std::string WXXX::GetDescription( void ) const
+            {
+                return "User defined URL link frame";
+            }
+            
             WXXX::IMPL::IMPL( void )
             {}
         }

@@ -61,6 +61,11 @@ namespace ID3v2
             void WOAS::ProcessData( void )
             {}
             
+            std::string WOAS::GetDescription( void ) const
+            {
+                return "Official audio source webpage";
+            }
+            
             WOAS::IMPL::IMPL( void )
             {}
         }

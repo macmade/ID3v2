@@ -61,6 +61,11 @@ namespace ID3v2
             void TRSO::ProcessData( void )
             {}
             
+            std::string TRSO::GetDescription( void ) const
+            {
+                return "Internet radio station owner";
+            }
+            
             TRSO::IMPL::IMPL( void )
             {}
         }

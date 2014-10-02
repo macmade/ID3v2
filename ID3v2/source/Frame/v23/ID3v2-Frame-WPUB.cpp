@@ -61,6 +61,11 @@ namespace ID3v2
             void WPUB::ProcessData( void )
             {}
             
+            std::string WPUB::GetDescription( void ) const
+            {
+                return "Publishers official webpage";
+            }
+            
             WPUB::IMPL::IMPL( void )
             {}
         }

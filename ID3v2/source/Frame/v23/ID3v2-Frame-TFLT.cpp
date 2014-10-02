@@ -61,6 +61,11 @@ namespace ID3v2
             void TFLT::ProcessData( void )
             {}
             
+            std::string TFLT::GetDescription( void ) const
+            {
+                return "File type";
+            }
+            
             TFLT::IMPL::IMPL( void )
             {}
         }

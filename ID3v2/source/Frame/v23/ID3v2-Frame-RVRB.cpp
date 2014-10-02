@@ -61,6 +61,11 @@ namespace ID3v2
             void RVRB::ProcessData( void )
             {}
             
+            std::string RVRB::GetDescription( void ) const
+            {
+                return "Reverb";
+            }
+            
             RVRB::IMPL::IMPL( void )
             {}
         }

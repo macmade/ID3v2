@@ -61,6 +61,11 @@ namespace ID3v2
             void USLT::ProcessData( void )
             {}
             
+            std::string USLT::GetDescription( void ) const
+            {
+                return "Unsychronized lyric/text transcription";
+            }
+            
             USLT::IMPL::IMPL( void )
             {}
         }

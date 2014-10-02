@@ -63,11 +63,12 @@ namespace ID3v2
             virtual ~AbstractFrame( void );
             
             std::string     GetName( void ) const;
-            std::string     GetDescription( void ) const;
             std::size_t     GetSize( void ) const;
             const char *    GetData( void ) const;
             unsigned short  GetFlags( void ) const;
             bool            HasFlag( Flag flag ) const;
+            
+            virtual std::string GetDescription( void ) const = 0;
             
         protected:
             

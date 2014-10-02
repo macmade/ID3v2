@@ -61,6 +61,11 @@ namespace ID3v2
             void TIT1::ProcessData( void )
             {}
             
+            std::string TIT1::GetDescription( void ) const
+            {
+                return "Content group description";
+            }
+            
             TIT1::IMPL::IMPL( void )
             {}
         }

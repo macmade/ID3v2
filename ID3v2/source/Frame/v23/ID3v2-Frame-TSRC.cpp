@@ -61,6 +61,11 @@ namespace ID3v2
             void TSRC::ProcessData( void )
             {}
             
+            std::string TSRC::GetDescription( void ) const
+            {
+                return "ISRC (international standard recording code)";
+            }
+            
             TSRC::IMPL::IMPL( void )
             {}
         }

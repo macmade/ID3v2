@@ -61,6 +61,11 @@ namespace ID3v2
             void ETCO::ProcessData( void )
             {}
             
+            std::string ETCO::GetDescription( void ) const
+            {
+                return "Event timing codes";
+            }
+            
             ETCO::IMPL::IMPL( void )
             {}
         }

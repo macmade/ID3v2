@@ -61,6 +61,11 @@ namespace ID3v2
             void TCOP::ProcessData( void )
             {}
             
+            std::string TCOP::GetDescription( void ) const
+            {
+                return "Copyright message";
+            }
+            
             TCOP::IMPL::IMPL( void )
             {}
         }

@@ -61,6 +61,11 @@ namespace ID3v2
             void TRSN::ProcessData( void )
             {}
             
+            std::string TRSN::GetDescription( void ) const
+            {
+                return "Internet radio station name";
+            }
+            
             TRSN::IMPL::IMPL( void )
             {}
         }

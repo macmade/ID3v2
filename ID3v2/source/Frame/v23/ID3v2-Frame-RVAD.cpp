@@ -61,6 +61,11 @@ namespace ID3v2
             void RVAD::ProcessData( void )
             {}
             
+            std::string RVAD::GetDescription( void ) const
+            {
+                return "Relative volume adjustment";
+            }
+            
             RVAD::IMPL::IMPL( void )
             {}
         }

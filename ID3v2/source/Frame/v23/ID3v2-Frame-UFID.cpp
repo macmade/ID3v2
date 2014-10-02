@@ -61,6 +61,11 @@ namespace ID3v2
             void UFID::ProcessData( void )
             {}
             
+            std::string UFID::GetDescription( void ) const
+            {
+                return "Unique file identifier";
+            }
+            
             UFID::IMPL::IMPL( void )
             {}
         }

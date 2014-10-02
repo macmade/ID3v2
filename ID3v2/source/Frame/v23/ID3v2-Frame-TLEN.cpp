@@ -61,6 +61,11 @@ namespace ID3v2
             void TLEN::ProcessData( void )
             {}
             
+            std::string TLEN::GetDescription( void ) const
+            {
+                return "Length";
+            }
+            
             TLEN::IMPL::IMPL( void )
             {}
         }

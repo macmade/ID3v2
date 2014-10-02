@@ -61,6 +61,11 @@ namespace ID3v2
             void TDLY::ProcessData( void )
             {}
             
+            std::string TDLY::GetDescription( void ) const
+            {
+                return "Playlist delay";
+            }
+            
             TDLY::IMPL::IMPL( void )
             {}
         }

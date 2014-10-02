@@ -61,6 +61,11 @@ namespace ID3v2
             void POSS::ProcessData( void )
             {}
             
+            std::string POSS::GetDescription( void ) const
+            {
+                return "Position synchronisation frame";
+            }
+            
             POSS::IMPL::IMPL( void )
             {}
         }

@@ -61,6 +61,11 @@ namespace ID3v2
             void TXXX::ProcessData( void )
             {}
             
+            std::string TXXX::GetDescription( void ) const
+            {
+                return "User defined text information frame";
+            }
+            
             TXXX::IMPL::IMPL( void )
             {}
         }

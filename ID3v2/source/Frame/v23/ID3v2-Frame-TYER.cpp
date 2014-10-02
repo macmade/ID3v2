@@ -61,6 +61,11 @@ namespace ID3v2
             void TYER::ProcessData( void )
             {}
             
+            std::string TYER::GetDescription( void ) const
+            {
+                return "Year";
+            }
+            
             TYER::IMPL::IMPL( void )
             {}
         }

@@ -61,6 +61,11 @@ namespace ID3v2
             void GRID::ProcessData( void )
             {}
             
+            std::string GRID::GetDescription( void ) const
+            {
+                return "Group identification registration";
+            }
+            
             GRID::IMPL::IMPL( void )
             {}
         }

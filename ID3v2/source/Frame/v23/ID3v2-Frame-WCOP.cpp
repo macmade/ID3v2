@@ -61,6 +61,11 @@ namespace ID3v2
             void WCOP::ProcessData( void )
             {}
             
+            std::string WCOP::GetDescription( void ) const
+            {
+                return "Copyright/Legal information";
+            }
+            
             WCOP::IMPL::IMPL( void )
             {}
         }

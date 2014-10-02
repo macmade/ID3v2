@@ -61,6 +61,11 @@ namespace ID3v2
             void WPAY::ProcessData( void )
             {}
             
+            std::string WPAY::GetDescription( void ) const
+            {
+                return "Payment";
+            }
+            
             WPAY::IMPL::IMPL( void )
             {}
         }

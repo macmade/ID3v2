@@ -61,6 +61,11 @@ namespace ID3v2
             void TIME::ProcessData( void )
             {}
             
+            std::string TIME::GetDescription( void ) const
+            {
+                return "Time";
+            }
+            
             TIME::IMPL::IMPL( void )
             {}
         }

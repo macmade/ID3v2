@@ -61,6 +61,11 @@ namespace ID3v2
             void TEXT::ProcessData( void )
             {}
             
+            std::string TEXT::GetDescription( void ) const
+            {
+                return "Lyricist/Text writer";
+            }
+            
             TEXT::IMPL::IMPL( void )
             {}
         }

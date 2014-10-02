@@ -61,6 +61,11 @@ namespace ID3v2
             void TIT2::ProcessData( void )
             {}
             
+            std::string TIT2::GetDescription( void ) const
+            {
+                return "Title/songname/content description";
+            }
+            
             TIT2::IMPL::IMPL( void )
             {}
         }

@@ -61,6 +61,11 @@ namespace ID3v2
             void AENC::ProcessData( void )
             {}
             
+            std::string AENC::GetDescription( void ) const
+            {
+                return "Audio encryption";
+            }
+            
             AENC::IMPL::IMPL( void )
             {}
         }

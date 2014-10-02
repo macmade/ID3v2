@@ -61,6 +61,11 @@ namespace ID3v2
             void LINK::ProcessData( void )
             {}
             
+            std::string LINK::GetDescription( void ) const
+            {
+                return "Linked information";
+            }
+            
             LINK::IMPL::IMPL( void )
             {}
         }

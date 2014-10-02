@@ -61,6 +61,11 @@ namespace ID3v2
             void TKEY::ProcessData( void )
             {}
             
+            std::string TKEY::GetDescription( void ) const
+            {
+                return "Initial key";
+            }
+            
             TKEY::IMPL::IMPL( void )
             {}
         }

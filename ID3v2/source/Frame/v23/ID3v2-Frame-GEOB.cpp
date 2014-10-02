@@ -61,6 +61,11 @@ namespace ID3v2
             void GEOB::ProcessData( void )
             {}
             
+            std::string GEOB::GetDescription( void ) const
+            {
+                return "General encapsulated object";
+            }
+            
             GEOB::IMPL::IMPL( void )
             {}
         }

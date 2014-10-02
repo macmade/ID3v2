@@ -61,6 +61,11 @@ namespace ID3v2
             void PRIV::ProcessData( void )
             {}
             
+            std::string PRIV::GetDescription( void ) const
+            {
+                return "Private frame";
+            }
+            
             PRIV::IMPL::IMPL( void )
             {}
         }

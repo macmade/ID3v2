@@ -61,6 +61,11 @@ namespace ID3v2
             void SYLT::ProcessData( void )
             {}
             
+            std::string SYLT::GetDescription( void ) const
+            {
+                return "Synchronized lyric/text";
+            }
+            
             SYLT::IMPL::IMPL( void )
             {}
         }

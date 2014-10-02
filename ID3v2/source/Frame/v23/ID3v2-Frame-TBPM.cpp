@@ -61,6 +61,11 @@ namespace ID3v2
             void TBPM::ProcessData( void )
             {}
             
+            std::string TBPM::GetDescription( void ) const
+            {
+                return "BPM (beats per minute)";
+            }
+            
             TBPM::IMPL::IMPL( void )
             {}
         }

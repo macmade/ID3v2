@@ -61,6 +61,11 @@ namespace ID3v2
             void TSIZ::ProcessData( void )
             {}
             
+            std::string TSIZ::GetDescription( void ) const
+            {
+                return "Size";
+            }
+            
             TSIZ::IMPL::IMPL( void )
             {}
         }

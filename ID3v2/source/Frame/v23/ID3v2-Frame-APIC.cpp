@@ -61,6 +61,11 @@ namespace ID3v2
             void APIC::ProcessData( void )
             {}
             
+            std::string APIC::GetDescription( void ) const
+            {
+                return "Attached picture";
+            }
+            
             APIC::IMPL::IMPL( void )
             {}
         }

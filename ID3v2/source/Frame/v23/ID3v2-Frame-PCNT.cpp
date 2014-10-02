@@ -61,6 +61,11 @@ namespace ID3v2
             void PCNT::ProcessData( void )
             {}
             
+            std::string PCNT::GetDescription( void ) const
+            {
+                return "Play counter";
+            }
+            
             PCNT::IMPL::IMPL( void )
             {}
         }

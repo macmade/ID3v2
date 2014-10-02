@@ -61,6 +61,11 @@ namespace ID3v2
             void TMED::ProcessData( void )
             {}
             
+            std::string TMED::GetDescription( void ) const
+            {
+                return "Media type";
+            }
+            
             TMED::IMPL::IMPL( void )
             {}
         }

@@ -61,6 +61,11 @@ namespace ID3v2
             void COMM::ProcessData( void )
             {}
             
+            std::string COMM::GetDescription( void ) const
+            {
+                return "Comments";
+            }
+            
             COMM::IMPL::IMPL( void )
             {}
         }

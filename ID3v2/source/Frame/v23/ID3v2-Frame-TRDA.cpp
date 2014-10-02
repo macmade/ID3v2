@@ -61,6 +61,11 @@ namespace ID3v2
             void TRDA::ProcessData( void )
             {}
             
+            std::string TRDA::GetDescription( void ) const
+            {
+                return "Recording dates";
+            }
+            
             TRDA::IMPL::IMPL( void )
             {}
         }

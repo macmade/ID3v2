@@ -61,6 +61,11 @@ namespace ID3v2
             void OWNE::ProcessData( void )
             {}
             
+            std::string OWNE::GetDescription( void ) const
+            {
+                return "Ownership frame";
+            }
+            
             OWNE::IMPL::IMPL( void )
             {}
         }

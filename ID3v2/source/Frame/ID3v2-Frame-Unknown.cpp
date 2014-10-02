@@ -59,6 +59,11 @@ namespace ID3v2
         void Unknown::ProcessData( void )
         {}
         
+        std::string Unknown::GetDescription( void ) const
+        {
+            return "Unknown";
+        }
+        
         Unknown::IMPL::IMPL( void )
         {}
     }

@@ -61,6 +61,11 @@ namespace ID3v2
             void TPE4::ProcessData( void )
             {}
             
+            std::string TPE4::GetDescription( void ) const
+            {
+                return "Interpreted, remixed, or otherwise modified by";
+            }
+            
             TPE4::IMPL::IMPL( void )
             {}
         }

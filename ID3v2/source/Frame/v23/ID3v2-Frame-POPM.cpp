@@ -61,6 +61,11 @@ namespace ID3v2
             void POPM::ProcessData( void )
             {}
             
+            std::string POPM::GetDescription( void ) const
+            {
+                return "Popularimeter";
+            }
+            
             POPM::IMPL::IMPL( void )
             {}
         }

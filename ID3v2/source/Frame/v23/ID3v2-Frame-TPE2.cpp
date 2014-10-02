@@ -61,6 +61,11 @@ namespace ID3v2
             void TPE2::ProcessData( void )
             {}
             
+            std::string TPE2::GetDescription( void ) const
+            {
+                return "Band/orchestra/accompaniment";
+            }
+            
             TPE2::IMPL::IMPL( void )
             {}
         }

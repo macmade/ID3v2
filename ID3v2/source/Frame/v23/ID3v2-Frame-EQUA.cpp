@@ -61,6 +61,11 @@ namespace ID3v2
             void EQUA::ProcessData( void )
             {}
             
+            std::string EQUA::GetDescription( void ) const
+            {
+                return "Equalization";
+            }
+            
             EQUA::IMPL::IMPL( void )
             {}
         }

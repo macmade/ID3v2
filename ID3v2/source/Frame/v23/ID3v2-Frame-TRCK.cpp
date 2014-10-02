@@ -61,6 +61,11 @@ namespace ID3v2
             void TRCK::ProcessData( void )
             {}
             
+            std::string TRCK::GetDescription( void ) const
+            {
+                return "Track number/Position in set";
+            }
+            
             TRCK::IMPL::IMPL( void )
             {}
         }

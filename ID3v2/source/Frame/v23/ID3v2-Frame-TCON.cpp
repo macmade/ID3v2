@@ -61,6 +61,11 @@ namespace ID3v2
             void TCON::ProcessData( void )
             {}
             
+            std::string TCON::GetDescription( void ) const
+            {
+                return "Content type";
+            }
+            
             TCON::IMPL::IMPL( void )
             {}
         }

@@ -61,6 +61,11 @@ namespace ID3v2
             void MCDI::ProcessData( void )
             {}
             
+            std::string MCDI::GetDescription( void ) const
+            {
+                return "Music CD identifier";
+            }
+            
             MCDI::IMPL::IMPL( void )
             {}
         }

@@ -61,6 +61,11 @@ namespace ID3v2
             void TDAT::ProcessData( void )
             {}
             
+            std::string TDAT::GetDescription( void ) const
+            {
+                return "Date";
+            }
+            
             TDAT::IMPL::IMPL( void )
             {}
         }

@@ -61,6 +61,11 @@ namespace ID3v2
             void RBUF::ProcessData( void )
             {}
             
+            std::string RBUF::GetDescription( void ) const
+            {
+                return "Recommended buffer size";
+            }
+            
             RBUF::IMPL::IMPL( void )
             {}
         }

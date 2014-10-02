@@ -61,6 +61,11 @@ namespace ID3v2
             void TSSE::ProcessData( void )
             {}
             
+            std::string TSSE::GetDescription( void ) const
+            {
+                return "Software/Hardware and settings used for encoding";
+            }
+            
             TSSE::IMPL::IMPL( void )
             {}
         }

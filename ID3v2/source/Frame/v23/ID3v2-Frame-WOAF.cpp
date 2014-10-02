@@ -61,6 +61,11 @@ namespace ID3v2
             void WOAF::ProcessData( void )
             {}
             
+            std::string WOAF::GetDescription( void ) const
+            {
+                return "Official audio file webpage";
+            }
+            
             WOAF::IMPL::IMPL( void )
             {}
         }

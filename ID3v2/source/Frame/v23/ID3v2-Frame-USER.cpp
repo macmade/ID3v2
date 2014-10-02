@@ -61,6 +61,11 @@ namespace ID3v2
             void USER::ProcessData( void )
             {}
             
+            std::string USER::GetDescription( void ) const
+            {
+                return "Terms of use";
+            }
+            
             USER::IMPL::IMPL( void )
             {}
         }

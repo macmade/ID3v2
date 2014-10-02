@@ -61,6 +61,11 @@ namespace ID3v2
             void TPE1::ProcessData( void )
             {}
             
+            std::string TPE1::GetDescription( void ) const
+            {
+                return "Lead performer(s)/Soloist(s)";
+            }
+            
             TPE1::IMPL::IMPL( void )
             {}
         }

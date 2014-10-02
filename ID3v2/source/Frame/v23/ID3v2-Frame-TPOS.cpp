@@ -61,6 +61,11 @@ namespace ID3v2
             void TPOS::ProcessData( void )
             {}
             
+            std::string TPOS::GetDescription( void ) const
+            {
+                return "Part of a set";
+            }
+            
             TPOS::IMPL::IMPL( void )
             {}
         }

@@ -61,6 +61,11 @@ namespace ID3v2
             void TCOM::ProcessData( void )
             {}
             
+            std::string TCOM::GetDescription( void ) const
+            {
+                return "Composer";
+            }
+            
             TCOM::IMPL::IMPL( void )
             {}
         }

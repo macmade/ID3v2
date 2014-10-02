@@ -61,6 +61,11 @@ namespace ID3v2
             void TOPE::ProcessData( void )
             {}
             
+            std::string TOPE::GetDescription( void ) const
+            {
+                return "Original artist(s)/performer(s)";
+            }
+            
             TOPE::IMPL::IMPL( void )
             {}
         }

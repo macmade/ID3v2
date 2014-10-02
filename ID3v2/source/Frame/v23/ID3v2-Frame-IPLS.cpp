@@ -61,6 +61,11 @@ namespace ID3v2
             void IPLS::ProcessData( void )
             {}
             
+            std::string IPLS::GetDescription( void ) const
+            {
+                return "Involved people list";
+            }
+            
             IPLS::IMPL::IMPL( void )
             {}
         }

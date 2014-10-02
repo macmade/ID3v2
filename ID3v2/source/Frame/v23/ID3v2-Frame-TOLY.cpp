@@ -61,6 +61,11 @@ namespace ID3v2
             void TOLY::ProcessData( void )
             {}
             
+            std::string TOLY::GetDescription( void ) const
+            {
+                return "Original lyricist(s)/text writer(s)";
+            }
+            
             TOLY::IMPL::IMPL( void )
             {}
         }

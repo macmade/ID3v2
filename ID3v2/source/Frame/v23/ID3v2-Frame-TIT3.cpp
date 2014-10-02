@@ -61,6 +61,11 @@ namespace ID3v2
             void TIT3::ProcessData( void )
             {}
             
+            std::string TIT3::GetDescription( void ) const
+            {
+                return "Subtitle/Description refinement";
+            }
+            
             TIT3::IMPL::IMPL( void )
             {}
         }

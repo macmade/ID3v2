@@ -61,6 +61,11 @@ namespace ID3v2
             void TOWN::ProcessData( void )
             {}
             
+            std::string TOWN::GetDescription( void ) const
+            {
+                return "File owner/licensee";
+            }
+            
             TOWN::IMPL::IMPL( void )
             {}
         }

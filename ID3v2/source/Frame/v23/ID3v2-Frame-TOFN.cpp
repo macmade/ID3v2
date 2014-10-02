@@ -61,6 +61,11 @@ namespace ID3v2
             void TOFN::ProcessData( void )
             {}
             
+            std::string TOFN::GetDescription( void ) const
+            {
+                return "Original filename";
+            }
+            
             TOFN::IMPL::IMPL( void )
             {}
         }

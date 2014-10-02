@@ -61,6 +61,11 @@ namespace ID3v2
             void TPUB::ProcessData( void )
             {}
             
+            std::string TPUB::GetDescription( void ) const
+            {
+                return "Publisher";
+            }
+            
             TPUB::IMPL::IMPL( void )
             {}
         }

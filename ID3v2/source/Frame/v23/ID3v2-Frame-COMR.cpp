@@ -61,6 +61,11 @@ namespace ID3v2
             void COMR::ProcessData( void )
             {}
             
+            std::string COMR::GetDescription( void ) const
+            {
+                return "Commercial frame";
+            }
+            
             COMR::IMPL::IMPL( void )
             {}
         }

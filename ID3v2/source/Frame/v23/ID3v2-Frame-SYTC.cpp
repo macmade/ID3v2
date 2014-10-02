@@ -61,6 +61,11 @@ namespace ID3v2
             void SYTC::ProcessData( void )
             {}
             
+            std::string SYTC::GetDescription( void ) const
+            {
+                return "Synchronized tempo codes";
+            }
+            
             SYTC::IMPL::IMPL( void )
             {}
         }

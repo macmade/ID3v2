@@ -61,6 +61,11 @@ namespace ID3v2
             void TALB::ProcessData( void )
             {}
             
+            std::string TALB::GetDescription( void ) const
+            {
+                return "Album/Movie/Show title";
+            }
+            
             TALB::IMPL::IMPL( void )
             {}
         }

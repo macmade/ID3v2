@@ -61,6 +61,11 @@ namespace ID3v2
             void TPE3::ProcessData( void )
             {}
             
+            std::string TPE3::GetDescription( void ) const
+            {
+                return "Conductor/performer refinement";
+            }
+            
             TPE3::IMPL::IMPL( void )
             {}
         }

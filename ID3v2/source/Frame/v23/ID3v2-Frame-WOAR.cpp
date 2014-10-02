@@ -61,6 +61,11 @@ namespace ID3v2
             void WOAR::ProcessData( void )
             {}
             
+            std::string WOAR::GetDescription( void ) const
+            {
+                return "Official artist/performer webpage";
+            }
+            
             WOAR::IMPL::IMPL( void )
             {}
         }

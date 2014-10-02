@@ -61,6 +61,11 @@ namespace ID3v2
             void WORS::ProcessData( void )
             {}
             
+            std::string WORS::GetDescription( void ) const
+            {
+                return "Official internet radio station homepage";
+            }
+            
             WORS::IMPL::IMPL( void )
             {}
         }

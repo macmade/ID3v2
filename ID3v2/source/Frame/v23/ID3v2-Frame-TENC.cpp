@@ -61,6 +61,11 @@ namespace ID3v2
             void TENC::ProcessData( void )
             {}
             
+            std::string TENC::GetDescription( void ) const
+            {
+                return "Encoded by";
+            }
+            
             TENC::IMPL::IMPL( void )
             {}
         }

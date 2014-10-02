@@ -61,6 +61,11 @@ namespace ID3v2
             void TOAL::ProcessData( void )
             {}
             
+            std::string TOAL::GetDescription( void ) const
+            {
+                return "Original album/movie/show title";
+            }
+            
             TOAL::IMPL::IMPL( void )
             {}
         }

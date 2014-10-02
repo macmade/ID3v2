@@ -61,6 +61,11 @@ namespace ID3v2
             void MLLT::ProcessData( void )
             {}
             
+            std::string MLLT::GetDescription( void ) const
+            {
+                return "MPEG location lookup table";
+            }
+            
             MLLT::IMPL::IMPL( void )
             {}
         }

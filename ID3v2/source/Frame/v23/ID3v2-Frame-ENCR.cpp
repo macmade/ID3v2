@@ -61,6 +61,11 @@ namespace ID3v2
             void ENCR::ProcessData( void )
             {}
             
+            std::string ENCR::GetDescription( void ) const
+            {
+                return "Encryption method registration";
+            }
+            
             ENCR::IMPL::IMPL( void )
             {}
         }

@@ -61,6 +61,11 @@ namespace ID3v2
             void WCOM::ProcessData( void )
             {}
             
+            std::string WCOM::GetDescription( void ) const
+            {
+                return "Commercial information";
+            }
+            
             WCOM::IMPL::IMPL( void )
             {}
         }

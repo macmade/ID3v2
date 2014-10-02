@@ -53,7 +53,8 @@ namespace ID3v2
                 
                 protected:
                         
-                        void ProcessData( void );
+                        void        ProcessData( void );
+                        std::string GetDescription( void ) const;
                         
                 private:
                         

@@ -61,6 +61,11 @@ namespace ID3v2
             void TORY::ProcessData( void )
             {}
             
+            std::string TORY::GetDescription( void ) const
+            {
+                return "Original release year";
+            }
+            
             TORY::IMPL::IMPL( void )
             {}
         }

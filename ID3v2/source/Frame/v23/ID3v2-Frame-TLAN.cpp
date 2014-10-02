@@ -61,6 +61,11 @@ namespace ID3v2
             void TLAN::ProcessData( void )
             {}
             
+            std::string TLAN::GetDescription( void ) const
+            {
+                return "Language(s)";
+            }
+            
             TLAN::IMPL::IMPL( void )
             {}
         }
