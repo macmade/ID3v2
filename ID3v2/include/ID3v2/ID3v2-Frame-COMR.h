@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class COMR: public Frame
+        class COMR: public AbstractFrame
         {
             public:
                 

@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TLAN: public Frame
+        class TLAN: public AbstractFrame
         {
             public:
                 

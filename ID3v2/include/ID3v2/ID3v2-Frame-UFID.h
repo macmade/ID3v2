@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class UFID: public Frame
+        class UFID: public AbstractFrame
         {
             public:
                 

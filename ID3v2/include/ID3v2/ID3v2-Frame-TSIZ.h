@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TSIZ: public Frame
+        class TSIZ: public AbstractFrame
         {
             public:
                 

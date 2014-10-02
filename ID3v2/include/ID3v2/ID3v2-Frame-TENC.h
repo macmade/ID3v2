@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TENC: public Frame
+        class TENC: public AbstractFrame
         {
             public:
                 

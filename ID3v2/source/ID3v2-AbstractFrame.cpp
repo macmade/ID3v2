@@ -30,9 +30,9 @@
 /* $Id$ */
 
 /*!
- * @header      ID3v2-Frame.cpp
+ * @header      ID3v2-AbstractFrame.cpp
  * @copyright   (c) 2014 - Jean-David Gadina - www.xs-labs.com / www.digidna.net
- * @abstract    ID3v2 frame
+ * @abstract    ID3v2 abstract frame
  */
 
 #include <ID3v2.h>
@@ -46,12 +46,12 @@ namespace ID3v2
     #pragma clang diagnostic ignored "-Wpadded"
     #endif
     
-    class Frame::IMPL
+    class AbstractFrame::IMPL
     {
         public:
             
-            static Frame * NewFrame( ID3v22Frame header, std::size_t size, char * data, Version version );
-            static Frame * NewFrame( ID3v23Frame header, std::size_t size, char * data, Version version );
+            static AbstractFrame * NewFrame( ID3v22Frame header, std::size_t size, char * data, Version version );
+            static AbstractFrame * NewFrame( ID3v23Frame header, std::size_t size, char * data, Version version );
             
             IMPL( void );
             ~IMPL( void );
@@ -67,7 +67,7 @@ namespace ID3v2
     #pragma clang diagnostic pop
     #endif
     
-    Frame * Frame::NewFrameFromFileHandle( FILE * fh, Version version )
+    AbstractFrame * AbstractFrame::NewFrameFromFileHandle( FILE * fh, Version version )
     {
         ID3v22Frame  frameHeader22;
         ID3v23Frame  frameHeader23;
@@ -149,25 +149,25 @@ namespace ID3v2
         
         if( version < Version( 2, 3, 0 ) )
         {
-            return Frame::IMPL::NewFrame( frameHeader22, frameSize, data, version );
+            return AbstractFrame::IMPL::NewFrame( frameHeader22, frameSize, data, version );
         }
         
-        return Frame::IMPL::NewFrame( frameHeader23, frameSize, data, version );
+        return AbstractFrame::IMPL::NewFrame( frameHeader23, frameSize, data, version );
         
         error:
         
         return NULL;
     }
     
-    Frame::Frame( void ): impl( new IMPL )
+    AbstractFrame::AbstractFrame( void ): impl( new IMPL )
     {}
     
-    Frame::~Frame( void )
+    AbstractFrame::~AbstractFrame( void )
     {
         delete this->impl;
     }
     
-    std::string Frame::GetName( void ) const
+    std::string AbstractFrame::GetName( void ) const
     {
         std::stringstream ss;
         
@@ -188,7 +188,7 @@ namespace ID3v2
         return ss.str();
     }
     
-    std::string Frame::GetDescription( void ) const
+    std::string AbstractFrame::GetDescription( void ) const
     {
         std::string name;
         
@@ -272,17 +272,17 @@ namespace ID3v2
         return "Unknown";
     }
     
-    std::size_t Frame::GetSize( void ) const
+    std::size_t AbstractFrame::GetSize( void ) const
     {
         return this->impl->frameSize;
     }
     
-    const char * Frame::GetData( void ) const
+    const char * AbstractFrame::GetData( void ) const
     {
         return this->impl->data;
     }
     
-    unsigned short  Frame::GetFlags( void ) const
+    unsigned short  AbstractFrame::GetFlags( void ) const
     {
         unsigned short f1;
         unsigned short f2;
@@ -301,7 +301,7 @@ namespace ID3v2
         return f1 | f2;
     }
     
-    bool Frame::HasFlag( Flag flag ) const
+    bool AbstractFrame::HasFlag( Flag flag ) const
     {
         unsigned short flags;
         
@@ -320,9 +320,9 @@ namespace ID3v2
         return false;
     }
     
-    Frame * Frame::IMPL::NewFrame( ID3v22Frame header, std::size_t size, char * data, Version version )
+    AbstractFrame * AbstractFrame::IMPL::NewFrame( ID3v22Frame header, std::size_t size, char * data, Version version )
     {
-        Frame           * frame;
+        AbstractFrame   * frame;
         std::stringstream ss;
         std::string       name;
         
@@ -346,9 +346,9 @@ namespace ID3v2
         return frame;
     }
     
-    Frame * Frame::IMPL::NewFrame( ID3v23Frame header, std::size_t size, char * data, Version version )
+    AbstractFrame * AbstractFrame::IMPL::NewFrame( ID3v23Frame header, std::size_t size, char * data, Version version )
     {
-        Frame           * frame;
+        AbstractFrame   * frame;
         std::stringstream ss;
         std::string       name;
         
@@ -448,7 +448,7 @@ namespace ID3v2
         return frame;
     }
     
-    Frame::IMPL::IMPL( void ): version( 0, 0, 0 )
+    AbstractFrame::IMPL::IMPL( void ): version( 0, 0, 0 )
     {
         this->frameSize = 0;
         this->data      = NULL;
@@ -457,7 +457,7 @@ namespace ID3v2
         memset( &( this->frame23 ), 0, sizeof( ID3v23Frame ) );
     }
     
-    Frame::IMPL::~IMPL( void )
+    AbstractFrame::IMPL::~IMPL( void )
     {
         delete[] this->data;
     }

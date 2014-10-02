@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TKEY: public Frame
+        class TKEY: public AbstractFrame
         {
             public:
                 

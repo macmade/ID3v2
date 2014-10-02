@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class MCDI: public Frame
+        class MCDI: public AbstractFrame
         {
             public:
                 

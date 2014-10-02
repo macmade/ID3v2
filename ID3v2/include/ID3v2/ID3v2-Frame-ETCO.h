@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class ETCO: public Frame
+        class ETCO: public AbstractFrame
         {
             public:
                 

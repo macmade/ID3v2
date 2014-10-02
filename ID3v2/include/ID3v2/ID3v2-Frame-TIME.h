@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TIME: public Frame
+        class TIME: public AbstractFrame
         {
             public:
                 

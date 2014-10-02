@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class WOAF: public Frame
+        class WOAF: public AbstractFrame
         {
             public:
                 

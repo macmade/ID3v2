@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TDAT: public Frame
+        class TDAT: public AbstractFrame
         {
             public:
                 

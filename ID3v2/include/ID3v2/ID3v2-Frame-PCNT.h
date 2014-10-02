@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class PCNT: public Frame
+        class PCNT: public AbstractFrame
         {
             public:
                 

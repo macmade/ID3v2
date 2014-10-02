@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TORY: public Frame
+        class TORY: public AbstractFrame
         {
             public:
                 

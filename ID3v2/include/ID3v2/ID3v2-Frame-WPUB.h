@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class WPUB: public Frame
+        class WPUB: public AbstractFrame
         {
             public:
                 

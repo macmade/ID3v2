@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class GRID: public Frame
+        class GRID: public AbstractFrame
         {
             public:
                 

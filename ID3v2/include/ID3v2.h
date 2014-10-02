@@ -43,7 +43,7 @@
 #include <vector>
 
 #include <ID3v2/ID3v2-Version.h>
-#include <ID3v2/ID3v2-Frame.h>
+#include <ID3v2/ID3v2-AbstractFrame.h>
 #include <ID3v2/ID3v2-ExtendedHeader.h>
 #include <ID3v2/ID3v2-Tag.h>
 #include <ID3v2/ID3v2-Frame-Unknown.h>

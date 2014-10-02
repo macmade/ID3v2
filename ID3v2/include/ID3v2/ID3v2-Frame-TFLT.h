@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TFLT: public Frame
+        class TFLT: public AbstractFrame
         {
             public:
                 

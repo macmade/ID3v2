@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TALB: public Frame
+        class TALB: public AbstractFrame
         {
             public:
                 

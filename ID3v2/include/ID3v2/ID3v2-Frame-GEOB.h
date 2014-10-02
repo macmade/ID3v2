@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class GEOB: public Frame
+        class GEOB: public AbstractFrame
         {
             public:
                 

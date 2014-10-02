@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TCOP: public Frame
+        class TCOP: public AbstractFrame
         {
             public:
                 

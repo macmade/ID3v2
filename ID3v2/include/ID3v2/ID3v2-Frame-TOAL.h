@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TOAL: public Frame
+        class TOAL: public AbstractFrame
         {
             public:
                 

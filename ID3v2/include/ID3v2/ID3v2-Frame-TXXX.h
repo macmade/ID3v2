@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TXXX: public Frame
+        class TXXX: public AbstractFrame
         {
             public:
                 

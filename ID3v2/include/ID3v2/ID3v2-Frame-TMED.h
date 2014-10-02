@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TMED: public Frame
+        class TMED: public AbstractFrame
         {
             public:
                 

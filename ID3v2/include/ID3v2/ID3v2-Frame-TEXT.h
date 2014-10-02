@@ -48,7 +48,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TEXT: public Frame
+        class TEXT: public AbstractFrame
         {
             public:
                 

@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TYER: public Frame
+        class TYER: public AbstractFrame
         {
             public:
                 

@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class WPAY: public Frame
+        class WPAY: public AbstractFrame
         {
             public:
                 

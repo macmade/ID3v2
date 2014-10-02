@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class SYTC: public Frame
+        class SYTC: public AbstractFrame
         {
             public:
                 

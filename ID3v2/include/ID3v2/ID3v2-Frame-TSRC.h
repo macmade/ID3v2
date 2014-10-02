@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TSRC: public Frame
+        class TSRC: public AbstractFrame
         {
             public:
                 

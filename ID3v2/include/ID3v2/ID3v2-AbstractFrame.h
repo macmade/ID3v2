@@ -30,19 +30,19 @@
 /* $Id$ */
 
 /*!
- * @header      ID3v2-Frame.h
+ * @header      ID3v2-AbstractFrame.h
  * @copyright   (c) 2014 - Jean-David Gadina - www.xs-labs.com / www.digidna.net
  * @abstract    ID3v2 frame
  */
 
-#ifndef __ID3V2_FRAME__
-#define __ID3V2_FRAME__
+#ifndef __ID3V2_ABSTRACT_FRAME__
+#define __ID3V2_ABSTRACT_FRAME__
 
 namespace ID3v2
 {
     class Tag;
     
-    class Frame
+    class AbstractFrame
     {
         friend class Tag;
         
@@ -59,8 +59,8 @@ namespace ID3v2
             }
             Flag;
             
-            Frame( void );
-            virtual ~Frame( void );
+            AbstractFrame( void );
+            virtual ~AbstractFrame( void );
             
             std::string     GetName( void ) const;
             std::string     GetDescription( void ) const;
@@ -75,11 +75,11 @@ namespace ID3v2
             
         private:
             
-            static Frame * NewFrameFromFileHandle( FILE * fh, Version version );
+            static AbstractFrame * NewFrameFromFileHandle( FILE * fh, Version version );
             
             class  IMPL;
             IMPL * impl;
     };
 }
 
-#endif /* __ID3V2_FRAME__ */
+#endif /* __ID3V2_ABSTRACT_FRAME__ */

@@ -39,10 +39,10 @@
 
 int main( void )
 {
-    ID3v2::Tag                              tag( "/Users/macmade/Desktop/song.mp3" );
-    ID3v2::Frame                          * frame;     
-    std::vector< ID3v2::Frame * >           frames;
-    std::vector< ID3v2::Frame * >::iterator it;
+    ID3v2::Tag                                      tag( "/Users/macmade/Desktop/song.mp3" );
+    ID3v2::AbstractFrame                          * frame;     
+    std::vector< ID3v2::AbstractFrame * >           frames;
+    std::vector< ID3v2::AbstractFrame * >::iterator it;
     
     if( tag.IsValid() == false )
     {
@@ -70,12 +70,12 @@ int main( void )
             std::cout << "Frame: " << frame->GetName() << " (" << frame->GetDescription() << ")" << std::endl;
             std::cout << std::endl;
             std::cout << "    - Size:                    " << frame->GetSize() << std::endl;
-            std::cout << "    - Tag alter preservation:  " << ( ( frame->HasFlag( ID3v2::Frame::FlagTagAlterPreservation  ) ) ? "No"  : "Yes" ) << std::endl;
-            std::cout << "    - File alter preservation: " << ( ( frame->HasFlag( ID3v2::Frame::FlagFileAlterPreservation ) ) ? "No"  : "Yes" ) << std::endl;
-            std::cout << "    - Read only:               " << ( ( frame->HasFlag( ID3v2::Frame::FlagReadOnly              ) ) ? "Yes" : "No" ) << std::endl;
-            std::cout << "    - Compression:             " << ( ( frame->HasFlag( ID3v2::Frame::FlagCompression           ) ) ? "Yes" : "No" ) << std::endl;
-            std::cout << "    - Encryption:              " << ( ( frame->HasFlag( ID3v2::Frame::FlagCompression           ) ) ? "Yes" : "No" ) << std::endl;
-            std::cout << "    - Grouping identity:       " << ( ( frame->HasFlag( ID3v2::Frame::FlagGroupingIdentity      ) ) ? "Yes" : "No" ) << std::endl;
+            std::cout << "    - Tag alter preservation:  " << ( ( frame->HasFlag( ID3v2::AbstractFrame::FlagTagAlterPreservation  ) ) ? "No"  : "Yes" ) << std::endl;
+            std::cout << "    - File alter preservation: " << ( ( frame->HasFlag( ID3v2::AbstractFrame::FlagFileAlterPreservation ) ) ? "No"  : "Yes" ) << std::endl;
+            std::cout << "    - Read only:               " << ( ( frame->HasFlag( ID3v2::AbstractFrame::FlagReadOnly              ) ) ? "Yes" : "No" ) << std::endl;
+            std::cout << "    - Compression:             " << ( ( frame->HasFlag( ID3v2::AbstractFrame::FlagCompression           ) ) ? "Yes" : "No" ) << std::endl;
+            std::cout << "    - Encryption:              " << ( ( frame->HasFlag( ID3v2::AbstractFrame::FlagCompression           ) ) ? "Yes" : "No" ) << std::endl;
+            std::cout << "    - Grouping identity:       " << ( ( frame->HasFlag( ID3v2::AbstractFrame::FlagGroupingIdentity      ) ) ? "Yes" : "No" ) << std::endl;
 
         }
     }

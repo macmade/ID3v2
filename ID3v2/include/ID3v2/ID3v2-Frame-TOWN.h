@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TOWN: public Frame
+        class TOWN: public AbstractFrame
         {
             public:
                 

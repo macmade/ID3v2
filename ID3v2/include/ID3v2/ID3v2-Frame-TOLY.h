@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TOLY: public Frame
+        class TOLY: public AbstractFrame
         {
             public:
                 

@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class RBUF: public Frame
+        class RBUF: public AbstractFrame
         {
             public:
                 

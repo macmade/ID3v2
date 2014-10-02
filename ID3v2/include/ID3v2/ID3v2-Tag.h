@@ -59,14 +59,14 @@ namespace ID3v2
             
             Tag & operator =( const Tag & tag );
             
-            bool                    IsValid( void ) const;
-            Version                 GetVersion( void ) const;
-            unsigned char           GetFlags( void ) const;
-            bool                    HasFlag( Flag flag ) const;
-            std::size_t             GetSize( void );
-            ExtendedHeader        * GetExtendedHeader( void );
-            std::vector< Frame * >  GetFrames( void ) const;
-            Frame                 * GetFrameWithName( std::string name ) const;
+            bool                            IsValid( void ) const;
+            Version                         GetVersion( void ) const;
+            unsigned char                   GetFlags( void ) const;
+            bool                            HasFlag( Flag flag ) const;
+            std::size_t                     GetSize( void );
+            ExtendedHeader                * GetExtendedHeader( void );
+            std::vector< AbstractFrame * >  GetFrames( void ) const;
+            AbstractFrame                 * GetFrameWithName( std::string name ) const;
             
         private:
             

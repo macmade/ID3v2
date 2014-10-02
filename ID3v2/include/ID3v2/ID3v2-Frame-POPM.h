@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class POPM: public Frame
+        class POPM: public AbstractFrame
         {
             public:
                 

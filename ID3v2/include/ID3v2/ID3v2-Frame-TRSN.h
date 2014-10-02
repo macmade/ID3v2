@@ -42,7 +42,7 @@ namespace ID3v2
 {
     namespace Frames
     {
-        class TRSN: public Frame
+        class TRSN: public AbstractFrame
         {
             public:
                 

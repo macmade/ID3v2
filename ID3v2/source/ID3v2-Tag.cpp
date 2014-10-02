@@ -54,12 +54,12 @@ namespace ID3v2
             
             void ParseFile( std::string path );
             
-            bool                   valid;
-            Version                version;
-            ID3v2Header            header;
-            std::size_t            headerSize;
-            ExtendedHeader       * extendedHeader;
-            std::vector< Frame * > frames;
+            bool                           valid;
+            Version                        version;
+            ID3v2Header                    header;
+            std::size_t                    headerSize;
+            ExtendedHeader               * extendedHeader;
+            std::vector< AbstractFrame * > frames;
     };
     
     #ifdef __clang__
@@ -150,20 +150,20 @@ namespace ID3v2
         return this->impl->extendedHeader;
     }
     
-    std::vector< Frame * > Tag::GetFrames( void ) const
+    std::vector< AbstractFrame * > Tag::GetFrames( void ) const
     {
         if( this->IsValid() == false )
         {
-            return std::vector< Frame * >();
+            return std::vector< AbstractFrame * >();
         }
         
         return this->impl->frames;
     }
     
-    Frame * Tag::GetFrameWithName( std::string name ) const
+    AbstractFrame * Tag::GetFrameWithName( std::string name ) const
     {
-        std::vector< Frame * >::iterator it;
-        Frame                          * frame;
+        std::vector< AbstractFrame * >::iterator it;
+        AbstractFrame                          * frame;
         
         if( this->IsValid() == false )
         {
@@ -194,7 +194,7 @@ namespace ID3v2
     
     Tag::IMPL::~IMPL( void )
     {
-        std::vector< Frame * >::iterator it;
+        std::vector< AbstractFrame * >::iterator it;
         
         delete this->extendedHeader;
         
@@ -278,9 +278,9 @@ namespace ID3v2
         while( static_cast< std::size_t >( ftell( fh ) ) < this->headerSize )
         {
             {
-                Frame * frame;
+                AbstractFrame * frame;
                 
-                frame = Frame::NewFrameFromFileHandle( fh, this->version );
+                frame = AbstractFrame::NewFrameFromFileHandle( fh, this->version );
                 
                 if( frame == NULL )
                 {

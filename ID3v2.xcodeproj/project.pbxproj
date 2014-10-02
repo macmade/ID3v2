@@ -10,8 +10,8 @@
 		056C884118C8C232006260B3 /* libID3v2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 056C881218C8B85F006260B3 /* libID3v2.a */; };
 		05FCC73D19DB40E900BC1FBE /* ID3v2-ExtendedHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC73A19DB40E900BC1FBE /* ID3v2-ExtendedHeader.h */; };
 		05FCC73E19DB40E900BC1FBE /* ID3v2-ExtendedHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC73A19DB40E900BC1FBE /* ID3v2-ExtendedHeader.h */; };
-		05FCC73F19DB40E900BC1FBE /* ID3v2-Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC73B19DB40E900BC1FBE /* ID3v2-Frame.h */; };
-		05FCC74019DB40E900BC1FBE /* ID3v2-Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC73B19DB40E900BC1FBE /* ID3v2-Frame.h */; };
+		05FCC73F19DB40E900BC1FBE /* ID3v2-AbstractFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC73B19DB40E900BC1FBE /* ID3v2-AbstractFrame.h */; };
+		05FCC74019DB40E900BC1FBE /* ID3v2-AbstractFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC73B19DB40E900BC1FBE /* ID3v2-AbstractFrame.h */; };
 		05FCC74119DB40E900BC1FBE /* ID3v2-Tag.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC73C19DB40E900BC1FBE /* ID3v2-Tag.h */; };
 		05FCC74219DB40E900BC1FBE /* ID3v2-Tag.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC73C19DB40E900BC1FBE /* ID3v2-Tag.h */; };
 		05FCC74419DB40F000BC1FBE /* ID3v2.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCC6B619DB3E7A00BC1FBE /* ID3v2.h */; };
@@ -20,10 +20,10 @@
 		05FCC74A19DB410A00BC1FBE /* ID3v2-ExtendedHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC74619DB410A00BC1FBE /* ID3v2-ExtendedHeader.cpp */; };
 		05FCC74B19DB410A00BC1FBE /* ID3v2-ExtendedHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC74619DB410A00BC1FBE /* ID3v2-ExtendedHeader.cpp */; };
 		05FCC74C19DB410A00BC1FBE /* ID3v2-ExtendedHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC74619DB410A00BC1FBE /* ID3v2-ExtendedHeader.cpp */; };
-		05FCC74D19DB410A00BC1FBE /* ID3v2-Frame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC74719DB410A00BC1FBE /* ID3v2-Frame.cpp */; };
-		05FCC74E19DB410A00BC1FBE /* ID3v2-Frame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC74719DB410A00BC1FBE /* ID3v2-Frame.cpp */; };
-		05FCC74F19DB410A00BC1FBE /* ID3v2-Frame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC74719DB410A00BC1FBE /* ID3v2-Frame.cpp */; };
-		05FCC75019DB410A00BC1FBE /* ID3v2-Frame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC74719DB410A00BC1FBE /* ID3v2-Frame.cpp */; };
+		05FCC74D19DB410A00BC1FBE /* ID3v2-AbstractFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC74719DB410A00BC1FBE /* ID3v2-AbstractFrame.cpp */; };
+		05FCC74E19DB410A00BC1FBE /* ID3v2-AbstractFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC74719DB410A00BC1FBE /* ID3v2-AbstractFrame.cpp */; };
+		05FCC74F19DB410A00BC1FBE /* ID3v2-AbstractFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC74719DB410A00BC1FBE /* ID3v2-AbstractFrame.cpp */; };
+		05FCC75019DB410A00BC1FBE /* ID3v2-AbstractFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC74719DB410A00BC1FBE /* ID3v2-AbstractFrame.cpp */; };
 		05FCC75119DB410A00BC1FBE /* ID3v2-Tag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC74819DB410A00BC1FBE /* ID3v2-Tag.cpp */; };
 		05FCC75219DB410A00BC1FBE /* ID3v2-Tag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC74819DB410A00BC1FBE /* ID3v2-Tag.cpp */; };
 		05FCC75319DB410A00BC1FBE /* ID3v2-Tag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05FCC74819DB410A00BC1FBE /* ID3v2-Tag.cpp */; };
@@ -551,10 +551,10 @@
 		05FCC6B819DB3E7A00BC1FBE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		05FCC6C819DB3E7A00BC1FBE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		05FCC73A19DB40E900BC1FBE /* ID3v2-ExtendedHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-ExtendedHeader.h"; sourceTree = "<group>"; };
-		05FCC73B19DB40E900BC1FBE /* ID3v2-Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Frame.h"; sourceTree = "<group>"; };
+		05FCC73B19DB40E900BC1FBE /* ID3v2-AbstractFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-AbstractFrame.h"; sourceTree = "<group>"; };
 		05FCC73C19DB40E900BC1FBE /* ID3v2-Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Tag.h"; sourceTree = "<group>"; };
 		05FCC74619DB410A00BC1FBE /* ID3v2-ExtendedHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-ExtendedHeader.cpp"; sourceTree = "<group>"; };
-		05FCC74719DB410A00BC1FBE /* ID3v2-Frame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Frame.cpp"; sourceTree = "<group>"; };
+		05FCC74719DB410A00BC1FBE /* ID3v2-AbstractFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-AbstractFrame.cpp"; sourceTree = "<group>"; };
 		05FCC74819DB410A00BC1FBE /* ID3v2-Tag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Tag.cpp"; sourceTree = "<group>"; };
 		05FCC75519DB454C00BC1FBE /* ID3v2-Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ID3v2-Version.h"; sourceTree = "<group>"; };
 		05FCC75819DB455900BC1FBE /* ID3v2-Version.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-Version.cpp"; sourceTree = "<group>"; };
@@ -805,7 +805,7 @@
 			isa = PBXGroup;
 			children = (
 				05FCC74619DB410A00BC1FBE /* ID3v2-ExtendedHeader.cpp */,
-				05FCC74719DB410A00BC1FBE /* ID3v2-Frame.cpp */,
+				05FCC74719DB410A00BC1FBE /* ID3v2-AbstractFrame.cpp */,
 				05FCC74819DB410A00BC1FBE /* ID3v2-Tag.cpp */,
 				05FCC75819DB455900BC1FBE /* ID3v2-Version.cpp */,
 				05FCC86519DB7C6900BC1FBE /* ID3v2-Frame-AENC.cpp */,
@@ -899,7 +899,7 @@
 			isa = PBXGroup;
 			children = (
 				05FCC73A19DB40E900BC1FBE /* ID3v2-ExtendedHeader.h */,
-				05FCC73B19DB40E900BC1FBE /* ID3v2-Frame.h */,
+				05FCC73B19DB40E900BC1FBE /* ID3v2-AbstractFrame.h */,
 				05FCC73C19DB40E900BC1FBE /* ID3v2-Tag.h */,
 				05FCC75519DB454C00BC1FBE /* ID3v2-Version.h */,
 				05FCC75E19DB4D8D00BC1FBE /* ID3v2-PrivateTypes.h */,
@@ -1043,7 +1043,7 @@
 				05FCC7FD19DB7C6000BC1FBE /* ID3v2-Frame-TALB.h in Headers */,
 				05FCC80F19DB7C6000BC1FBE /* ID3v2-Frame-TFLT.h in Headers */,
 				05FCC74419DB40F000BC1FBE /* ID3v2.h in Headers */,
-				05FCC73F19DB40E900BC1FBE /* ID3v2-Frame.h in Headers */,
+				05FCC73F19DB40E900BC1FBE /* ID3v2-AbstractFrame.h in Headers */,
 				05FCC7DB19DB7C6000BC1FBE /* ID3v2-Frame-ETCO.h in Headers */,
 				05FCC83719DB7C6000BC1FBE /* ID3v2-Frame-TPUB.h in Headers */,
 				05FCC80D19DB7C6000BC1FBE /* ID3v2-Frame-TEXT.h in Headers */,
@@ -1130,7 +1130,7 @@
 				05FCC7FE19DB7C6000BC1FBE /* ID3v2-Frame-TALB.h in Headers */,
 				05FCC81019DB7C6000BC1FBE /* ID3v2-Frame-TFLT.h in Headers */,
 				05FCC74519DB40F200BC1FBE /* ID3v2.h in Headers */,
-				05FCC74019DB40E900BC1FBE /* ID3v2-Frame.h in Headers */,
+				05FCC74019DB40E900BC1FBE /* ID3v2-AbstractFrame.h in Headers */,
 				05FCC7DC19DB7C6000BC1FBE /* ID3v2-Frame-ETCO.h in Headers */,
 				05FCC83819DB7C6000BC1FBE /* ID3v2-Frame-TPUB.h in Headers */,
 				05FCC80E19DB7C6000BC1FBE /* ID3v2-Frame-TEXT.h in Headers */,
@@ -1318,7 +1318,7 @@
 				05FCC9C419DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp in Sources */,
 				05FCC94C19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp in Sources */,
 				05FCC95419DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp in Sources */,
-				05FCC74D19DB410A00BC1FBE /* ID3v2-Frame.cpp in Sources */,
+				05FCC74D19DB410A00BC1FBE /* ID3v2-AbstractFrame.cpp in Sources */,
 				05FCC96C19DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp in Sources */,
 				05FCC95019DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp in Sources */,
 				05FCC91019DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp in Sources */,
@@ -1404,7 +1404,7 @@
 				05FCC9C519DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp in Sources */,
 				05FCC94D19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp in Sources */,
 				05FCC95519DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp in Sources */,
-				05FCC74E19DB410A00BC1FBE /* ID3v2-Frame.cpp in Sources */,
+				05FCC74E19DB410A00BC1FBE /* ID3v2-AbstractFrame.cpp in Sources */,
 				05FCC96D19DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp in Sources */,
 				05FCC95119DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp in Sources */,
 				05FCC91119DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp in Sources */,
@@ -1490,7 +1490,7 @@
 				05FCC9C619DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp in Sources */,
 				05FCC94E19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp in Sources */,
 				05FCC95619DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp in Sources */,
-				05FCC74F19DB410A00BC1FBE /* ID3v2-Frame.cpp in Sources */,
+				05FCC74F19DB410A00BC1FBE /* ID3v2-AbstractFrame.cpp in Sources */,
 				05FCC96E19DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp in Sources */,
 				05FCC95219DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp in Sources */,
 				05FCC91219DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp in Sources */,
@@ -1576,7 +1576,7 @@
 				05FCC9C719DB7C6900BC1FBE /* ID3v2-Frame-WOAR.cpp in Sources */,
 				05FCC94F19DB7C6900BC1FBE /* ID3v2-Frame-TLEN.cpp in Sources */,
 				05FCC95719DB7C6900BC1FBE /* ID3v2-Frame-TOAL.cpp in Sources */,
-				05FCC75019DB410A00BC1FBE /* ID3v2-Frame.cpp in Sources */,
+				05FCC75019DB410A00BC1FBE /* ID3v2-AbstractFrame.cpp in Sources */,
 				05FCC96F19DB7C6900BC1FBE /* ID3v2-Frame-TPE1.cpp in Sources */,
 				05FCC95319DB7C6900BC1FBE /* ID3v2-Frame-TMED.cpp in Sources */,
 				05FCC91319DB7C6900BC1FBE /* ID3v2-Frame-TBPM.cpp in Sources */,
