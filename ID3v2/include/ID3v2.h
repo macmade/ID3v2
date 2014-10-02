@@ -38,10 +38,6 @@
 #ifndef __ID3V2__
 #define __ID3V2__
 
-#include <string>
-#include <iostream>
-#include <vector>
-
 #include <ID3v2/ID3v2-Version.h>
 #include <ID3v2/ID3v2-AbstractFrame.h>
 #include <ID3v2/ID3v2-ExtendedHeader.h>

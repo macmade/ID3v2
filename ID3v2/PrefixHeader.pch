@@ -50,6 +50,4 @@
 
 #include "Clang-Warnings.h"
 
-#include <ID3v2/ID3v2-PrivateTypes.h>
-
 #endif /* __ID3V2_PREFIX_H__ */
