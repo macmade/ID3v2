@@ -38,12 +38,91 @@
 #ifndef __ID3V2__
 #define __ID3V2__
 
+#include <string>
+#include <iostream>
+#include <vector>
+
+/*******************************************************************************
+ * Base
+ ******************************************************************************/
+
 #include <ID3v2/ID3v2-Version.h>
 #include <ID3v2/ID3v2-AbstractFrame.h>
 #include <ID3v2/ID3v2-ExtendedHeader.h>
 #include <ID3v2/ID3v2-Tag.h>
-
 #include <ID3v2/Frame/ID3v2-Frame-Unknown.h>
+
+/*******************************************************************************
+ * Frames - v2.2.0
+ ******************************************************************************/
+
+#include <ID3v2/Frame/v22/ID3v2-Frame-BUF.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-CNT.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-COM.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-CRA.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-CRM.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-EQU.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-ETC.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-GEO.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-IPL.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-LNK.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-MCI.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-MLL.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-PIC.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-POP.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-REV.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-RVA.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-SLT.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-STC.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TAL.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TBP.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TCM.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TCO.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TCR.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TDA.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TDY.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TEN.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TFT.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TIM.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TKE.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TLA.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TLE.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TMT.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TOA.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TOF.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TOL.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TOR.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TOT.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TP1.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TP2.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TP3.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TP4.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TPA.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TPB.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TRC.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TRD.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TRK.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TSI.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TSS.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TT1.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TT2.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TT3.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TXT.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TXX.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-TYE.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-UFI.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-ULT.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-WAF.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-WAR.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-WAS.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-WCM.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-WCP.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-WPB.h>
+#include <ID3v2/Frame/v22/ID3v2-Frame-WXX.h>
+
+/*******************************************************************************
+ * Frames - v2.3.0
+ ******************************************************************************/
 
 #include <ID3v2/Frame/v23/ID3v2-Frame-AENC.h>
 #include <ID3v2/Frame/v23/ID3v2-Frame-APIC.h>

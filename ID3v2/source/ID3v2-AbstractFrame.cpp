@@ -248,6 +248,70 @@ namespace ID3v2
         
         name = ss.str();
         
+             if( name == "BUF" ) { frame = new Frame::v22::BUF(); }
+        else if( name == "CNT" ) { frame = new Frame::v22::CNT(); }
+        else if( name == "COM" ) { frame = new Frame::v22::COM(); }
+        else if( name == "CRA" ) { frame = new Frame::v22::CRA(); }
+        else if( name == "CRM" ) { frame = new Frame::v22::CRM(); }
+        else if( name == "EQU" ) { frame = new Frame::v22::EQU(); }
+        else if( name == "ETC" ) { frame = new Frame::v22::ETC(); }
+        else if( name == "GEO" ) { frame = new Frame::v22::GEO(); }
+        else if( name == "IPL" ) { frame = new Frame::v22::IPL(); }
+        else if( name == "LNK" ) { frame = new Frame::v22::LNK(); }
+        else if( name == "MCI" ) { frame = new Frame::v22::MCI(); }
+        else if( name == "MLL" ) { frame = new Frame::v22::MLL(); }
+        else if( name == "PIC" ) { frame = new Frame::v22::PIC(); }
+        else if( name == "POP" ) { frame = new Frame::v22::POP(); }
+        else if( name == "REV" ) { frame = new Frame::v22::REV(); }
+        else if( name == "RVA" ) { frame = new Frame::v22::RVA(); }
+        else if( name == "SLT" ) { frame = new Frame::v22::SLT(); }
+        else if( name == "STC" ) { frame = new Frame::v22::STC(); }
+        else if( name == "TAL" ) { frame = new Frame::v22::TAL(); }
+        else if( name == "TBP" ) { frame = new Frame::v22::TBP(); }
+        else if( name == "TCM" ) { frame = new Frame::v22::TCM(); }
+        else if( name == "TCO" ) { frame = new Frame::v22::TCO(); }
+        else if( name == "TCR" ) { frame = new Frame::v22::TCR(); }
+        else if( name == "TDA" ) { frame = new Frame::v22::TDA(); }
+        else if( name == "TDY" ) { frame = new Frame::v22::TDY(); }
+        else if( name == "TEN" ) { frame = new Frame::v22::TEN(); }
+        else if( name == "TFT" ) { frame = new Frame::v22::TFT(); }
+        else if( name == "TIM" ) { frame = new Frame::v22::TIM(); }
+        else if( name == "TKE" ) { frame = new Frame::v22::TKE(); }
+        else if( name == "TLA" ) { frame = new Frame::v22::TLA(); }
+        else if( name == "TLE" ) { frame = new Frame::v22::TLE(); }
+        else if( name == "TMT" ) { frame = new Frame::v22::TMT(); }
+        else if( name == "TOA" ) { frame = new Frame::v22::TOA(); }
+        else if( name == "TOF" ) { frame = new Frame::v22::TOF(); }
+        else if( name == "TOL" ) { frame = new Frame::v22::TOL(); }
+        else if( name == "TOR" ) { frame = new Frame::v22::TOR(); }
+        else if( name == "TOT" ) { frame = new Frame::v22::TOT(); }
+        else if( name == "TP1" ) { frame = new Frame::v22::TP1(); }
+        else if( name == "TP2" ) { frame = new Frame::v22::TP2(); }
+        else if( name == "TP3" ) { frame = new Frame::v22::TP3(); }
+        else if( name == "TP4" ) { frame = new Frame::v22::TP4(); }
+        else if( name == "TPA" ) { frame = new Frame::v22::TPA(); }
+        else if( name == "TPB" ) { frame = new Frame::v22::TPB(); }
+        else if( name == "TRC" ) { frame = new Frame::v22::TRC(); }
+        else if( name == "TRD" ) { frame = new Frame::v22::TRD(); }
+        else if( name == "TRK" ) { frame = new Frame::v22::TRK(); }
+        else if( name == "TSI" ) { frame = new Frame::v22::TSI(); }
+        else if( name == "TSS" ) { frame = new Frame::v22::TSS(); }
+        else if( name == "TT1" ) { frame = new Frame::v22::TT1(); }
+        else if( name == "TT2" ) { frame = new Frame::v22::TT2(); }
+        else if( name == "TT3" ) { frame = new Frame::v22::TT3(); }
+        else if( name == "TXT" ) { frame = new Frame::v22::TXT(); }
+        else if( name == "TXX" ) { frame = new Frame::v22::TXX(); }
+        else if( name == "TYE" ) { frame = new Frame::v22::TYE(); }
+        else if( name == "UFI" ) { frame = new Frame::v22::UFI(); }
+        else if( name == "ULT" ) { frame = new Frame::v22::ULT(); }
+        else if( name == "WAF" ) { frame = new Frame::v22::WAF(); }
+        else if( name == "WAR" ) { frame = new Frame::v22::WAR(); }
+        else if( name == "WAS" ) { frame = new Frame::v22::WAS(); }
+        else if( name == "WCM" ) { frame = new Frame::v22::WCM(); }
+        else if( name == "WCP" ) { frame = new Frame::v22::WCP(); }
+        else if( name == "WPB" ) { frame = new Frame::v22::WPB(); }
+        else if( name == "WXX" ) { frame = new Frame::v22::WXX(); }
+        else
         {
             frame = new Frame::Unknown();
         }
