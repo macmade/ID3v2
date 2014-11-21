@@ -8,6 +8,11 @@ About
 
 C++ library for ID3v2 tag parsing.
 
+License
+-------
+
+ID3v2 is released under the terms of the BOOST license.
+
 Repository Infos
 ----------------
 
