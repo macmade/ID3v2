@@ -923,7 +923,6 @@
 		056C884A18C8C547006260B3 /* libID3v2.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libID3v2.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		056C885F18C8C76B006260B3 /* ID3v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ID3v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		056C88AA18C8C8AC006260B3 /* libID3v2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libID3v2.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		05FCC6A419DB3E7A00BC1FBE /* Clang-Warnings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Clang-Warnings.h"; sourceTree = "<group>"; };
 		05FCC6B619DB3E7A00BC1FBE /* ID3v2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ID3v2.h; path = ../../ID3v2.h; sourceTree = "<group>"; };
 		05FCC6B719DB3E7A00BC1FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05FCC6B819DB3E7A00BC1FBE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -1287,7 +1286,6 @@
 		05FCC6A319DB3E7A00BC1FBE /* ID3v2 */ = {
 			isa = PBXGroup;
 			children = (
-				05FCC6A419DB3E7A00BC1FBE /* Clang-Warnings.h */,
 				05FCC6A519DB3E7A00BC1FBE /* include */,
 				05FCC6B719DB3E7A00BC1FBE /* Info.plist */,
 				05FCC6B819DB3E7A00BC1FBE /* PrefixHeader.pch */,
