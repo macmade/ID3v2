@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TXT frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TXT__
-#define __ID3V2_V22_FRAME_TXT__
+#ifndef ID3V2_V22_FRAME_TXT
+#define ID3V2_V22_FRAME_TXT
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TXT__ */
+#endif /* ID3V2_V22_FRAME_TXT */
 

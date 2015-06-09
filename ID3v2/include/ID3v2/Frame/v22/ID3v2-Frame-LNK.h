@@ -33,8 +33,8 @@
  * @abstract    ID3v2 LNK frame
  */
 
-#ifndef __ID3V2_V22_FRAME_LNK__
-#define __ID3V2_V22_FRAME_LNK__
+#ifndef ID3V2_V22_FRAME_LNK
+#define ID3V2_V22_FRAME_LNK
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_LNK__ */
+#endif /* ID3V2_V22_FRAME_LNK */
 

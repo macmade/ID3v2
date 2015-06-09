@@ -33,8 +33,8 @@
  * @abstract    ID3v2 private types
  */
 
-#ifndef __ID3V2_PRIVATE_TYPES__
-#define __ID3V2_PRIVATE_TYPES__
+#ifndef ID3V2_PRIVATE_TYPES
+#define ID3V2_PRIVATE_TYPES
 
 typedef struct
 {
@@ -68,4 +68,4 @@ typedef struct
 }
 ID3v23Frame;
 
-#endif /* __ID3V2_PRIVATE_TYPES__ */
+#endif /* ID3V2_PRIVATE_TYPES */

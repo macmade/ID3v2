@@ -33,8 +33,8 @@
  * @abstract    ID3v2 EQU frame
  */
 
-#ifndef __ID3V2_V22_FRAME_EQU__
-#define __ID3V2_V22_FRAME_EQU__
+#ifndef ID3V2_V22_FRAME_EQU
+#define ID3V2_V22_FRAME_EQU
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_EQU__ */
+#endif /* ID3V2_V22_FRAME_EQU */
 

@@ -33,8 +33,8 @@
  * @abstract    ID3v2 WOAF frame
  */
 
-#ifndef __ID3V2_V23_FRAME_WOAF__
-#define __ID3V2_V23_FRAME_WOAF__
+#ifndef ID3V2_V23_FRAME_WOAF
+#define ID3V2_V23_FRAME_WOAF
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_WOAF__ */
+#endif /* ID3V2_V23_FRAME_WOAF */

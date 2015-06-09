@@ -33,8 +33,8 @@
  * @abstract    ID3v2 BUF frame
  */
 
-#ifndef __ID3V2_V22_FRAME_BUF__
-#define __ID3V2_V22_FRAME_BUF__
+#ifndef ID3V2_V22_FRAME_BUF
+#define ID3V2_V22_FRAME_BUF
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_BUF__ */
+#endif /* ID3V2_V22_FRAME_BUF */
 

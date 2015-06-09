@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TAL frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TAL__
-#define __ID3V2_V22_FRAME_TAL__
+#ifndef ID3V2_V22_FRAME_TAL
+#define ID3V2_V22_FRAME_TAL
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TAL__ */
+#endif /* ID3V2_V22_FRAME_TAL */
 

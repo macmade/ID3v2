@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TSI frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TSI__
-#define __ID3V2_V22_FRAME_TSI__
+#ifndef ID3V2_V22_FRAME_TSI
+#define ID3V2_V22_FRAME_TSI
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TSI__ */
+#endif /* ID3V2_V22_FRAME_TSI */
 

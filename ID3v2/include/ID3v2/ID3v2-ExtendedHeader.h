@@ -33,8 +33,8 @@
  * @abstract    ID3v2 extended header
  */
 
-#ifndef __ID3V2_EXTENDED_HEADER__
-#define __ID3V2_EXTENDED_HEADER__
+#ifndef ID3V2_EXTENDED_HEADER
+#define ID3V2_EXTENDED_HEADER
 
 namespace ID3v2
 {
@@ -61,4 +61,4 @@ namespace ID3v2
     };
 }
 
-#endif /* __ID3V2_EXTENDED_HEADER__ */
+#endif /* ID3V2_EXTENDED_HEADER */

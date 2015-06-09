@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TCON frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TCON__
-#define __ID3V2_V23_FRAME_TCON__
+#ifndef ID3V2_V23_FRAME_TCON
+#define ID3V2_V23_FRAME_TCON
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TCON__ */
+#endif /* ID3V2_V23_FRAME_TCON */

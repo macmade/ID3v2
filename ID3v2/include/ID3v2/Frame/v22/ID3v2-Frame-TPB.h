@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TPB frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TPB__
-#define __ID3V2_V22_FRAME_TPB__
+#ifndef ID3V2_V22_FRAME_TPB
+#define ID3V2_V22_FRAME_TPB
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TPB__ */
+#endif /* ID3V2_V22_FRAME_TPB */
 

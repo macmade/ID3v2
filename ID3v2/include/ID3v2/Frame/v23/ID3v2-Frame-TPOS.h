@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TPOS frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TPOS__
-#define __ID3V2_V23_FRAME_TPOS__
+#ifndef ID3V2_V23_FRAME_TPOS
+#define ID3V2_V23_FRAME_TPOS
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TPOS__ */
+#endif /* ID3V2_V23_FRAME_TPOS */

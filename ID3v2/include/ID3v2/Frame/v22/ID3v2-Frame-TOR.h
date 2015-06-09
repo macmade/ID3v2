@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TOR frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TOR__
-#define __ID3V2_V22_FRAME_TOR__
+#ifndef ID3V2_V22_FRAME_TOR
+#define ID3V2_V22_FRAME_TOR
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TOR__ */
+#endif /* ID3V2_V22_FRAME_TOR */
 

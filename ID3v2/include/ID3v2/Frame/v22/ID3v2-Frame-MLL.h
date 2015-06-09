@@ -33,8 +33,8 @@
  * @abstract    ID3v2 MLL frame
  */
 
-#ifndef __ID3V2_V22_FRAME_MLL__
-#define __ID3V2_V22_FRAME_MLL__
+#ifndef ID3V2_V22_FRAME_MLL
+#define ID3V2_V22_FRAME_MLL
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_MLL__ */
+#endif /* ID3V2_V22_FRAME_MLL */
 

@@ -33,8 +33,8 @@
  * @abstract    ID3v2 GEOB frame
  */
 
-#ifndef __ID3V2_V23_FRAME_GEOB__
-#define __ID3V2_V23_FRAME_GEOB__
+#ifndef ID3V2_V23_FRAME_GEOB
+#define ID3V2_V23_FRAME_GEOB
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_GEOB__ */
+#endif /* ID3V2_V23_FRAME_GEOB */

@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TOLY frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TOLY__
-#define __ID3V2_V23_FRAME_TOLY__
+#ifndef ID3V2_V23_FRAME_TOLY
+#define ID3V2_V23_FRAME_TOLY
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TOLY__ */
+#endif /* ID3V2_V23_FRAME_TOLY */

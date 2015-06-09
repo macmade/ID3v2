@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TDAT frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TDAT__
-#define __ID3V2_V23_FRAME_TDAT__
+#ifndef ID3V2_V23_FRAME_TDAT
+#define ID3V2_V23_FRAME_TDAT
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TDAT__ */
+#endif /* ID3V2_V23_FRAME_TDAT */

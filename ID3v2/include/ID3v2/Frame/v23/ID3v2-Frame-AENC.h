@@ -33,8 +33,8 @@
  * @abstract    ID3v2 AENC frame
  */
 
-#ifndef __ID3V2_V23_FRAME_AENC__
-#define __ID3V2_V23_FRAME_AENC__
+#ifndef ID3V2_V23_FRAME_AENC
+#define ID3V2_V23_FRAME_AENC
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_AENC__ */
+#endif /* ID3V2_V23_FRAME_AENC */

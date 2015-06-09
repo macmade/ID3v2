@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TENC frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TENC__
-#define __ID3V2_V23_FRAME_TENC__
+#ifndef ID3V2_V23_FRAME_TENC
+#define ID3V2_V23_FRAME_TENC
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TENC__ */
+#endif /* ID3V2_V23_FRAME_TENC */

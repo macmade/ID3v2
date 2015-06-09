@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TPE2 frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TPE2__
-#define __ID3V2_V23_FRAME_TPE2__
+#ifndef ID3V2_V23_FRAME_TPE2
+#define ID3V2_V23_FRAME_TPE2
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TPE2__ */
+#endif /* ID3V2_V23_FRAME_TPE2 */

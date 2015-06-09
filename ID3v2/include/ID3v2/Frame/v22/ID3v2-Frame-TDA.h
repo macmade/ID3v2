@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TDA frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TDA__
-#define __ID3V2_V22_FRAME_TDA__
+#ifndef ID3V2_V22_FRAME_TDA
+#define ID3V2_V22_FRAME_TDA
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TDA__ */
+#endif /* ID3V2_V22_FRAME_TDA */
 

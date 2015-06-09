@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TIM frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TIM__
-#define __ID3V2_V22_FRAME_TIM__
+#ifndef ID3V2_V22_FRAME_TIM
+#define ID3V2_V22_FRAME_TIM
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TIM__ */
+#endif /* ID3V2_V22_FRAME_TIM */
 

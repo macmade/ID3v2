@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TOAL frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TOAL__
-#define __ID3V2_V23_FRAME_TOAL__
+#ifndef ID3V2_V23_FRAME_TOAL
+#define ID3V2_V23_FRAME_TOAL
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TOAL__ */
+#endif /* ID3V2_V23_FRAME_TOAL */

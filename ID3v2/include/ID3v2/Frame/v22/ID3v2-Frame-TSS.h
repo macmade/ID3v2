@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TSS frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TSS__
-#define __ID3V2_V22_FRAME_TSS__
+#ifndef ID3V2_V22_FRAME_TSS
+#define ID3V2_V22_FRAME_TSS
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TSS__ */
+#endif /* ID3V2_V22_FRAME_TSS */
 

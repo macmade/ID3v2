@@ -33,8 +33,8 @@
  * @abstract    ID3v2 RVRB frame
  */
 
-#ifndef __ID3V2_V23_FRAME_RVRB__
-#define __ID3V2_V23_FRAME_RVRB__
+#ifndef ID3V2_V23_FRAME_RVRB
+#define ID3V2_V23_FRAME_RVRB
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_RVRB__ */
+#endif /* ID3V2_V23_FRAME_RVRB */

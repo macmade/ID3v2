@@ -33,8 +33,8 @@
  * @abstract    ID3v2 WAF frame
  */
 
-#ifndef __ID3V2_V22_FRAME_WAF__
-#define __ID3V2_V22_FRAME_WAF__
+#ifndef ID3V2_V22_FRAME_WAF
+#define ID3V2_V22_FRAME_WAF
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_WAF__ */
+#endif /* ID3V2_V22_FRAME_WAF */
 

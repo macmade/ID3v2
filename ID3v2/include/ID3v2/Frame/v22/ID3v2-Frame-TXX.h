@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TXX frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TXX__
-#define __ID3V2_V22_FRAME_TXX__
+#ifndef ID3V2_V22_FRAME_TXX
+#define ID3V2_V22_FRAME_TXX
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TXX__ */
+#endif /* ID3V2_V22_FRAME_TXX */
 

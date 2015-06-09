@@ -33,8 +33,8 @@
  * @abstract    ID3v2 WORS frame
  */
 
-#ifndef __ID3V2_V23_FRAME_WORS__
-#define __ID3V2_V23_FRAME_WORS__
+#ifndef ID3V2_V23_FRAME_WORS
+#define ID3V2_V23_FRAME_WORS
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_WORS__ */
+#endif /* ID3V2_V23_FRAME_WORS */

@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TXXX frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TXXX__
-#define __ID3V2_V23_FRAME_TXXX__
+#ifndef ID3V2_V23_FRAME_TXXX
+#define ID3V2_V23_FRAME_TXXX
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TXXX__ */
+#endif /* ID3V2_V23_FRAME_TXXX */

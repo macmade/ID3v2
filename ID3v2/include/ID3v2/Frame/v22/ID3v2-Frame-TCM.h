@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TCM frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TCM__
-#define __ID3V2_V22_FRAME_TCM__
+#ifndef ID3V2_V22_FRAME_TCM
+#define ID3V2_V22_FRAME_TCM
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TCM__ */
+#endif /* ID3V2_V22_FRAME_TCM */
 

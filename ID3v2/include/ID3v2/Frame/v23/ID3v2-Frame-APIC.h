@@ -33,8 +33,8 @@
  * @abstract    ID3v2 APIC frame
  */
 
-#ifndef __ID3V2_V23_FRAME_APIC__
-#define __ID3V2_V23_FRAME_APIC__
+#ifndef ID3V2_V23_FRAME_APIC
+#define ID3V2_V23_FRAME_APIC
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_APIC__ */
+#endif /* ID3V2_V23_FRAME_APIC */

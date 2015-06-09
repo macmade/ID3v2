@@ -33,8 +33,8 @@
  * @abstract    ID3v2 IPLS frame
  */
 
-#ifndef __ID3V2_V23_FRAME_IPLS__
-#define __ID3V2_V23_FRAME_IPLS__
+#ifndef ID3V2_V23_FRAME_IPLS
+#define ID3V2_V23_FRAME_IPLS
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_IPLS__ */
+#endif /* ID3V2_V23_FRAME_IPLS */

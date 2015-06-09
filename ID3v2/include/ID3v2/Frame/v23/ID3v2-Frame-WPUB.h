@@ -33,8 +33,8 @@
  * @abstract    ID3v2 WPUB frame
  */
 
-#ifndef __ID3V2_V23_FRAME_WPUB__
-#define __ID3V2_V23_FRAME_WPUB__
+#ifndef ID3V2_V23_FRAME_WPUB
+#define ID3V2_V23_FRAME_WPUB
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_WPUB__ */
+#endif /* ID3V2_V23_FRAME_WPUB */

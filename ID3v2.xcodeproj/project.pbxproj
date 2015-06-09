@@ -2069,7 +2069,7 @@
 		056C87C618C8B0F8006260B3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "XS-Labs";
 			};
 			buildConfigurationList = 056C87C918C8B0F8006260B3 /* Build configuration list for PBXProject "ID3v2" */;
@@ -2788,6 +2788,7 @@
 				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -3038,6 +3039,7 @@
 					ID3v2/include,
 				);
 				INFOPLIST_FILE = ID3v2/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.ID3v2";
 				PRODUCT_NAME = ID3v2;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -3057,6 +3059,7 @@
 					ID3v2/include,
 				);
 				INFOPLIST_FILE = ID3v2/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.ID3v2";
 				PRODUCT_NAME = ID3v2;
 				WRAPPER_EXTENSION = framework;
 			};

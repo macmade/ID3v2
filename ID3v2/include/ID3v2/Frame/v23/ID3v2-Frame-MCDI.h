@@ -33,8 +33,8 @@
  * @abstract    ID3v2 MCDI frame
  */
 
-#ifndef __ID3V2_V23_FRAME_MCDI__
-#define __ID3V2_V23_FRAME_MCDI__
+#ifndef ID3V2_V23_FRAME_MCDI
+#define ID3V2_V23_FRAME_MCDI
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_MCDI__ */
+#endif /* ID3V2_V23_FRAME_MCDI */

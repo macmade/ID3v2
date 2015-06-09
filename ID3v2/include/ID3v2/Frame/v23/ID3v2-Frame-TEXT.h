@@ -33,12 +33,12 @@
  * @abstract    ID3v2 TEXT frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TEXT__
-#define __ID3V2_V23_FRAME_TEXT__
+#ifndef ID3V2_V23_FRAME_TEXT
+#define ID3V2_V23_FRAME_TEXT
 
 /* Fix for WIN32 TEXT macro (winrt.h) */
 #ifdef TEXT
-#define __ID3V2_TEXT TEXT
+#define ID3V2_TEXT TEXT
 #undef TEXT
 #endif
 
@@ -70,9 +70,9 @@ namespace ID3v2
 }
 
 /* Fix for WIN32 TEXT macro (winrt.h) */
-#ifdef __ID3V2_TEXT
-#define TEXT __ID3V2_TEXT
-#undef __ID3V2_TEXT
+#ifdef ID3V2_TEXT
+#define TEXT ID3V2_TEXT
+#undef ID3V2_TEXT
 #endif
 
-#endif /* __ID3V2_V23_FRAME_TEXT__ */
+#endif /* ID3V2_V23_FRAME_TEXT */

@@ -33,8 +33,8 @@
  * @abstract    ID3v2 version
  */
 
-#ifndef __ID3V2_VERSION__
-#define __ID3V2_VERSION__
+#ifndef ID3V2_VERSION
+#define ID3V2_VERSION
 
 namespace ID3v2
 {
@@ -69,4 +69,4 @@ namespace ID3v2
     };
 }
 
-#endif /* __ID3V2_VERSION__ */
+#endif /* ID3V2_VERSION */

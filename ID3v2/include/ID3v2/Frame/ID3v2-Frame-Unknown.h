@@ -33,8 +33,8 @@
  * @abstract    ID3v2 unknwon frame
  */
 
-#ifndef __ID3V2_FRAME_UNKNWON__
-#define __ID3V2_FRAME_UNKNWON__
+#ifndef ID3V2_FRAME_UNKNWON
+#define ID3V2_FRAME_UNKNWON
 
 namespace ID3v2
 {
@@ -60,4 +60,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_FRAME_UNKNWON__ */
+#endif /* ID3V2_FRAME_UNKNWON */

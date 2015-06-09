@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TRC frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TRC__
-#define __ID3V2_V22_FRAME_TRC__
+#ifndef ID3V2_V22_FRAME_TRC
+#define ID3V2_V22_FRAME_TRC
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TRC__ */
+#endif /* ID3V2_V22_FRAME_TRC */
 

@@ -33,8 +33,8 @@
  * @abstract    ID3v2 WCOM frame
  */
 
-#ifndef __ID3V2_V23_FRAME_WCOM__
-#define __ID3V2_V23_FRAME_WCOM__
+#ifndef ID3V2_V23_FRAME_WCOM
+#define ID3V2_V23_FRAME_WCOM
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_WCOM__ */
+#endif /* ID3V2_V23_FRAME_WCOM */

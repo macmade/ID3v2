@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TDY frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TDY__
-#define __ID3V2_V22_FRAME_TDY__
+#ifndef ID3V2_V22_FRAME_TDY
+#define ID3V2_V22_FRAME_TDY
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TDY__ */
+#endif /* ID3V2_V22_FRAME_TDY */
 

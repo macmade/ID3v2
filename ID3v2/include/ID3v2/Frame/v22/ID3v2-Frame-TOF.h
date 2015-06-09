@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TOF frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TOF__
-#define __ID3V2_V22_FRAME_TOF__
+#ifndef ID3V2_V22_FRAME_TOF
+#define ID3V2_V22_FRAME_TOF
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TOF__ */
+#endif /* ID3V2_V22_FRAME_TOF */
 

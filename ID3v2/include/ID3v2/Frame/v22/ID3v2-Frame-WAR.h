@@ -33,8 +33,8 @@
  * @abstract    ID3v2 WAR frame
  */
 
-#ifndef __ID3V2_V22_FRAME_WAR__
-#define __ID3V2_V22_FRAME_WAR__
+#ifndef ID3V2_V22_FRAME_WAR
+#define ID3V2_V22_FRAME_WAR
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_WAR__ */
+#endif /* ID3V2_V22_FRAME_WAR */
 

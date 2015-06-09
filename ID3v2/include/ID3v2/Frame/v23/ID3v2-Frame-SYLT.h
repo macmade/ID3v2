@@ -33,8 +33,8 @@
  * @abstract    ID3v2 SYLT frame
  */
 
-#ifndef __ID3V2_V23_FRAME_SYLT__
-#define __ID3V2_V23_FRAME_SYLT__
+#ifndef ID3V2_V23_FRAME_SYLT
+#define ID3V2_V23_FRAME_SYLT
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_SYLT__ */
+#endif /* ID3V2_V23_FRAME_SYLT */

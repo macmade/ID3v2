@@ -33,8 +33,8 @@
  * @abstract    ID3v2 ETCO frame
  */
 
-#ifndef __ID3V2_V23_FRAME_ETCO__
-#define __ID3V2_V23_FRAME_ETCO__
+#ifndef ID3V2_V23_FRAME_ETCO
+#define ID3V2_V23_FRAME_ETCO
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_ETCO__ */
+#endif /* ID3V2_V23_FRAME_ETCO */

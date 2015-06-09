@@ -33,8 +33,8 @@
  * @abstract    ID3v2 POP frame
  */
 
-#ifndef __ID3V2_V22_FRAME_POP__
-#define __ID3V2_V22_FRAME_POP__
+#ifndef ID3V2_V22_FRAME_POP
+#define ID3V2_V22_FRAME_POP
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_POP__ */
+#endif /* ID3V2_V22_FRAME_POP */
 

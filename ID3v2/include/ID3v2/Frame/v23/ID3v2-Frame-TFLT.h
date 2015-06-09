@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TFLT frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TFLT__
-#define __ID3V2_V23_FRAME_TFLT__
+#ifndef ID3V2_V23_FRAME_TFLT
+#define ID3V2_V23_FRAME_TFLT
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TFLT__ */
+#endif /* ID3V2_V23_FRAME_TFLT */

@@ -33,8 +33,8 @@
  * @abstract    ID3v2 PIC frame
  */
 
-#ifndef __ID3V2_V22_FRAME_PIC__
-#define __ID3V2_V22_FRAME_PIC__
+#ifndef ID3V2_V22_FRAME_PIC
+#define ID3V2_V22_FRAME_PIC
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_PIC__ */
+#endif /* ID3V2_V22_FRAME_PIC */
 

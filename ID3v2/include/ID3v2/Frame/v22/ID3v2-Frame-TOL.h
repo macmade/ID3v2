@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TOL frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TOL__
-#define __ID3V2_V22_FRAME_TOL__
+#ifndef ID3V2_V22_FRAME_TOL
+#define ID3V2_V22_FRAME_TOL
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TOL__ */
+#endif /* ID3V2_V22_FRAME_TOL */
 

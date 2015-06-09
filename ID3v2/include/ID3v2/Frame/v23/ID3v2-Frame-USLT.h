@@ -33,8 +33,8 @@
  * @abstract    ID3v2 USLT frame
  */
 
-#ifndef __ID3V2_V23_FRAME_USLT__
-#define __ID3V2_V23_FRAME_USLT__
+#ifndef ID3V2_V23_FRAME_USLT
+#define ID3V2_V23_FRAME_USLT
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_USLT__ */
+#endif /* ID3V2_V23_FRAME_USLT */

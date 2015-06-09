@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TPA frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TPA__
-#define __ID3V2_V22_FRAME_TPA__
+#ifndef ID3V2_V22_FRAME_TPA
+#define ID3V2_V22_FRAME_TPA
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TPA__ */
+#endif /* ID3V2_V22_FRAME_TPA */
 

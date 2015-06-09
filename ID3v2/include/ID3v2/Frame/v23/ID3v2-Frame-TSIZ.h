@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TSIZ frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TSIZ__
-#define __ID3V2_V23_FRAME_TSIZ__
+#ifndef ID3V2_V23_FRAME_TSIZ
+#define ID3V2_V23_FRAME_TSIZ
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TSIZ__ */
+#endif /* ID3V2_V23_FRAME_TSIZ */

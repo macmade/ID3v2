@@ -33,8 +33,8 @@
  * @abstract    ID3v2 tag
  */
 
-#ifndef __ID3V2_TAG__
-#define __ID3V2_TAG__
+#ifndef ID3V2_TAG
+#define ID3V2_TAG
 
 namespace ID3v2
 {
@@ -73,4 +73,4 @@ namespace ID3v2
     };
 }
 
-#endif /* __ID3V2_TAG__ */
+#endif /* ID3V2_TAG */

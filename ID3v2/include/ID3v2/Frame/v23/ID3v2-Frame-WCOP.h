@@ -33,8 +33,8 @@
  * @abstract    ID3v2 WCOP frame
  */
 
-#ifndef __ID3V2_V23_FRAME_WCOP__
-#define __ID3V2_V23_FRAME_WCOP__
+#ifndef ID3V2_V23_FRAME_WCOP
+#define ID3V2_V23_FRAME_WCOP
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_WCOP__ */
+#endif /* ID3V2_V23_FRAME_WCOP */

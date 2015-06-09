@@ -33,8 +33,8 @@
  * @abstract    ID3v2 ETC frame
  */
 
-#ifndef __ID3V2_V22_FRAME_ETC__
-#define __ID3V2_V22_FRAME_ETC__
+#ifndef ID3V2_V22_FRAME_ETC
+#define ID3V2_V22_FRAME_ETC
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_ETC__ */
+#endif /* ID3V2_V22_FRAME_ETC */
 

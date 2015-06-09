@@ -33,8 +33,8 @@
  * @abstract    ID3v2 REV frame
  */
 
-#ifndef __ID3V2_V22_FRAME_REV__
-#define __ID3V2_V22_FRAME_REV__
+#ifndef ID3V2_V22_FRAME_REV
+#define ID3V2_V22_FRAME_REV
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_REV__ */
+#endif /* ID3V2_V22_FRAME_REV */
 

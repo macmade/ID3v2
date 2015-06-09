@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TYER frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TYER__
-#define __ID3V2_V23_FRAME_TYER__
+#ifndef ID3V2_V23_FRAME_TYER
+#define ID3V2_V23_FRAME_TYER
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TYER__ */
+#endif /* ID3V2_V23_FRAME_TYER */

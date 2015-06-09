@@ -33,8 +33,8 @@
  * @abstract    ID3v2 ULT frame
  */
 
-#ifndef __ID3V2_V22_FRAME_ULT__
-#define __ID3V2_V22_FRAME_ULT__
+#ifndef ID3V2_V22_FRAME_ULT
+#define ID3V2_V22_FRAME_ULT
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_ULT__ */
+#endif /* ID3V2_V22_FRAME_ULT */
 

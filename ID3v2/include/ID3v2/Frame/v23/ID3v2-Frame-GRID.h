@@ -33,8 +33,8 @@
  * @abstract    ID3v2 GRID frame
  */
 
-#ifndef __ID3V2_V23_FRAME_GRID__
-#define __ID3V2_V23_FRAME_GRID__
+#ifndef ID3V2_V23_FRAME_GRID
+#define ID3V2_V23_FRAME_GRID
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_GRID__ */
+#endif /* ID3V2_V23_FRAME_GRID */

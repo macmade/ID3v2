@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TRSO frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TRSO__
-#define __ID3V2_V23_FRAME_TRSO__
+#ifndef ID3V2_V23_FRAME_TRSO
+#define ID3V2_V23_FRAME_TRSO
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TRSO__ */
+#endif /* ID3V2_V23_FRAME_TRSO */

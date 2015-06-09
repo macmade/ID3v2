@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TYE frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TYE__
-#define __ID3V2_V22_FRAME_TYE__
+#ifndef ID3V2_V22_FRAME_TYE
+#define ID3V2_V22_FRAME_TYE
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TYE__ */
+#endif /* ID3V2_V22_FRAME_TYE */
 

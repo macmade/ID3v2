@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TCOP frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TCOP__
-#define __ID3V2_V23_FRAME_TCOP__
+#ifndef ID3V2_V23_FRAME_TCOP
+#define ID3V2_V23_FRAME_TCOP
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TCOP__ */
+#endif /* ID3V2_V23_FRAME_TCOP */

@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TRDA frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TRDA__
-#define __ID3V2_V23_FRAME_TRDA__
+#ifndef ID3V2_V23_FRAME_TRDA
+#define ID3V2_V23_FRAME_TRDA
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TRDA__ */
+#endif /* ID3V2_V23_FRAME_TRDA */

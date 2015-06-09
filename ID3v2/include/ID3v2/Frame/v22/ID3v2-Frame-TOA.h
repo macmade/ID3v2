@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TOA frame
  */
 
-#ifndef __ID3V2_V22_FRAME_TOA__
-#define __ID3V2_V22_FRAME_TOA__
+#ifndef ID3V2_V22_FRAME_TOA
+#define ID3V2_V22_FRAME_TOA
 
 namespace ID3v2
 {
@@ -63,5 +63,5 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V22_FRAME_TOA__ */
+#endif /* ID3V2_V22_FRAME_TOA */
 

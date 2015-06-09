@@ -33,8 +33,8 @@
  * @abstract    ID3v2 PCNT frame
  */
 
-#ifndef __ID3V2_V23_FRAME_PCNT__
-#define __ID3V2_V23_FRAME_PCNT__
+#ifndef ID3V2_V23_FRAME_PCNT
+#define ID3V2_V23_FRAME_PCNT
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_PCNT__ */
+#endif /* ID3V2_V23_FRAME_PCNT */

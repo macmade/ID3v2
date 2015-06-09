@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TOWN frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TOWN__
-#define __ID3V2_V23_FRAME_TOWN__
+#ifndef ID3V2_V23_FRAME_TOWN
+#define ID3V2_V23_FRAME_TOWN
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TOWN__ */
+#endif /* ID3V2_V23_FRAME_TOWN */

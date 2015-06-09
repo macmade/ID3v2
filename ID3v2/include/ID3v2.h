@@ -33,8 +33,8 @@
  * @abstract    ID3v2 main header file
  */
 
-#ifndef __ID3V2__
-#define __ID3V2__
+#ifndef ID3V2
+#define ID3V2
 
 #include <string>
 #include <iostream>
@@ -197,4 +197,4 @@
 #include <ID3v2/Frame/v23/ID3v2-Frame-WPUB.h>
 #include <ID3v2/Frame/v23/ID3v2-Frame-WXXX.h>
 
-#endif /* __ID3V2__ */
+#endif /* ID3V2 */

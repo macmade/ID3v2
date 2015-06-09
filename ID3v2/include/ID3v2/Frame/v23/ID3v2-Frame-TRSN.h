@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TRSN frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TRSN__
-#define __ID3V2_V23_FRAME_TRSN__
+#ifndef ID3V2_V23_FRAME_TRSN
+#define ID3V2_V23_FRAME_TRSN
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TRSN__ */
+#endif /* ID3V2_V23_FRAME_TRSN */

@@ -33,8 +33,8 @@
  * @abstract    ID3v2 TIT2 frame
  */
 
-#ifndef __ID3V2_V23_FRAME_TIT2__
-#define __ID3V2_V23_FRAME_TIT2__
+#ifndef ID3V2_V23_FRAME_TIT2
+#define ID3V2_V23_FRAME_TIT2
 
 namespace ID3v2
 {
@@ -63,4 +63,4 @@ namespace ID3v2
     }
 }
 
-#endif /* __ID3V2_V23_FRAME_TIT2__ */
+#endif /* ID3V2_V23_FRAME_TIT2 */
