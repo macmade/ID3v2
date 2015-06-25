@@ -55,7 +55,18 @@ namespace ID3v2
     }
     
     void TextFrame::ProcessData( void )
-    {}
+    {
+        const char * data;
+        
+        data = this->GetData();
+        
+        if( data == NULL || this->GetSize() == 0 )
+        {
+            return;
+        }
+        
+        this->impl->str = std::string( data + 1, this->GetSize() - 1 );
+    }
     
     std::string TextFrame::GetStringValue( void ) const
     {
