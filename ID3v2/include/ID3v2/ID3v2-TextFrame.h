@@ -45,7 +45,9 @@ namespace ID3v2
             TextFrame( void );
             virtual ~TextFrame( void );
             
-            std::string GetStringValue( void ) const;
+            std::string  GetStringValue( void ) const;
+            const char * GetCStringValue( void ) const;
+            int          GetStringEncoding( void ) const;
             
         protected:
             

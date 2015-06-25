@@ -37,14 +37,25 @@
 
 namespace ID3v2
 {
+    #ifdef __clang__
+    #pragma clang diagnostic push
+    #pragma clang diagnostic ignored "-Wpadded"
+    #endif
+    
     class TextFrame::IMPL
     {
         public:
             
             IMPL( void );
             
-            std::string str;
+            std::string  str;
+            const char * cStr;
+            int          enc;
     };
+    
+    #ifdef __clang__
+    #pragma clang diagnostic pop
+    #endif
          
     TextFrame::TextFrame( void ): impl( new IMPL )
     {}
@@ -65,7 +76,9 @@ namespace ID3v2
             return;
         }
         
-        this->impl->str = std::string( data + 1, this->GetSize() - 1 );
+        this->impl->str  = std::string( data + 1, this->GetSize() - 1 );
+        this->impl->cStr = data + 1;
+        this->impl->enc  = data[ 0 ];
     }
     
     std::string TextFrame::GetStringValue( void ) const
@@ -73,7 +86,17 @@ namespace ID3v2
         return this->impl->str;
     }
     
-    TextFrame::IMPL::IMPL( void )
+    const char * TextFrame::GetCStringValue( void ) const
+    {
+        return this->impl->cStr;
+    }
+    
+    int TextFrame::GetStringEncoding( void ) const
+    {
+        return this->impl->enc;
+    }
+    
+    TextFrame::IMPL::IMPL( void ): cStr( NULL ), enc( 0 )
     {}
 }
 
