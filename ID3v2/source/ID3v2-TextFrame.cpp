@@ -28,41 +28,75 @@
  ******************************************************************************/
 
 /*!
- * @header      ID3v2-Frame-TT3.h
+ * @header      ID3v2-TextFrame.cpp
  * @copyright   (c) 2014 - Jean-David Gadina - www.xs-labs.com / www.digidna.net
- * @abstract    ID3v2 TT3 frame
+ * @abstract    ID3v2 text frame
  */
 
-#ifndef ID3V2_V22_FRAME_TT3
-#define ID3V2_V22_FRAME_TT3
+#include <ID3v2.h>
 
 namespace ID3v2
 {
-    namespace Frame
+    #ifdef __clang__
+    #pragma clang diagnostic push
+    #pragma clang diagnostic ignored "-Wpadded"
+    #endif
+    
+    class TextFrame::IMPL
     {
-        namespace v22
-        {
-            class TT3: public AbstractFrame
-            {
-                public:
-                        
-                        TT3( void );
-                        virtual ~TT3( void );
-                        
-                        std::string GetDescription( void ) const;
-                
-                protected:
-                        
-                        void ProcessData( void );
-                        
-                private:
-                        
-                        class  IMPL;
-                        IMPL * impl;
-            };
-        }
+        public:
+            
+            IMPL( void );
+            
+            std::string  str;
+            const char * cStr;
+            int          enc;
+    };
+    
+    #ifdef __clang__
+    #pragma clang diagnostic pop
+    #endif
+         
+    TextFrame::TextFrame( void ): impl( new IMPL )
+    {}
+    
+    TextFrame::~TextFrame( void )
+    {
+        delete this->impl;
     }
+    
+    void TextFrame::ProcessData( void )
+    {
+        const char * data;
+        
+        data = this->GetData();
+        
+        if( data == NULL || this->GetSize() == 0 )
+        {
+            return;
+        }
+        
+        this->impl->str  = std::string( data + 1, this->GetSize() - 1 );
+        this->impl->cStr = data + 1;
+        this->impl->enc  = data[ 0 ];
+    }
+    
+    std::string TextFrame::GetStringValue( void ) const
+    {
+        return this->impl->str;
+    }
+    
+    const char * TextFrame::GetCStringValue( void ) const
+    {
+        return this->impl->cStr;
+    }
+    
+    int TextFrame::GetStringEncoding( void ) const
+    {
+        return this->impl->enc;
+    }
+    
+    TextFrame::IMPL::IMPL( void ): cStr( NULL ), enc( 0 )
+    {}
 }
-
-#endif /* ID3V2_V22_FRAME_TT3 */
 

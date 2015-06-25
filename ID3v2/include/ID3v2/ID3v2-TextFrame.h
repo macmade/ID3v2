@@ -28,41 +28,36 @@
  ******************************************************************************/
 
 /*!
- * @header      ID3v2-Frame-TT3.h
+ * @header      ID3v2-TextFrame.h
  * @copyright   (c) 2014 - Jean-David Gadina - www.xs-labs.com / www.digidna.net
- * @abstract    ID3v2 TT3 frame
+ * @abstract    ID3v2 text frame
  */
 
-#ifndef ID3V2_V22_FRAME_TT3
-#define ID3V2_V22_FRAME_TT3
+#ifndef ID3V2_TEXT_FRAME
+#define ID3V2_TEXT_FRAME
 
 namespace ID3v2
 {
-    namespace Frame
+    class TextFrame: public AbstractFrame
     {
-        namespace v22
-        {
-            class TT3: public AbstractFrame
-            {
-                public:
-                        
-                        TT3( void );
-                        virtual ~TT3( void );
-                        
-                        std::string GetDescription( void ) const;
-                
-                protected:
-                        
-                        void ProcessData( void );
-                        
-                private:
-                        
-                        class  IMPL;
-                        IMPL * impl;
-            };
-        }
-    }
+        public:
+            
+            TextFrame( void );
+            virtual ~TextFrame( void );
+            
+            std::string  GetStringValue( void ) const;
+            const char * GetCStringValue( void ) const;
+            int          GetStringEncoding( void ) const;
+            
+        protected:
+            
+            void ProcessData( void );
+            
+        private:
+            
+            class  IMPL;
+            IMPL * impl;
+    };
 }
 
-#endif /* ID3V2_V22_FRAME_TT3 */
-
+#endif /* ID3V2_TEXT_FRAME */

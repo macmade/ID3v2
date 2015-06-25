@@ -48,11 +48,12 @@ namespace ID3v2
                         
                         GEO( void );
                         virtual ~GEO( void );
+                        
+                        std::string GetDescription( void ) const;
                 
                 protected:
                         
-                        void        ProcessData( void );
-                        std::string GetDescription( void ) const;
+                        void ProcessData( void );
                         
                 private:
                         

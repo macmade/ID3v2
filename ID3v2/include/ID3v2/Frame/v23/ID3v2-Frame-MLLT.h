@@ -48,11 +48,12 @@ namespace ID3v2
                         
                         MLLT( void );
                         virtual ~MLLT( void );
+                        
+                        std::string GetDescription( void ) const;
                 
                 protected:
                         
-                        void        ProcessData( void );
-                        std::string GetDescription( void ) const;
+                        void ProcessData( void );
                         
                 private:
                         
