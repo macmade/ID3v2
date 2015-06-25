@@ -48,11 +48,12 @@ namespace ID3v2
                         
                         TIT2( void );
                         virtual ~TIT2( void );
+                        
+                        std::string GetDescription( void ) const;
                 
                 protected:
                         
-                        void        ProcessData( void );
-                        std::string GetDescription( void ) const;
+                        void ProcessData( void );
                         
                 private:
                         

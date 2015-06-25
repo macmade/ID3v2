@@ -49,7 +49,7 @@ namespace ID3v2
             
         protected:
             
-            virtual void ProcessData( void );
+            void ProcessData( void );
             
         private:
             
