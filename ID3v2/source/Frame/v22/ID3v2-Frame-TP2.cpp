@@ -56,9 +56,6 @@ namespace ID3v2
                 delete this->impl;
             }
             
-            void TP2::ProcessData( void )
-            {}
-            
             std::string TP2::GetDescription( void ) const
             {
                 return "Band/Orchestra/Accompaniment";

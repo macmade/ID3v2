@@ -42,7 +42,7 @@ namespace ID3v2
     {
         namespace v22
         {
-            class TP2: public AbstractFrame
+            class TP2: public TextFrame
             {
                 public:
                         
@@ -50,10 +50,6 @@ namespace ID3v2
                         virtual ~TP2( void );
                         
                         std::string GetDescription( void ) const;
-                
-                protected:
-                        
-                        void ProcessData( void );
                         
                 private:
                         
