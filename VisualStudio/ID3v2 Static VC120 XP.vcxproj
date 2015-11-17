@@ -311,7 +311,7 @@
     <ClCompile Include="..\ID3v2\source\ID3v2-Version.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F13AD617-6E12-4A08-8730-C4CE926CD2F8}</ProjectGuid>
+    <ProjectGuid>{26947226-CB3F-43C0-ABB4-0073F2E7171E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>CF</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
