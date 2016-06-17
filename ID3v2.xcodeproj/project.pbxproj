@@ -929,7 +929,6 @@
 		056C88AA18C8C8AC006260B3 /* libID3v2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libID3v2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E50A1D1B3C365600332712 /* ID3v2-TextFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ID3v2-TextFrame.cpp"; sourceTree = "<group>"; };
 		05E50A1F1B3C367B00332712 /* ID3v2-TextFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ID3v2-TextFrame.h"; sourceTree = "<group>"; };
-		05FCC6A419DB3E7A00BC1FBE /* Clang-Warnings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Clang-Warnings.h"; sourceTree = "<group>"; };
 		05FCC6B619DB3E7A00BC1FBE /* ID3v2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ID3v2.h; sourceTree = "<group>"; };
 		05FCC6B719DB3E7A00BC1FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05FCC6B819DB3E7A00BC1FBE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -2076,7 +2075,7 @@
 		056C87C618C8B0F8006260B3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "XS-Labs";
 			};
 			buildConfigurationList = 056C87C918C8B0F8006260B3 /* Build configuration list for PBXProject "ID3v2" */;
@@ -2749,12 +2748,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
 				CLANG_ANALYZER_GCD = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_MEMORY_MANAGEMENT = YES;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_OBJC_ATSYNC = YES;
 				CLANG_ANALYZER_OBJC_COLLECTIONS = YES;
+				CLANG_ANALYZER_OBJC_DEALLOC = YES;
+				CLANG_ANALYZER_OBJC_GENERICS = YES;
 				CLANG_ANALYZER_OBJC_INCOMP_METHOD_TYPES = YES;
 				CLANG_ANALYZER_OBJC_NSCFERROR = YES;
 				CLANG_ANALYZER_OBJC_RETAIN_COUNT = YES;
@@ -2803,6 +2806,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -2855,12 +2859,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
 				CLANG_ANALYZER_GCD = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_MEMORY_MANAGEMENT = YES;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_OBJC_ATSYNC = YES;
 				CLANG_ANALYZER_OBJC_COLLECTIONS = YES;
+				CLANG_ANALYZER_OBJC_DEALLOC = YES;
+				CLANG_ANALYZER_OBJC_GENERICS = YES;
 				CLANG_ANALYZER_OBJC_INCOMP_METHOD_TYPES = YES;
 				CLANG_ANALYZER_OBJC_NSCFERROR = YES;
 				CLANG_ANALYZER_OBJC_RETAIN_COUNT = YES;
@@ -2909,6 +2917,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
@@ -3079,7 +3088,6 @@
 		056C88CA18C8C8AD006260B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/CF__.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ID3v2/PrefixHeader.pch;
@@ -3087,7 +3095,7 @@
 					"$(inherited)",
 					ID3v2/include,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ID3v2;
 				SDKROOT = iphoneos;
@@ -3099,7 +3107,6 @@
 		056C88CB18C8C8AD006260B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/CF__.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ID3v2/PrefixHeader.pch;
@@ -3107,7 +3114,7 @@
 					"$(inherited)",
 					ID3v2/include,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ID3v2;
 				SDKROOT = iphoneos;
