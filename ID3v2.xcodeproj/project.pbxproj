@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050B83F41EB91E6B0090EA12 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 050B83F31EB91E6B0090EA12 /* libc++.tbd */; };
+		050B83F51EB91E720090EA12 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 050B83F31EB91E6B0090EA12 /* libc++.tbd */; };
+		050B83F61EB91E780090EA12 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 050B83F31EB91E6B0090EA12 /* libc++.tbd */; };
 		051D0B5D1B3C38170038CC90 /* ID3v2-TextFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05E50A1D1B3C365600332712 /* ID3v2-TextFrame.cpp */; };
 		051D0B5E1B3C38170038CC90 /* ID3v2-TextFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05E50A1D1B3C365600332712 /* ID3v2-TextFrame.cpp */; };
 		051D0B5F1B3C38180038CC90 /* ID3v2-TextFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05E50A1D1B3C365600332712 /* ID3v2-TextFrame.cpp */; };
@@ -922,6 +925,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		050B83F31EB91E6B0090EA12 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		056C87CE18C8B0F8006260B3 /* ID3v2Example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ID3v2Example; sourceTree = BUILT_PRODUCTS_DIR; };
 		056C881218C8B85F006260B3 /* libID3v2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libID3v2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		056C884A18C8C547006260B3 /* libID3v2.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libID3v2.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1225,6 +1229,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050B83F61EB91E780090EA12 /* libc++.tbd in Frameworks */,
 				056C884118C8C232006260B3 /* libID3v2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1240,6 +1245,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050B83F51EB91E720090EA12 /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1247,6 +1253,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050B83F41EB91E6B0090EA12 /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1285,6 +1292,7 @@
 		056C880D18C8B50E006260B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				050B83F31EB91E6B0090EA12 /* libc++.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2075,7 +2083,7 @@
 		056C87C618C8B0F8006260B3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "XS-Labs";
 			};
 			buildConfigurationList = 056C87C918C8B0F8006260B3 /* Build configuration list for PBXProject "ID3v2" */;
@@ -2748,6 +2756,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "$(SRCROOT)/Scripts/ccache.sh";
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
 				CLANG_ANALYZER_GCD = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
@@ -2773,7 +2782,7 @@
 				CLANG_ANALYZER_SECURITY_KEYCHAIN_API = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				CLANG_STATIC_ANALYZER_MODE_ON_ANALYZE_ACTION = deep;
@@ -2787,6 +2796,7 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
@@ -2796,6 +2806,7 @@
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -2885,7 +2896,7 @@
 				CLANG_ANALYZER_SECURITY_KEYCHAIN_API = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				CLANG_STATIC_ANALYZER_MODE_ON_ANALYZE_ACTION = deep;
@@ -2899,6 +2910,7 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
@@ -2908,6 +2920,7 @@
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
