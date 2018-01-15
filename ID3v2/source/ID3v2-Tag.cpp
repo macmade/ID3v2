@@ -285,8 +285,10 @@ namespace ID3v2
                     goto end;
                 }
                 
-                if( frame->GetSize() == 0 )
+                if( frame->GetSize() == 0 && dynamic_cast< Frame::Unknown * >( frame ) == nullptr )
                 {
+                    delete frame;
+                    
                     break;
                 }
                 
