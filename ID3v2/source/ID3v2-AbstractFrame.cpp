@@ -48,8 +48,8 @@ namespace ID3v2
     {
         public:
             
-            static AbstractFrame * NewFrame( ID3v22Frame header, std::size_t size, char * data, Version version );
-            static AbstractFrame * NewFrame( ID3v23Frame header, std::size_t size, char * data, Version version );
+            static AbstractFrame * NewFrame( ID3v22Frame header, std::size_t size, uint8_t * data, Version version );
+            static AbstractFrame * NewFrame( ID3v23Frame header, std::size_t size, uint8_t * data, Version version );
             
             IMPL( void );
             ~IMPL( void );
@@ -57,7 +57,7 @@ namespace ID3v2
             ID3v22Frame  frame22;
             ID3v23Frame  frame23;
             std::size_t  frameSize;
-            char       * data;
+            uint8_t    * data;
             Version      version;
     };
     
@@ -133,7 +133,7 @@ namespace ID3v2
             }
         }
         
-        data      = new char[ frameSize ];
+        data = new char[ frameSize ];
         
         if( data == NULL )
         {
@@ -147,10 +147,10 @@ namespace ID3v2
         
         if( version < Version( 2, 3, 0 ) )
         {
-            return AbstractFrame::IMPL::NewFrame( frameHeader22, frameSize, data, version );
+            return AbstractFrame::IMPL::NewFrame( frameHeader22, frameSize, reinterpret_cast< uint8_t * >( data ), version );
         }
         
-        return AbstractFrame::IMPL::NewFrame( frameHeader23, frameSize, data, version );
+        return AbstractFrame::IMPL::NewFrame( frameHeader23, frameSize, reinterpret_cast< uint8_t * >( data ), version );
         
         error:
         
@@ -191,7 +191,7 @@ namespace ID3v2
         return this->impl->frameSize;
     }
     
-    const char * AbstractFrame::GetData( void ) const
+    const uint8_t * AbstractFrame::GetData( void ) const
     {
         return this->impl->data;
     }
@@ -234,7 +234,7 @@ namespace ID3v2
         return false;
     }
     
-    AbstractFrame * AbstractFrame::IMPL::NewFrame( ID3v22Frame header, std::size_t size, char * data, Version version )
+    AbstractFrame * AbstractFrame::IMPL::NewFrame( ID3v22Frame header, std::size_t size, uint8_t * data, Version version )
     {
         AbstractFrame   * frame;
         std::stringstream ss;
@@ -324,7 +324,7 @@ namespace ID3v2
         return frame;
     }
     
-    AbstractFrame * AbstractFrame::IMPL::NewFrame( ID3v23Frame header, std::size_t size, char * data, Version version )
+    AbstractFrame * AbstractFrame::IMPL::NewFrame( ID3v23Frame header, std::size_t size, uint8_t * data, Version version )
     {
         AbstractFrame   * frame;
         std::stringstream ss;

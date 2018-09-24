@@ -74,7 +74,25 @@ int main( void )
             std::cout << "    - Compression:             " << ( ( frame->HasFlag( ID3v2::AbstractFrame::FlagCompression           ) ) ? "Yes" : "No" ) << std::endl;
             std::cout << "    - Encryption:              " << ( ( frame->HasFlag( ID3v2::AbstractFrame::FlagCompression           ) ) ? "Yes" : "No" ) << std::endl;
             std::cout << "    - Grouping identity:       " << ( ( frame->HasFlag( ID3v2::AbstractFrame::FlagGroupingIdentity      ) ) ? "Yes" : "No" ) << std::endl;
-
+        }
+        
+        {
+            ID3v2::Frame::v23::APIC * apic;
+            
+            apic = dynamic_cast< ID3v2::Frame::v23::APIC * >( tag.GetFrameWithName( "APIC" ) );
+            
+            if( apic != nullptr )
+            {
+                using std::to_string;
+                
+                std::cout << std::endl;
+                std::cout << "APIC:" << std::endl;
+                std::cout << "    - Text encoding:       " << static_cast< unsigned int >( apic->GetTextEncoding() ) << std::endl;
+                std::cout << "    - MIME type:           " << apic->GetMimeType() << std::endl;
+                std::cout << "    - Picture type:        " << apic->GetPictureTypeString() << std::endl;
+                std::cout << "    - Picture description: " << apic->GetPictureDescription() << std::endl;
+                std::cout << "    - Picture data size:   " << apic->GetPictureData().size() << std::endl;
+            }
         }
     }
     

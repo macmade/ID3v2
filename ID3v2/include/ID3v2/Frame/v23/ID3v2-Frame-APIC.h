@@ -46,11 +46,45 @@ namespace ID3v2
             {
                 public:
                         
+                        enum class PictureType
+                        {
+                            Other               = 0x00,
+                            FileIcon            = 0x01,
+                            OtherFileIcon       = 0x02,
+                            CoverFront          = 0x03,
+                            CoverBack           = 0x04,
+                            LeafletPage         = 0x05,
+                            Media               = 0x06,
+                            LeadArtist          = 0x07,
+                            Artist              = 0x08,
+                            Conductor           = 0x09,
+                            Band                = 0x0A,
+                            Composer            = 0x0B,
+                            LyricistWriter      = 0x0C,
+                            RecordingLocation   = 0x0D,
+                            DuringRecording     = 0x0E,
+                            DuringPerformance   = 0x0F,
+                            MovieScreenCapture  = 0x10,
+                            BrightColouredFish  = 0x11,
+                            Illustration        = 0x12,
+                            BandLogotype        = 0x13,
+                            PublisherLogotype   = 0x14
+                        };
+                        
+                        std::string to_string( PictureType value );
+                        
                         APIC( void );
                         virtual ~APIC( void );
                         
                         std::string GetDescription( void ) const;
-                
+                        
+                        uint8_t                GetTextEncoding( void )       const;
+                        std::string            GetMimeType( void )           const;
+                        PictureType            GetPictureType( void )        const;
+                        std::string            GetPictureTypeString( void )  const;
+                        std::string            GetPictureDescription( void ) const;
+                        std::vector< uint8_t > GetPictureData( void )        const;
+                        
                 protected:
                         
                         void ProcessData( void );

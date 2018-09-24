@@ -62,7 +62,7 @@ namespace ID3v2
             
             std::string     GetName( void ) const;
             std::size_t     GetSize( void ) const;
-            const char *    GetData( void ) const;
+            const uint8_t * GetData( void ) const;
             unsigned short  GetFlags( void ) const;
             bool            HasFlag( Flag flag ) const;
             

@@ -69,7 +69,7 @@ namespace ID3v2
     {
         const char * data;
         
-        data = this->GetData();
+        data = reinterpret_cast< const char * >( this->GetData() );
         
         if( data == NULL || this->GetSize() == 0 )
         {
