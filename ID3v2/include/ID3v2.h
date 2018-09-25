@@ -39,6 +39,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <cstdint>
 
 /*******************************************************************************
  * Base
