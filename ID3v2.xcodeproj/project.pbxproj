@@ -3051,12 +3051,11 @@
 		056C88CA18C8C8AD006260B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/CF__.dst;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					ID3v2/include,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ID3v2;
 				SDKROOT = iphoneos;
@@ -3069,12 +3068,11 @@
 		056C88CB18C8C8AD006260B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/CF__.dst;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					ID3v2/include,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ID3v2;
 				SDKROOT = iphoneos;
