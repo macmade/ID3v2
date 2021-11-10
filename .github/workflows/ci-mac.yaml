@@ -1,0 +1,34 @@
+name: ci-mac
+on:   [push]
+jobs:
+    ci:
+        runs-on: macos-latest
+        strategy:
+            matrix:
+                run-config:
+                    - { scheme: 'ID3v2 Example',             configuration: 'Debug',   project: 'ID3v2.xcodeproj', build: 1, analyze: 1, test: 0, info: 1, destination: 'platform=macOS' }
+                    - { scheme: 'ID3v2 Example',             configuration: 'Release', project: 'ID3v2.xcodeproj', build: 1, analyze: 1, test: 0, info: 1, destination: 'platform=macOS' }
+                    - { scheme: 'ID3v2 Mac Static Library',  configuration: 'Debug',   project: 'ID3v2.xcodeproj', build: 1, analyze: 1, test: 0, info: 1, destination: 'platform=macOS' }
+                    - { scheme: 'ID3v2 Mac Static Library',  configuration: 'Release', project: 'ID3v2.xcodeproj', build: 1, analyze: 1, test: 0, info: 1, destination: 'platform=macOS' }
+                    - { scheme: 'ID3v2 Mac Dynamic Library', configuration: 'Debug',   project: 'ID3v2.xcodeproj', build: 1, analyze: 1, test: 0, info: 1, destination: 'platform=macOS' }
+                    - { scheme: 'ID3v2 Mac Dynamic Library', configuration: 'Release', project: 'ID3v2.xcodeproj', build: 1, analyze: 1, test: 0, info: 1, destination: 'platform=macOS' }
+                    - { scheme: 'ID3v2 Mac Framework',       configuration: 'Debug',   project: 'ID3v2.xcodeproj', build: 1, analyze: 1, test: 0, info: 1, destination: 'platform=macOS' }
+                    - { scheme: 'ID3v2 Mac Framework',       configuration: 'Release', project: 'ID3v2.xcodeproj', build: 1, analyze: 1, test: 0, info: 1, destination: 'platform=macOS' }
+                    - { scheme: 'ID3v2 iOS Static Library',  configuration: 'Debug',   project: 'ID3v2.xcodeproj', build: 1, analyze: 1, test: 0, info: 1, destination: 'platform=iOS Simulator,name=iPhone 12' }
+                    - { scheme: 'ID3v2 iOS Static Library',  configuration: 'Release', project: 'ID3v2.xcodeproj', build: 1, analyze: 1, test: 0, info: 1, destination: 'platform=iOS Simulator,name=iPhone 12' }
+        steps:
+            
+            - uses: actions/checkout@v1
+              with:
+                submodules: 'recursive'
+                
+            - uses: macmade/action-xcodebuild@v1.0.0
+            
+            - uses: macmade/action-slack@v1.0.0
+              if:   ${{ always() }}
+              env:
+                SLACK_WEBHOOK_URL:  ${{ secrets.SLACK_WEBHOOK_URL }}
+              with:
+                channel:    '#ci'
+                status:     ${{ job.status }}
+                title:      ${{ matrix.run-config[ 'scheme' ] }} - ${{ matrix.run-config[ 'configuration' ] }}
