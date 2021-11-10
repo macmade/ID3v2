@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "056C87CD18C8B0F8006260B3"
-               BuildableName = "ID3v2Example"
+               BlueprintIdentifier = "0510362C273BCEC3000D6EEC"
+               BuildableName = "ID3v2 Example"
                BlueprintName = "ID3v2 Example"
                ReferencedContainer = "container:ID3v2.xcodeproj">
             </BuildableReference>
@@ -44,8 +44,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "056C87CD18C8B0F8006260B3"
-            BuildableName = "ID3v2Example"
+            BlueprintIdentifier = "0510362C273BCEC3000D6EEC"
+            BuildableName = "ID3v2 Example"
             BlueprintName = "ID3v2 Example"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>
@@ -67,8 +67,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "056C87CD18C8B0F8006260B3"
-            BuildableName = "ID3v2Example"
+            BlueprintIdentifier = "0510362C273BCEC3000D6EEC"
+            BuildableName = "ID3v2 Example"
             BlueprintName = "ID3v2 Example"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>
@@ -84,8 +84,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "056C87CD18C8B0F8006260B3"
-            BuildableName = "ID3v2Example"
+            BlueprintIdentifier = "0510362C273BCEC3000D6EEC"
+            BuildableName = "ID3v2 Example"
             BlueprintName = "ID3v2 Example"
             ReferencedContainer = "container:ID3v2.xcodeproj">
          </BuildableReference>
