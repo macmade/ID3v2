@@ -2930,7 +2930,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 057223AE201119C600DC0502 /* Debug - ccache.xcconfig */;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 			};
 			name = Debug;
 		};
@@ -2938,7 +2938,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 057223AC201119C600DC0502 /* Release - ccache.xcconfig */;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 			};
 			name = Release;
 		};
