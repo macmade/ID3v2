@@ -17,7 +17,7 @@ C++ library for ID3v2 tag parsing.
 License
 -------
 
-ID3v2 is released under the terms of the BOOST license.
+ID3v2 is released under the terms of the MIT license.
 
 Repository Infos
 ----------------
