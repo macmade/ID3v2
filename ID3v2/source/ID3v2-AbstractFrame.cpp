@@ -120,9 +120,19 @@ namespace ID3v2
                 s2  &= 0xFF;
                 s3  &= 0xFF;
                 s4  &= 0xFF;
-                s1 <<= 24;
-                s2 <<= 16;
-                s3 <<= 8;
+                
+                if( version >= Version( 2, 4, 0 ) )
+                {
+                    s1 <<= 21;
+                    s2 <<= 14;
+                    s3 <<= 7;
+                }
+                else
+                {
+                    s1 <<= 24;
+                    s2 <<= 16;
+                    s3 <<= 8;
+                }
                 
                 frameSize = s1 | s2 | s3 | s4;
             }
